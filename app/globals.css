@@ -2,32 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* or overflow-y: scroll; */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
 }
+
+@layer base {
+  body {
+    --mainBg: #2E2F34;
+    --secondBg: #34353A;
+    --mainColor: #D3AD63;
+    --secondaryColor: #CFCDBD;
+    --accentColor: #ffe590;
+    --text_Color: #FFFCF5;
+
+    @apply text-[#000000] bg-[#34353A] tracking-wide;
+  }
+
+}
+
+/***************************MAIN****************************/
+li {
+  list-style: none;
+}
+
+.nav-item1 {
+  margin-right: 150px;
+
+}
+
+.nav-item2 {
+  margin-left: 150px;
+  ;
+}
+
+/*************************** Nav-Bar ****************************/
+/*************************** Body ****************************/
+/*************************** Footer ****************************/
