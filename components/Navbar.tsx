@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <nav className="bg-secondaryColor shadow-md mx-auto" style={{ width: '70%', maxWidth: '1200px', height: '500px'}} >     
+    <nav className="bg-secondaryColor shadow-md mx-auto" style={{ width: '70%', maxWidth: '1200px', height: '400px'}} >     
      <div className="max-w-7xl mx-auto px-4 ">
         <div className="flex justify-center items-center h-16">
           <div className="flex items-center">
@@ -24,9 +24,9 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-          <h1>Header Information</h1>
+          <em className='header-info'>Header Information</em> 
           <div>
-            
+
           </div>
       </div>
     </nav>

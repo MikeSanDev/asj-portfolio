@@ -34,6 +34,9 @@ body::-webkit-scrollbar {
 }
 
 /***************************MAIN****************************/
+
+
+/*************************** Nav-Bar ****************************/
 li {
   list-style: none;
 }
@@ -48,6 +51,25 @@ li {
   ;
 }
 
-/*************************** Nav-Bar ****************************/
+.header-info {
+  font-size: 40px;
+  margin-left: 75px;
+}
+
 /*************************** Body ****************************/
+.sub-header {
+  color: white;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-left: 75px;
+  text-decoration: underline;
+}
+
+.sub-text {
+  color: white;
+  font-size: 15px;
+  width: 50%;
+  margin-top: 20px;
+}
+
 /*************************** Footer ****************************/
