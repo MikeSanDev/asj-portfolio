@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
   return (
@@ -25,8 +26,12 @@ export default function Navbar() {
           </div>
         </div>
           <em className='header-info'>Header Information</em> 
-          <div>
-
+          <div className='flex justify-center fig-box'>
+            <Image 
+            src="/assets/fig-box.png" 
+            alt='box'
+            width={500}
+            height={500}/>
           </div>
       </div>
     </nav>

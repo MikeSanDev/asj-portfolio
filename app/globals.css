@@ -56,11 +56,15 @@ li {
   margin-left: 75px;
 }
 
+.fig-box {
+  margin-top: 35px;
+}
+
 /*************************** Body ****************************/
 .sub-header {
   color: white;
   font-size: 35px;
-  margin-top: 20px;
+  margin-top: 70px;
   margin-left: 75px;
   text-decoration: underline;
 }
