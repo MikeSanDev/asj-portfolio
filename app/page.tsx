@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Wireframe2 from "@/components/wireframe2";
 import Image from "next/image";
 import Link from 'next/link';
 
@@ -7,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <main className=" mx-auto " style={{ width: '70%', maxWidth: '1200px', height: '500px' }} >
+      <main className="mx-auto" style={{ width: '70%', maxWidth: '1200px', height: '500px' }} >
         <div className="max-w-7xl mx-auto px-4 ">
           <h1 className="sub-header">Sub-Header</h1>
           <div className="flex justify-center">
@@ -22,19 +21,17 @@ export default function Home() {
               width={800}
               height={500} />
           </div>
-
         </div>
         <div>
           <ul className="flex justify-center text-white mt-10 pb-10 space-x-4">
-            <Link href="/components/Wireframe2.tsx">
-              <li>Wireframe 2 </li>
+            <Link href="/wireframe2Page">
+              <li>Wireframe 2</li>
             </Link>
-            <li>Wireframe 3 </li>
-            <li>Wireframe 4 </li>
+            <li>Wireframe 3</li>
+            <li>Wireframe 4</li>
           </ul>
         </div>
       </main>
     </div>
   );
 }
-
