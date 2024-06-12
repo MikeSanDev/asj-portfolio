@@ -60,6 +60,14 @@ li {
   margin-top: 37px;
 }
 
+.fig-box2 {
+  margin-top: 37px;
+}
+
+.header-info2 {
+  font-size: 40px;
+}
+
 /*************************** Body ****************************/
 .sub-header {
   color: white;
@@ -70,6 +78,26 @@ li {
 }
 
 .sub-text {
+  color: white;
+  font-size: 15px;
+  width: 50%;
+  margin-top: 20px;
+}
+
+.wf2-sub-div {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+}
+
+.sub-header2 {
+  color: white;
+  font-size: 35px;
+  margin-top: 60px;
+  text-decoration: underline;
+}
+
+.sub-text2 {
   color: white;
   font-size: 15px;
   width: 50%;

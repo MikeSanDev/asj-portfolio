@@ -8,6 +8,18 @@ export default function Home() {
   return (
     <div>
       <Navbar />
+      {/* Header info */}
+      <div className="bg-secondaryColor shadow-md mx-auto" style={{ width: '70%', maxWidth: '1200px', height: 'auto' }}>
+        <em className='header-info pl-5'>Header Information</em>
+        <div className='flex justify-center fig-box'>
+          <Image
+            src="/assets/fig-box.png"
+            alt='box'
+            width={500}
+            height={500} />
+        </div>
+      </div>
+      {/* Main Body */}
       <main className="mx-auto" style={{ width: '70%', maxWidth: '1200px', height: '500px' }} >
         <div className="max-w-7xl mx-auto px-4 ">
           <h1 className="sub-header">Sub-Header</h1>

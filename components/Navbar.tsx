@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Navbar() {
   return (
-    <nav className="bg-secondaryColor shadow-md mx-auto" style={{ width: '70%', maxWidth: '1200px', height: '400px' }} >
+    <nav className="bg-secondaryColor shadow-md mx-auto" style={{ width: '70%', maxWidth: '1200px', height: 'auto' }} >
       <div className="max-w-7xl mx-auto px-4 ">
         <div className="flex justify-center items-center h-16">
           <div className="flex items-center">
@@ -25,14 +25,7 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-        <em className='header-info'>Header Information</em>
-        <div className='flex justify-center fig-box'>
-          <Image
-            src="/assets/fig-box.png"
-            alt='box'
-            width={500}
-            height={500} />
-        </div>
+
       </div>
     </nav>
   );
