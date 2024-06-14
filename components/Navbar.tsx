@@ -13,7 +13,7 @@ export default function Navbar() {
               </Link>
             </div>
             <div className="flex items-center ">
-              <Link href="/work">
+              <Link href="/workPage">
                 <li className="nav-item1 text-sm text-mainBg hover:text-gray-200 px-3 mr-20 pr-20 py-2">Work</li>
               </Link>
               <Link href="/about">
@@ -25,7 +25,6 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-
       </div>
     </nav>
   );
