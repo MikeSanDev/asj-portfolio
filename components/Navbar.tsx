@@ -16,7 +16,7 @@ export default function Navbar() {
               <Link href="/workPage">
                 <li className="nav-item1 text-sm text-mainBg hover:text-gray-200 px-3 mr-20 pr-20 py-2">Work</li>
               </Link>
-              <Link href="/about">
+              <Link href="/aboutPage">
                 <li className="nav-item2 text-sm  text-mainBg hover:text-gray-200 px-3 ml-20 pl-20 py-2">About</li>
               </Link>
               <Link href="/contact">
