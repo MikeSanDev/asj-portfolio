@@ -8,7 +8,7 @@ export default function PkmnPage() {
 
     const handleBallClick = (route: string) => {
         console.log(`Navigating to ${route}`);
-        // Perform navigation logic here using Next.js router or any other navigation method
+
     };
 
     const handleMouseEnter = (message: string) => {
@@ -31,7 +31,7 @@ export default function PkmnPage() {
                 />
                 <Link href="/workPage">
                     <li className="absolute" style={{ top: '30%', left: '15%' }} onClick={() => handleBallClick('/workPage')}
-                        onMouseEnter={() => handleMouseEnter('Work Page')}
+                        onMouseEnter={() => handleMouseEnter('Work Experience')}
                         onMouseLeave={handleMouseLeave}>
                         <Image
                             src="/assets/ball1.png"
@@ -43,7 +43,7 @@ export default function PkmnPage() {
                 </Link>
                 <Link href="/aboutPage">
                     <li className="absolute" style={{ top: '30%', right: '17%' }} onClick={() => handleBallClick('/aboutPage')}
-                        onMouseEnter={() => handleMouseEnter('About Page')}
+                        onMouseEnter={() => handleMouseEnter('About Me')}
                         onMouseLeave={handleMouseLeave}>
                         <Image
                             src="/assets/ball2.png"
@@ -53,9 +53,9 @@ export default function PkmnPage() {
                         />
                     </li>
                 </Link>
-                <Link href="/resumePage">
-                    <li className="absolute" style={{ bottom: '20%', left: '44.3%' }} onClick={() => handleBallClick('/resumePage')}
-                        onMouseEnter={() => handleMouseEnter('Resume Page')}
+                <Link href="https://drive.google.com/file/d/1XN3fCDg3PXbmL4PLIJiW_nkYljsL2e9j/view">
+                    <li className="absolute" style={{ bottom: '20%', left: '44.3%' }} onClick={() => handleBallClick('https://drive.google.com/file/d/1XN3fCDg3PXbmL4PLIJiW_nkYljsL2e9j/view')}
+                        onMouseEnter={() => handleMouseEnter('Resume')}
                         onMouseLeave={handleMouseLeave}>
                         <Image
                             src="/assets/ball3.png"
@@ -67,8 +67,7 @@ export default function PkmnPage() {
                 </Link>
             </div>
             {/* Message display */}
-            <div className="fixed bottom-0 left-0 right-0 bg-white text-black py-2 text-center">
-                {message}
+            <div className={`pkmn-msg ${message ? 'opacity-100' : 'opacity-0'} transition-opacity fixed bottom-0 left-0 right-1  mx-auto p-4 mb-4`}>                {message}
             </div>
         </div>
     );
