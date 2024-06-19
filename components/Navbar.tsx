@@ -1,27 +1,26 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function Navbar() {
   return (
-    <nav className="bg-secondaryColor shadow-md mx-auto" style={{ width: '70%', maxWidth: '1200px', height: 'auto' }} >
-      <div className="max-w-7xl mx-auto px-4 ">
+    <nav className="bg-black shadow-md mx-auto" style={{ width: '100%', maxWidth: 'auto', height: 'auto' }}>
+      <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-center items-center h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Link href="/">
-                <ul className="text-l font-bold text-gray-800">Aaron San Jose</ul>
-              </Link>
+              <Link href="/" className="text-l font-bold text-white">Aaron San Jose</Link>
             </div>
-            <div className="flex items-center ">
-              <Link href="/workPage">
-                <li className="nav-item1 text-sm text-mainBg hover:text-gray-200 px-3 mr-20 pr-20 py-2">Work</li>
-              </Link>
-              <Link href="/aboutPage">
-                <li className="nav-item2 text-sm  text-mainBg hover:text-gray-200 px-3 ml-20 pl-20 py-2">About</li>
-              </Link>
-              <Link href="/contact">
-                <li className="text-gray-800 text-sm  hover:text-gray-200 px-3 py-2">Resume</li>
-              </Link>
+            <div className="flex items-center ml-10">
+              <ul className="flex space-x-8">
+                <li className="nav-item1 inline-block text-sm text-white hover:underline px-3 pr-20 py-2">
+                  <Link href="/workPage">Work</Link>
+                </li>
+                <li className="nav-item2 inline-block text-sm text-white hover:underline px-3 pl-20 py-2">
+                  <Link href="/aboutPage">About</Link>
+                </li>
+                <li className="inline-block text-sm text-white hover:underline px-3 py-2">
+                  <Link href="/contact">Resume</Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

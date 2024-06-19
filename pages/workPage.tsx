@@ -8,14 +8,14 @@ export default function workPage() {
         <div>
             <Navbar />
             {/* Header info */}
-            <div className="bg-secondaryColor shadow-md mx-auto" style={{ width: '70%', maxWidth: '1200px', height: 'auto' }}>
-                <em className='header-info pl-5'>Currently looking for work within UX/UI Design.</em>
+            <div className="bg-black shadow-md mx-auto" style={{ width: '100%', maxWidth: 'auto', height: 'auto' }}>
+                <em className='header-info text-white flex justify-center'>REACH Dashboard</em>
                 <div className='flex justify-center fig-box'>
                     <Image
-                        src="/assets/fig-box.png"
+                        src="/assets/reach.png"
                         alt='box'
-                        width={500}
-                        height={500} />
+                        width={600}
+                        height={600} />
                 </div>
             </div>
             {/* Main Body */}
