@@ -27,12 +27,12 @@ export default function Home() {
         <Image
           src="/assets/pkmn-bg.png"
           alt="background"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: "cover" }}
           className="w-full h-full"
         />
         <Link href="/workPage">
-          <li className="absolute" style={{ top: '30%', left: '15%' }} onClick={() => handleBallClick('/workPage')}
+          <li className="absolute no-bullets" style={{ top: '30%', left: '15%' }} onClick={() => handleBallClick('/workPage')}
             onMouseEnter={() => handleMouseEnter('Work Experience')}
             onMouseLeave={handleMouseLeave}>
             <Image
@@ -44,7 +44,7 @@ export default function Home() {
           </li>
         </Link>
         <Link href="/aboutPage">
-          <li className="absolute" style={{ top: '30%', right: '17%' }} onClick={() => handleBallClick('/aboutPage')}
+          <li className="absolute no-bullets" style={{ top: '30%', right: '17%' }} onClick={() => handleBallClick('/aboutPage')}
             onMouseEnter={() => handleMouseEnter('About Me')}
             onMouseLeave={handleMouseLeave}>
             <Image
@@ -56,7 +56,7 @@ export default function Home() {
           </li>
         </Link>
         <Link href="https://drive.google.com/file/d/1XN3fCDg3PXbmL4PLIJiW_nkYljsL2e9j/view">
-          <li className="absolute" style={{ bottom: '20%', left: '44.3%' }} onClick={() => handleBallClick('https://drive.google.com/file/d/1XN3fCDg3PXbmL4PLIJiW_nkYljsL2e9j/view')}
+          <li className="absolute no-bullets" style={{ bottom: '20%', left: '44.3%' }} onClick={() => handleBallClick('https://drive.google.com/file/d/1XN3fCDg3PXbmL4PLIJiW_nkYljsL2e9j/view')}
             onMouseEnter={() => handleMouseEnter('Resume')}
             onMouseLeave={handleMouseLeave}>
             <Image
