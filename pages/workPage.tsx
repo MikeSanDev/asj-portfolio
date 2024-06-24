@@ -100,25 +100,26 @@ export default function workPage() {
                         I don&rsquo;t believe school should be a survival of the fittest situation.&rdquo; <span>- Fareine Suarez </span></strong>
                     <div className="flex flex-col justify-between py-10 h-full">
                         <em className="mb-4">
-                            Fareine&rsquo;s quote about what she wants for her students deeply resonated with us.
-                            This affirmed our decision to use her quote for creating and introducing our persona.
                             Fiona Madison, a student recruitment manager, needs a system to visualize students&rsquo; college journey and on-campus involvement so that she can create workshops and connections to promote student success and retention.
                         </em>
                         <em className="mb-4">
-                            After setting our problem statement, we had to brainstorm on how we should approach our solution regarding our new persona.
-                            Fiona is someone we wanted to focus on to express our empathy for our users.
-                            Ensuring her needs and pain points being addressed was our absolute priority.
-                            We discovered that Fiona would need a solution and design that aligns with the problem statement above.
+                            Fiona was inspired by Fareine Suarez&rsquo;s college admission recruiter for Illinois Institute of Technology, quote and dedication for every student to have equal chances for success.
+                            Other interviewees also shared equal motivation of providing every tool necessary for students to succeed academically and personally.
+                            Higher education staff persona was a unanimous decision from the team because majority (83%) of our interviewees shared that similar profession.
                         </em>
+                        <strong className="flex justify-center text-black pb-5">Common trend that appeared from the team</strong>
+                        <div className="flex justify-center space-x-2 py-10">
+                            <em className="mb-4 ">
+                                &rdquo;Live feed&rdquo; concept that focuses on either career development or mental health support
+                            </em>
+                            <em className="mb-4">
+                                Issue with the idea was that the scope was either too broad or does not fully solve our problems
+                            </em>
+                        </div>
+                        <strong className="flex justify-center text-black pb-5">Solution</strong>
                         <em className="mb-4">
-                            We had several meetings on our team&rsquo;s approach addressing our problem statement. We were dancing with a &rdquo;live feed&rdquo; concept that allows students and higher education staff to monitor information derived of their own interests
-                            whether that would be mental health support or career development. A live feed wasn&rsquo;t enough to fulfill Fiona&rsquo;s problem in her current atmosphere.
-                            I suggested a dashboard because it can also include a live feed while having more opportunity to have more features.
-                        </em>
-                        <em className="mb-4">
-                            A dashboard felt the most appropriate because it allows an environment that can be customized with relation to the users liking.
-                            We all agreed that using a dashboard would be the design we would focus on but we weren&rsquo;t sure what should be on the dashboard.
-                            I suggested that the team perform a 6-8-5 Sketching exercise for more concrete discovery on the product.
+                            A dashboard because it can also include a live feed while having more opportunity to have more features. We all agreed a dashboard felt the most appropriate solution because it allows customization with relation to the users liking.
+                            I suggested that the team perform a 6-8-5 sketching exercise for more concrete discovery on the product.
                         </em>
                     </div>
                     {/* Four box image 2x2 */}
