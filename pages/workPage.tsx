@@ -122,8 +122,80 @@ export default function workPage() {
                             I suggested that the team perform a 6-8-5 sketching exercise for more concrete discovery on the product.
                         </em>
                     </div>
-                    {/* Four box image 2x2 */}
+                    <div className="four-box grid grid-cols-2 gap-2 justify-items-center">
+                        <div className='flex justify-center items-center flex-col'>
+                            <p className="py-4 text-center">Aaron</p>
+                            <Image
+                                src="/assets/asj-sketch.png"
+                                alt='Aaron sketch'
+                                width={300}
+                                height={400} />
+                        </div>
+                        <div className='flex justify-center items-center flex-col'>
+                            <p className="py-4 text-center">Isaac</p>
+                            <Image
+                                src="/assets/isaac-sketch.png"
+                                alt='Isaac sketch'
+                                width={300}
+                                height={400} />
+                        </div>
+                        <div className='flex justify-center items-center flex-col'>
+                            <p className="py-4 text-center">Demetrius</p>
+                            <Image
+                                src="/assets/dem-sketch.png"
+                                alt='Demetrius sketch'
+                                width={300}
+                                height={400} />
+                        </div>
+                        <div className='flex justify-center items-center flex-col'>
+                            <p className="py-4 text-center">Janelle</p>
+                            <Image
+                                src="/assets/jan-sketch.png"
+                                alt='Janelle sketch'
+                                width={300}
+                                height={400} />
+                        </div>
+                    </div>
+
                     {/* Final Product & Development */}
+                    <h1 className="sub-header text-black pb-5">Final Product & Development</h1>
+                    <em className="mb-4 ">
+                        Our ideas were fully converging amongst each other with a common theme of cards displaying student information.
+                        The cards of the students would be the first component that captures Fiona&rsquo;s attention inmmediately when accessing the dashboard
+                    </em>
+                    <div className='flex justify-center items-center flex-col'>
+                        <p className="py-4 text-center">First Example Card</p>
+                        <Image
+                            src="/assets/activity-card.png"
+                            alt='activity card'
+                            width={400}
+                            height={400} />
+                    </div>
+                    <em className=" py-10">
+                        Our first iteration created above by Issac opened our teams&rsquo; eyes on what can be possible with our cards. A mood meter indicating whether students needed attention or assistance during their higher education journey was absolutely brilliant.
+                        The card felt crowded and the information presented had redundancy and was overwhelming.
+                        We felt that &rdquo;less was more&rdquo; would appropriately fit Fiona&rsquo;s needs with her busy schedule.
+                    </em>
+                    <div className='flex justify-center items-center flex-col '>
+                        <p className="py-4 text-center">Final Example Card</p>
+                        <Image
+                            src="/assets/final-act-card.png"
+                            alt='final card'
+                            width={400}
+                            height={400} />
+                    </div>
+                    <em className=" py-10">
+                        I decided to modify Isaac&rsquo;s card to have more structure and negative space so the card can be viewed easily by Fiona.
+                        I decided to group related content into their own lines/categories for consistent and clean look.
+                    </em>
+                    <div className='flex justify-center items-center flex-col '>
+                        <p className="py-4 text-center">Final Product of Dashboard</p>
+                        <Image
+                            src="/assets/dashboard.png"
+                            alt='final dash'
+                            width={600}
+                            height={400} />
+                    </div>
                 </div>
             </main>
         </div>
