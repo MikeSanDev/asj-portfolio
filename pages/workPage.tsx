@@ -196,6 +196,37 @@ export default function workPage() {
                             width={600}
                             height={400} />
                     </div>
+                    <em className=" py-10">
+                        We used a Z pattern to ultimately decide where we would place components of the dashboard for Fiona. We kept in mind her desire to create workshops.
+                        Seeing how her students mood status is first allows us to strategically place our following components to what Fiona may find important after seeing her students&rsquo; information.
+                        We realized that having a &rdquo;Less is more&rdquo; student card is only appropriate if there was another page showing in depth details about the students as well.
+                    </em>
+                    <div className='flex justify-center items-center flex-col '>
+                        <p className="py-4 text-center">Final Product of Dashboard</p>
+                        <Image
+                            src="/assets/notes.png"
+                            alt='final dash'
+                            width={600}
+                            height={400} />
+                    </div>
+                    <em className=" py-10">
+                        The main components we wanted to focus for the student profile was the live feed and REACH engagement section.
+                        The live feed was important because it shows a centralized place for all departments to comment about a student.
+                        It was an initial idea we all resonated with in our early discussions about a solution. We felt that we needed to revisit that in another page.
+                    </em>
+                    <div className='flex justify-center items-center flex-col '>
+                        <p className="py-4 text-center">Final Product of Dashboard</p>
+                        <Image
+                            src="/assets/engagement.png"
+                            alt='final dash'
+                            width={600}
+                            height={400} />
+                    </div>
+                    <em className=" py-10">
+                        Higher education staff ability to visualize students&rsquo; interactions with their gamification space on REACH was a must have on this page.
+                        We wanted to add this component fulfill our client&rsquo;s needs while considering what the staff involvement and expectations with REACH.
+                        Seeing the value they bring on their student is something Fiona needs to see that their investment into REACH is satisfactory.
+                    </em>
                 </div>
             </main>
         </div>
