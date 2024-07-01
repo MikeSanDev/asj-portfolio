@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import ReachFooter from "@/components/ReachFooter";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -202,7 +203,6 @@ export default function workPage() {
                         We realized that having a &rdquo;Less is more&rdquo; student card is only appropriate if there was another page showing in depth details about the students as well.
                     </em>
                     <div className='flex justify-center items-center flex-col '>
-                        <p className="py-4 text-center">Final Product of Dashboard</p>
                         <Image
                             src="/assets/notes.png"
                             alt='final dash'
@@ -215,7 +215,6 @@ export default function workPage() {
                         It was an initial idea we all resonated with in our early discussions about a solution. We felt that we needed to revisit that in another page.
                     </em>
                     <div className='flex justify-center items-center flex-col '>
-                        <p className="py-4 text-center">Final Product of Dashboard</p>
                         <Image
                             src="/assets/engagement.png"
                             alt='final dash'
@@ -227,8 +226,34 @@ export default function workPage() {
                         We wanted to add this component fulfill our client&rsquo;s needs while considering what the staff involvement and expectations with REACH.
                         Seeing the value they bring on their student is something Fiona needs to see that their investment into REACH is satisfactory.
                     </em>
+                    <div className='flex justify-center items-center flex-col '>
+                        <p className="py-4 text-center">Final Product of Student Profile</p>
+                        <Image
+                            src="/assets/sdnt-profile.png"
+                            alt='final dash'
+                            width={600}
+                            height={400} />
+                    </div>
+                    {/* Whats next */}
+                    <h1 className="sub-header text-black pb-5">What&rsquo;s Next</h1>
+                    <em>
+                        The client loved our idea and was thankful on how it opened their eyes for new possibilities and who to communicate with to further advance our solution.
+                        We were aware that there was more we could have done if we had more time.
+                        <br />
+                        <br />
+                        One of the first steps we would take would be to perform more user interviews.
+                        We had a limited interviewee base to further discoveries and validations of our design. We can merely speculate on what we thought the user needs were with our persona Fiona.
+                        We would have hoped to discover what we were missing and did right in order to create an impact with our design.
+                        <br />
+                        <br />
+                        Finally we would have focused on the students and generate a dashboard specifically for them.
+                        We mainly focused on our higher education user base because our client resonated with our problem statement stated earlier with Fiona.
+                        Knowing what benefits the students would in turn benefit the higher education staff. It would give us more clarity on what components they should have with relation to the students.
+                    </em>
                 </div>
+                {/* Footer */}
             </main>
+            <ReachFooter />
         </div>
     );
 }
