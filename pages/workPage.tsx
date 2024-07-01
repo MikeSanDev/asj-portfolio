@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import ReachFooter from "@/components/ReachFooter";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -251,8 +252,8 @@ export default function workPage() {
                     </em>
                 </div>
                 {/* Footer */}
-
             </main>
+            <ReachFooter />
         </div>
     );
 }
