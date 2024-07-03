@@ -253,7 +253,7 @@ export default function workPage() {
                         </em>
                     </div>
                     {/* Footer */}
-                    {/* <ReachFooter /> */}
+                    <ReachFooter />
                 </main>
             </div>
         </>
