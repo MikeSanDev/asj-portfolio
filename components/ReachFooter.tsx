@@ -5,7 +5,7 @@ export default function ReachFooter() {
     <footer className="bg-black p-4" >
       <div className='text-white flex justify-center flex-col width-1/3'>
         <div className='pt-6 flex justify-center text-center flex-col'>
-          <p >Next / Coding Dojo</p>
+          <Link href="/codingDojo" >Next / Coding Dojo</Link>
           <strong>Craigslist Moodboard - Creating a redesign of Craigslist that also incentivizes user engagement</strong>
         </div>
         <div className='pt-6 flex justify-evenly'>
