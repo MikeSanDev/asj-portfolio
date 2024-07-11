@@ -7,10 +7,9 @@ import Link from "next/link";
 export default function reachPage() {
     return (
         <>
-            <div>
+            <div className="flex flex-col min-h-screen">
                 <Navbar />
-                {/* Header info */}
-                <div className="bg-black shadow-md mx-auto" style={{ width: '100%', maxWidth: 'auto', height: 'auto' }}>
+                <div className="bg-black shadow-md mx-auto w-full">
                     <em className='header-info text-white flex justify-center'>REACH Dashboard</em>
                     <div className='flex justify-center fig-box'>
                         <Image
@@ -20,57 +19,55 @@ export default function reachPage() {
                             height={600} />
                     </div>
                 </div>
-                {/* Main Body */}
-                <div className="mx-auto" style={{ width: '70%', maxWidth: '1200px', height: '500px' }} >
+                <div className="flex-grow mx-auto w-4/5 max-w-5xl">
                     <div className="flex justify-center">
                         <Image
                             src="/assets/reach-banner.png"
                             alt='box'
-                            width={800}
+                            width={900}
                             height={500} />
                     </div>
-                    {/* Main */}
-                    <div className="max-w-7xl mx-auto px-4">
-                        {/* Overview */}
+                    {/* Overview - Adjust width here */}
+                    <div className="max-w-3xl mx-auto px-4">
                         <div>
-                            <h1 className="sub-header text-black pb-5">Overview</h1>
-                            <div className="flex justify-center space-x-3 py-10">
+                            <h1 className="sub-header text-black py-8">Overview</h1>
+                            <div className="flex justify-center space-x-3 py-2">
                                 <div className="flex flex-col w-1/3">
-                                    <em>Problem</em>
+                                    <em className="pb-5">Problem</em>
                                     <p className="pr-5">How to convince higher education organizations to invest in their REACH platform</p>
                                 </div>
                                 <div className="flex flex-col w-1/3">
-                                    <em>Goal</em>
+                                    <em className="pb-5">Goal</em>
                                     <p>Understanding how higher education staff would provide support for their students</p>
                                 </div>
                                 <div className="flex flex-col w-1/3">
-                                    <em>Role</em>
+                                    <em className="pb-5">Role</em>
                                     <p>Split into teams of 5</p>
                                     <p>My roles: UX Designer, Researcher, and Interviewer</p>
                                 </div>
                             </div>
                         </div>
-                        {/* Research */}
                         <div>
-                            <h1 className="sub-header text-black pb-5">Research</h1>
-                            <div className="flex justify-center space-x-3 py-10">
+                            {/* Research */}
+                            <h1 className="sub-header text-black py-8">Research</h1>
+                            <div className="flex justify-center space-x-3 py-2 mb-5">
                                 <div className="flex flex-col w-1/2">
-                                    <em>Amount of Interviews</em>
-                                    <ul className="list-none">
+                                    <strong className="pb-5 text-2xl">Amount of Interviews</strong>
+                                    <ul className="list-disc italic">
                                         <li>Admission Recruiters 66%</li>
                                         <li>Communication Strategist 17%</li>
                                         <li>Students 17%</li>
                                     </ul>
                                 </div>
                                 <div className="flex flex-col w-1/2">
-                                    <em>Amount of Interviews</em>
-                                    <ul className="list-none">
+                                    <strong className="pb-5 text-2xl">Target of Research</strong>
+                                    <ul className="list-disc italic">
                                         <li>What is the competition doing?</li>
                                         <li>How do schools currently promote support to their students?</li>
                                     </ul>
                                 </div>
                             </div>
-                            <em>
+                            <em className="py-5">
                                 Competition to Chicago Scholars REACH Program were nonexistent. Majority of products or applications that could compare mainly focused on making friends with their fellow students.
                                 Nothing has surfaced with a product that schools provide a central hub of support the schools provide on their campuses.
                                 This encouraged the team to focus on user interviews with students and staff with the lack of competition.
@@ -94,7 +91,6 @@ export default function reachPage() {
                                 <br /> 3: Higher education departments do not have one place where they can freely share and communicate information amongst each other.
                             </em>
                         </div>
-                        {/* Conceptional Development */}
                         <div>
                             <h1 className="sub-header text-black pb-5">Conceptual Development</h1>
                             <em>
@@ -164,12 +160,11 @@ export default function reachPage() {
                                 </div>
                             </div>
                         </div>
-                        {/* Final Product & Development */}
                         <div>
                             <h1 className="sub-header text-black pb-5">Final Product & Development</h1>
                             <em className="mb-4 ">
                                 Our ideas were fully converging amongst each other with a common theme of cards displaying student information.
-                                The cards of the students would be the first component that captures Fiona&rsquo;s attention inmmediately when accessing the dashboard
+                                The cards of the students would be the first component that captures Fiona&rsquo;s attention immediately when accessing the dashboard
                             </em>
                             <div className='flex justify-center items-center flex-col'>
                                 <p className="py-4 text-center">First Example Card</p>
@@ -242,8 +237,7 @@ export default function reachPage() {
                                     height={400} />
                             </div>
                         </div>
-                        {/* Whats next */}
-                        <div>
+                        <div className="py-10">
                             <h1 className="sub-header text-black pb-5">What&rsquo;s Next</h1>
                             <em>
                                 The client loved our idea and was thankful on how it opened their eyes for new possibilities and who to communicate with to further advance our solution.
@@ -261,10 +255,9 @@ export default function reachPage() {
                             </em>
                         </div>
                     </div>
-                    {/* Footer */}
                 </div>
+                <ReachFooter />
             </div>
-            <ReachFooter />
         </>
     );
 }
