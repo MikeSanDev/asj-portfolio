@@ -6,16 +6,35 @@ import Link from "next/link";
 export default function aboutPage() {
     return (
         <div>
-            <Navbar />
-            {/* Header info */}
-            <div className="bg-[#bb9f8c] shadow-md mx-auto" style={{ width: '70%', maxWidth: '1200px', height: 'auto' }}>
-                <em className='header-info pl-5 flex justify-center'>Hello. I am Aaron, I want to create things that will make peoples lives easier.</em>
-                <div className='flex justify-center fig-box'>
+            <nav className="bg-[#bb9f8c] shadow-md mx-auto" style={{ width: '100%', maxWidth: 'auto', height: 'auto' }}>
+                <div className="max-w-7xl mx-auto px-4">
+                    <div className="flex justify-center items-center h-16" style={{ gap: '350px' }}> {/* Added gap for space between boxes */}
+                        <div className="flex items-center space-x-4">
+                            <Link href="/" className="text-l font-bold text-black">Aaron San Jose</Link>
+                            <li className="nav-item1 text-sm text-black hover:underline list-none">
+                                <Link href="/workPage">Work</Link>
+                            </li>
+                        </div>
+                        <div className="flex items-center space-x-4">
+                            <li className="nav-item2 text-sm text-black hover:underline list-none">
+                                <Link href="/aboutPage">About</Link>
+                            </li>
+                            <li className="text-sm text-black hover:underline list-none">
+                                <Link href="/contact">Resume</Link>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            {/* PFP */}
+            <div>
+                <div className='flex justify-center  my-5'>
                     <Image
-                        src="/assets/fig-box.png"
+                        className=" shadow-md pfp mx-auto"
+                        src="/assets/asj-pfp.png"
                         alt='box'
-                        width={500}
-                        height={500} />
+                        width={400}
+                        height={400} />
                 </div>
             </div>
             {/* Main Body */}
@@ -24,9 +43,34 @@ export default function aboutPage() {
                     {/* <h1 className="sub-header">Sub-Header</h1> */}
                     <div className="flex justify-center">
                         <p className="sub-text text-black">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sem sem, molestie in augue sed, commodo aliquet sem. Nullam accumsan ullamcorper eros quis varius. Quisque felis eros, lacinia vel dapibus a, pretium et diam. Phasellus facilisis dolor condimentum urna interdum, et malesuada dolor semper. Nulla id posuere libero. Nam luctus libero et mauris placerat finibus. Integer accumsan id velit nec mollis. Praesent arcu odio, fringilla sed tortor sollicitudin, mollis pretium lacus. In tempus feugiat quam, eu pretium risus pellentesque sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris purus ipsum, egestas vel tincidunt in, hendrerit a risus. Vestibulum finibus sollicitudin elit ac egestas. Maecenas porttitor tortor sit amet hendrerit dignissim.
-                            Nam et dui ac est imperdiet tincidunt. Integer magna diam, ornare quis consequat nec, dictum id ipsum. Morbi nisl ligula, convallis eget bibendum ac, suscipit vel erat.
+                            I am a product designer based out of Chicago with a passion to create effective and congenial designs.
+                            I especially enjoy being part of the process where designs are coming to life and reviewed for user satisfaction.
                         </p>
+                    </div>
+                    <div>
+                        <h1 className="text-3xl underline bold my-10">When I&rsquo;m not designing...</h1>
+                        <div className="about-boxes my-5 flex justify-center flex-col">
+                            <div className="about-box1 items-center  flex flex-row">
+                                <Image
+                                    className="py-5 mr-3"
+                                    src="/assets/asj-pfp.png"
+                                    alt='box'
+                                    width={200}
+                                    height={200} />
+                                <p>Dance is my main form of expression. Navigating your creativity to rhythms of the music is my muse.
+                                    It is my passion and continues to be the fuel of my creativity. I am seeking to cross over my creativity into dance into UX design.</p>
+                            </div>
+                            <div className="about-box2 items-center flex flex-row">
+                                <p>Magic the gathering is new hobby I am adding into my life. Playing the social format called Commander is quite the spectacle.
+                                    Expressing your creativity into your deck building is constant problem solving while factoring the social experience with the other three players</p>
+                                <Image
+                                    className=" py-5 "
+                                    src="/assets/asj-pfp.png"
+                                    alt='box'
+                                    width={200}
+                                    height={200} />
+                            </div>
+                        </div>
                     </div>
                 </div>
 

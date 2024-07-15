@@ -123,4 +123,19 @@ body::-webkit-scrollbar {
   margin-top: 20px;
 }
 
+
+
+/*************************** About Page ****************************/
+
+.pfp {
+  border-radius: 100%;
+  overflow: hidden;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+}
+
+.about-box1 {
+  display: flex;
+  align-items: center;
+}
+
 /*************************** Footer ****************************/
