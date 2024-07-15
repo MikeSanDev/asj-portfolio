@@ -27,13 +27,23 @@ export default function workPage() {
                     {/* Case Studies */}
                     <h1 className="sub-header text-black pt-5 ">Case Studies</h1>
                     <div className="py-5">
-                        {/* ??? DOES HE WANT THE IMAGE ONLY SELECT TO LINK OR TEXT ??? */}
                         <p className="from-neutral-300">Chicago Scholars</p>
                         <h2 className="text-2xl pb-5">Reach Dashboard - Building a product that creates a system for higher education staff to support their students.</h2>
                         <Link href="/reachPage">
                             <Image
                                 src="/assets/dashboard.png"
-                                alt='final dash'
+                                alt='Reach Dashboard'
+                                width={800}
+                                height={400} />
+                        </Link>
+                    </div>
+                    <div className="py-5">
+                        <p className="from-neutral-300">Coding Dojo</p>
+                        <h2 className="text-2xl pb-5">Craiglist Moodboard - Creating a redesign of Craigslist that also incentivize user engagement</h2>
+                        <Link href="/codingDojo">
+                            <Image
+                                src="/assets/craiglist-dash.png"
+                                alt='Coding Dojo Craigslist Dashboard'
                                 width={800}
                                 height={400} />
                         </Link>
