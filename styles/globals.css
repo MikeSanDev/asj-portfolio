@@ -138,4 +138,12 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 
+.about-video {
+  border-radius: 50%;
+  width: 350px;
+  height: 300px;
+  /* This makes it horizontally oval */
+  object-fit: cover;
+}
+
 /*************************** Footer ****************************/
