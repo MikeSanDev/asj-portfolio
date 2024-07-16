@@ -51,24 +51,24 @@ export default function aboutPage() {
                         <h1 className="text-3xl underline bold my-10">When I&rsquo;m not designing...</h1>
                         <div className="about-boxes my-5 flex justify-center flex-col">
                             <div className="about-box1 items-center  flex flex-row">
-                                <Image
-                                    className="py-5 mr-3"
-                                    src="/assets/asj-pfp.png"
-                                    alt='box'
-                                    width={200}
-                                    height={200} />
+                                <video
+                                    className="py-5 mr-3 about-video"
+                                    src="/assets/dance2.mp4"
+                                    autoPlay
+                                    muted
+                                    loop />
                                 <p>Dance is my main form of expression. Navigating your creativity to rhythms of the music is my muse.
                                     It is my passion and continues to be the fuel of my creativity. I am seeking to cross over my creativity into dance into UX design.</p>
                             </div>
                             <div className="about-box2 items-center flex flex-row">
                                 <p>Magic the gathering is new hobby I am adding into my life. Playing the social format called Commander is quite the spectacle.
                                     Expressing your creativity into your deck building is constant problem solving while factoring the social experience with the other three players</p>
-                                <Image
-                                    className=" py-5 "
-                                    src="/assets/asj-pfp.png"
-                                    alt='box'
-                                    width={200}
-                                    height={200} />
+                                <video
+                                    className=" py-5 about-video"
+                                    src="/assets/mtg.mp4"
+                                    autoPlay
+                                    muted
+                                    loop />
                             </div>
                         </div>
                     </div>
