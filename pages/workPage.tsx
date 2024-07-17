@@ -40,7 +40,7 @@ export default function workPage() {
                     <div className="py-5">
                         <p className="from-neutral-300">Coding Dojo</p>
                         <h2 className="text-2xl pb-5">Craiglist Moodboard - Creating a redesign of Craigslist that also incentivize user engagement</h2>
-                        <Link href="/codingDojo">
+                        <Link href="/craigsList">
                             <Image
                                 src="/assets/craiglist-dash.png"
                                 alt='Coding Dojo Craigslist Dashboard'
