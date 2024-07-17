@@ -127,23 +127,47 @@ body::-webkit-scrollbar {
 
 /*************************** About Page ****************************/
 
+.pfp-container {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+}
+
 .pfp {
-  border-radius: 100%;
-  overflow: hidden;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  /* Ensures the image covers the entire container */
+  height: auto;
+  /* Maintains the aspect ratio */
+  /* border-bottom: 16px solid #000; */
 }
 
 .about-box1 {
   display: flex;
   align-items: center;
+
 }
 
 .about-video {
   border-radius: 50%;
-  width: 350px;
+  width: 400px;
   height: 300px;
   /* This makes it horizontally oval */
   object-fit: cover;
+  border-bottom: 16px solid #000000;
+}
+
+.about-text {
+  width: 500px;
+  padding: 0 20px
+}
+
+.sub-text {
+  width: 75%;
+  font-size: 20px;
 }
 
 /*************************** Footer ****************************/
