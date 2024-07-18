@@ -53,45 +53,49 @@ export default function reachPage() {
                             <div className="flex justify-center space-x-3 py-2 mb-5">
                                 <div className="flex flex-col w-1/2">
                                     <strong className="pb-5 text-2xl">Amount of Interviews</strong>
-                                    <ul className="list-disc italic">
-                                        <li>Admission Recruiters 66%</li>
+                                    <ul className="list-disc italic pl-5">
+                                        <li >Admission Recruiters 66%</li>
                                         <li>Communication Strategist 17%</li>
                                         <li>Students 17%</li>
                                     </ul>
                                 </div>
                                 <div className="flex flex-col w-1/2">
                                     <strong className="pb-5 text-2xl">Target of Research</strong>
-                                    <ul className="list-disc italic">
+                                    <ul className="list-disc italic pl-5">
                                         <li>What is the competition doing?</li>
                                         <li>How do schools currently promote support to their students?</li>
                                     </ul>
                                 </div>
                             </div>
                             <div>
-                                <em className="flex flex-col py-5">
+                                <em className="flex flex-col py-5 pb-10">
                                     Competition to Chicago Scholars REACH Program were nonexistent. Majority of products or applications that could compare mainly focused on making friends with their fellow students.
                                     Nothing has surfaced with a product that schools provide a central hub of support the schools provide on their campuses.
                                     This encouraged the team to focus on user interviews with students and staff with the lack of competition.
                                 </em>
                                 <strong className="text-2xl pt-5">Sample of questions asked</strong>
                             </div>
-                            <div className="flex justify-center space-x-3 py-5">
-                                <div className="flex flex-col w-1/3">
-                                    <em>What technologies are being used by staff</em>
+                            <div className="flex justify-center space-x-3 py-5 pb-10">
+                                <div className="flex w-1/3">
+                                    <em>What technologies are being used by staff?</em>
                                 </div>
-                                <div className="flex flex-col w-1/3">
+                                <div className="flex w-1/3">
                                     <em>How does the staff approach giving students support they need?</em>
                                 </div>
-                                <div className="flex flex-col w-1/3">
+                                <div className="flex w-1/3">
                                     <em>What is something they hope for to improve their tasks?</em>
                                 </div>
                             </div>
-                            <div>
-                                <em className="font-extrabold"> We established three trends after user interviews were conducted:</em>
-                                <div className="pt-2">
-                                    <p>    1: Students wanting more variety in scheduling or availability in career building workshops.</p>
-                                    <p>    2: 100% of higher education staff desire to lower student retention and increase a sense of belonging within campus.</p>
-                                    <p>    3: Higher education departments do not have one place where they can freely share and communicate information amongst each other.</p>
+                            <em className="bold text-2xl mt-5"> We established three trends after user interviews were conducted:</em>
+                            <div className="flex justify-center space-x-3 py-5">
+                                <div className="flex flex-col w-1/3">
+                                    <em>1: Students wanting more variety in scheduling or availability in career building workshops.</em>
+                                </div>
+                                <div className="flex flex-col w-1/3">
+                                    <em>2: 100% of higher education staff desire to lower student retention and increase a sense of belonging within campus.</em>
+                                </div>
+                                <div className="flex flex-col w-1/3">
+                                    <em>3: Higher education departments do not have one place where they can freely share and communicate information amongst each other.</em>
                                 </div>
                             </div>
                         </div>
@@ -100,19 +104,19 @@ export default function reachPage() {
                             <h1 className="sub-header text-black py-8">Conceptual Development</h1>
                             <div className="flex justify-center">
                                 <Image
-                                    src="/assets/reach-user.png"
+                                    src="/assets/fariene.png"
                                     alt='box'
-                                    width={400}
-                                    height={400} />
+                                    width={300}
+                                    height={300} />
                             </div>
                             <br />
-                            <strong>&rdquo;I want to arm students with the tools they need to succeed. I don&rsquo;t believe in gatekeeping.
+                            <strong className="text-2xl">&rdquo;I want to arm students with the tools they need to succeed. I don&rsquo;t believe in gatekeeping.
                                 I don&rsquo;t believe school should be a survival of the fittest situation.&rdquo; <span>- Fareine Suarez </span></strong>
                             <div className="flex flex-col justify-between py-8 h-full">
-                                <em className="mb-4">
+                                <em className="py-5">
                                     Fiona Madison, a student recruitment manager, needs a system to visualize students&rsquo; college journey and on-campus involvement so that she can create workshops and connections to promote student success and retention.
                                 </em>
-                                <em className="mb-4">
+                                <em className="py-5">
                                     Fiona was inspired by Fareine Suarez&rsquo;s college admission recruiter for Illinois Institute of Technology, quote and dedication for every student to have equal chances for success.
                                     Other interviewees also shared equal motivation of providing every tool necessary for students to succeed academically and personally.
                                     Higher education staff persona was a unanimous decision from the team because majority (83%) of our interviewees shared that similar profession.
