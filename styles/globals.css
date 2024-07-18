@@ -37,7 +37,7 @@ body::-webkit-scrollbar {
     --accentColor: #ffe590;
     --text_Color: #FFFCF5;
 
-    @apply text-[#000000] bg-[#FFFCF5] tracking-wide;
+    @apply text-[#000000] bg-[#ffffff] tracking-wide;
   }
 
 }

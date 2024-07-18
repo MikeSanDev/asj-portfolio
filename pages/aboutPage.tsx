@@ -48,8 +48,8 @@ export default function aboutPage() {
                         I especially enjoy being part of the process where designs are coming to life and reviewed for user satisfaction.
                     </h2>
                 </div>
-                <div className="max-w-4xl mx-auto px-4 ">
-                    <h1 className="text-3xl underline bold ml-4 my-20">When I&rsquo;m not designing...</h1>
+                <div className="max-w-4xl mx-auto my-10 px-4">
+                    <h1 className="text-3xl underline bold ml-4 my-10">When I&rsquo;m not designing...</h1>
                     <div className="about-boxes my-5 flex justify-center flex-col">
                         <div className="about-box1 items-center justify-center flex flex-row">
                             <video
@@ -63,9 +63,9 @@ export default function aboutPage() {
                                     It is my passion and continues to be the fuel of my creativity. I am seeking to cross over my creativity into dance into UX design.</p>
                             </div>
                         </div>
-                        <div className="about-box2 items-center justify-center flex flex-row">
+                        <div className="about-box2 items-center justify-center  flex flex-row">
                             <div className="about-text">
-                                <p>Magic the gathering is new hobby I am adding into my life. Playing the social format called Commander is quite the spectacle.
+                                <p>Magic The Gathering is a new hobby I am adding into my life. Playing the social format called Commander is quite the spectacle.
                                     Expressing your creativity into your deck building is constant problem solving while factoring the social experience with the other three players</p>
                             </div>
                             <video
