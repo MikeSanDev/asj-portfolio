@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from 'react';
 
-export default function craigsList() {
+export default function CraigsList() {
     const [selectedIndex, setSelectedIndex] = useState(0);
 
     const images = [
@@ -12,6 +12,8 @@ export default function craigsList() {
         { src: '/assets/clist-photos/caro2.jpg', alt: 'color pallette', question: 'Question 2' },
         { src: '/assets/clist-photos/caro3.jpg', alt: 'furniture', question: 'Question 3' },
         { src: '/assets/clist-photos/caro4.jpg', alt: 'budget', question: 'Question 4' },
+        { src: '/assets/clist-photos/livingroom.jpg', alt: 'jay', question: 'Jay Chavis Mood Board Layout' },
+        { src: '/assets/clist-photos/janelle-mdbrd.jpg', alt: 'janelle', question: 'Janelle Smithson Mood Board List' },
     ];
 
     const handlePrev = () => {
@@ -196,6 +198,7 @@ export default function craigsList() {
                     {/* Carousel */}
                     <div className="carousel1 pt-5  flex items-center justify-center">
                         <Image
+                            // className="border 5px solid"
                             src={images[selectedIndex].src}
                             alt={images[selectedIndex].alt}
                             width={700}
@@ -207,7 +210,7 @@ export default function craigsList() {
                         <p className="flex flex-col justify-center">{images[selectedIndex].question}</p>
                         <button className="caro1-btn" onClick={handleNext}>&gt;</button>
                     </div>
-                    <div className='flex justify-center items-center flex-col'>
+                    {/* <div className='flex justify-center items-center flex-col'>
                         <Image
                             className="border 5px solid"
                             src="/assets/clist-photos/livingroom.jpg"
@@ -228,7 +231,7 @@ export default function craigsList() {
                     </div>
                     <div className="py-4 text-center">
                         <p >Janelle Smithson Mood Board Layout</p>
-                    </div>
+                    </div> */}
                     {/* Final Product & Development */}
                     <h1 className="sub-header text-black py-5">Final Product & Development</h1>
                     <div className="pb-1">
