@@ -55,7 +55,7 @@ export default function Home() {
             />
           </li>
         </Link>
-        <Link href="https://drive.google.com/file/d/1XN3fCDg3PXbmL4PLIJiW_nkYljsL2e9j/view" legacyBehavior>
+        <Link href="/assets/ASJ-resume.pdf" legacyBehavior>
           <a target="_blank" rel="noopener noreferrer" className="absolute no-bullets" style={{ bottom: '20%', left: '44.3%' }} onClick={() => handleBallClick('https://drive.google.com/file/d/1XN3fCDg3PXbmL4PLIJiW_nkYljsL2e9j/view')}
             onMouseEnter={() => handleMouseEnter('Resume')}
             onMouseLeave={handleMouseLeave}>

@@ -31,6 +31,7 @@ export default function workPage() {
                         <h2 className="text-2xl pb-5">Reach Dashboard - Building a product that creates a system for higher education staff to support their students.</h2>
                         <Link href="/reachPage">
                             <Image
+                                className="img-border"
                                 src="/assets/dashboard.png"
                                 alt='Reach Dashboard'
                                 width={800}
@@ -42,6 +43,7 @@ export default function workPage() {
                         <h2 className="text-2xl pb-5">Craiglist Moodboard - Creating a redesign of Craigslist that also incentivize user engagement</h2>
                         <Link href="/craigsList">
                             <Image
+                                className="mb-10"
                                 src="/assets/craiglist-dash.png"
                                 alt='Coding Dojo Craigslist Dashboard'
                                 width={800}

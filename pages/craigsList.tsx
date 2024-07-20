@@ -4,22 +4,38 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from 'react';
 
-export default function craigsList() {
-    const [selectedIndex, setSelectedIndex] = useState(0);
+export default function CraigsList() {
+    const [selectedIndex1, setSelectedIndex1] = useState(0);
+    const [selectedIndex2, setSelectedIndex2] = useState(0);
 
-    const images = [
+    const images1 = [
         { src: '/assets/clist-photos/caro1.jpg', alt: 'choose int design', question: 'Question 1' },
         { src: '/assets/clist-photos/caro2.jpg', alt: 'color pallette', question: 'Question 2' },
         { src: '/assets/clist-photos/caro3.jpg', alt: 'furniture', question: 'Question 3' },
         { src: '/assets/clist-photos/caro4.jpg', alt: 'budget', question: 'Question 4' },
+        { src: '/assets/clist-photos/livingroom.jpg', alt: 'jay', question: 'Jay Chavis Mood Board Layout' },
+        { src: '/assets/clist-photos/janelle-mdbrd.jpg', alt: 'janelle', question: 'Janelle Smithson Mood Board List' },
+    ];
+    const images2 = [
+        { src: '/assets/clist-photos/caro2-1.jpg', alt: 'minimalism', question: 'Question 1' },
+        { src: '/assets/clist-photos/caro2-2.jpg', alt: 'couches', question: 'Question 2' },
+        { src: '/assets/clist-photos/caro2-3.jpg', alt: 'warm', question: 'Question 3' },
+        { src: '/assets/clist-photos/caro2-4.jpg', alt: 'final', question: 'Mood Board Generated' },
     ];
 
-    const handlePrev = () => {
-        setSelectedIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+    const handlePrev1 = () => {
+        setSelectedIndex1((prevIndex) => (prevIndex === 0 ? images1.length - 1 : prevIndex - 1));
     };
 
-    const handleNext = () => {
-        setSelectedIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+    const handleNext1 = () => {
+        setSelectedIndex1((prevIndex) => (prevIndex === images1.length - 1 ? 0 : prevIndex + 1));
+    };
+    const handlePrev2 = () => {
+        setSelectedIndex2((prevIndex) => (prevIndex === 0 ? images2.length - 1 : prevIndex - 1));
+    };
+
+    const handleNext2 = () => {
+        setSelectedIndex2((prevIndex) => (prevIndex === images2.length - 1 ? 0 : prevIndex + 1));
     };
 
     return (
@@ -196,39 +212,19 @@ export default function craigsList() {
                     {/* Carousel */}
                     <div className="carousel1 pt-5  flex items-center justify-center">
                         <Image
-                            src={images[selectedIndex].src}
-                            alt={images[selectedIndex].alt}
+                            // className="border 5px solid"
+                            src={images1[selectedIndex1].src}
+                            alt={images1[selectedIndex1].alt}
                             width={700}
                             height={400}
                         />
                     </div>
                     <div className="py-5 pb-10 flex flex-row justify-center text-center">
-                        <button className="caro1-btn" onClick={handlePrev}>&lt;</button>
-                        <p className="flex flex-col justify-center">{images[selectedIndex].question}</p>
-                        <button className="caro1-btn" onClick={handleNext}>&gt;</button>
+                        <button className="caro1-btn" onClick={handlePrev1}>&lt;</button>
+                        <p className="flex flex-col justify-center">{images1[selectedIndex1].question}</p>
+                        <button className="caro1-btn" onClick={handleNext1}>&gt;</button>
                     </div>
-                    <div className='flex justify-center items-center flex-col'>
-                        <Image
-                            className="border 5px solid"
-                            src="/assets/clist-photos/livingroom.jpg"
-                            alt='Jay Chavis Mood Board Layout'
-                            width={700}
-                            height={400} />
-                    </div>
-                    <div className="py-4 text-center">
-                        <p >Janelle Mood Board Layout</p>
-                    </div>
-                    <div className='flex justify-center items-center flex-col'>
-                        <Image
-                            className="border 5px solid"
-                            src="/assets/clist-photos/janelle-mdbrd.jpg"
-                            alt='Jay Chavis Mood Board Layout'
-                            width={700}
-                            height={400} />
-                    </div>
-                    <div className="py-4 text-center">
-                        <p >Janelle Smithson Mood Board Layout</p>
-                    </div>
+
                     {/* Final Product & Development */}
                     <h1 className="sub-header text-black py-5">Final Product & Development</h1>
                     <div className="pb-1">
@@ -244,19 +240,37 @@ export default function craigsList() {
                     </div>
                     <div className='flex justify-center items-center flex-col'>
                         <Image
-                            className="border 5px solid"
+                            className="border 5px solid mb-8"
                             src="/assets/clist-photos/clist-styletile.png"
                             alt='Craigslist Style Tile'
                             width={700}
                             height={400} />
-                        <em className="flex flex-col py-5 pb-10">
+                        <em className="flex flex-col py-5 pb-5">
                             Using this style tile sped up my process on redesigning what my team had previously into something I resonate with.
                             I had more confidence about becoming a UX designer since this iteration would be solely defined by me.
                             I wanted to display what I believed in with respect to my team&rsquo;s work when redesigning this iteration.
                         </em>
                     </div>
                     {/* Carousel 2 */}
-
+                    <div className="carousel1 pt-8  flex items-center justify-center">
+                        <Image
+                            className="border 5px solid "
+                            src={images2[selectedIndex2].src}
+                            alt={images2[selectedIndex2].alt}
+                            width={700}
+                            height={400}
+                        />
+                    </div>
+                    <div className="py-5 pb-10 flex flex-row justify-center text-center">
+                        <button className="caro1-btn" onClick={handlePrev2}>&lt;</button>
+                        <p className="flex flex-col justify-center">{images2[selectedIndex2].question}</p>
+                        <button className="caro1-btn" onClick={handleNext2}>&gt;</button>
+                    </div>
+                    <em className="flex flex-col py-2 pb-10">
+                        I decided to scrap the budget question only because that would be limiting on all the potential items can be considered for the mood board but also not entirely necessary for our redesigns main task.
+                        I decided to add descriptions associated with the items because it would boost user confidence on their choices by understanding the products more.
+                        Finally I focused on using black to dictate space and white to accent the text for a more cohesive aesthetic. I wanted the text to stand out while being easy to read.
+                    </em>
 
                     {/* Whats next */}
                     <div className=" pb-10">

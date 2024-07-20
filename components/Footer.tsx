@@ -11,7 +11,7 @@ export default function Footer() {
                     <Link href="https://www.linkedin.com/in/asanjose/" legacyBehavior>
                         <a target="_blank" rel="noopener noreferrer" className='ml-4 underline italic'>Linkedin</a>
                     </Link>
-                    <Link href="https://drive.google.com/file/d/1XN3fCDg3PXbmL4PLIJiW_nkYljsL2e9j/view" legacyBehavior>
+                    <Link href="/assets/ASJ-resume.pdf" legacyBehavior>
                         <a target="_blank" rel="noopener noreferrer" className='ml-4 underline italic '>Resume</a>
                     </Link>
                 </div>

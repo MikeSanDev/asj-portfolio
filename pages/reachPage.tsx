@@ -20,15 +20,16 @@ export default function reachPage() {
                     </div>
                 </div>
                 <div className="flex-grow mx-auto w-4/5 max-w-5xl">
-                    <div className="flex justify-center">
+                    <div className="flex mt-5 justify-center">
                         <Image
                             src="/assets/reach-banner.png"
                             alt='box'
-                            width={800}
+                            width={650}
                             height={500} />
+
                     </div>
                     {/* Overview - Adjust width here */}
-                    <div className="max-w-3xl mx-auto px-4">
+                    <div className="max-w-2xl mx-auto ">
                         <div>
                             <h1 className="sub-header text-black py-8">Overview</h1>
                             <div className="flex justify-center space-x-3 py-2">
@@ -77,7 +78,8 @@ export default function reachPage() {
                             </div>
                             <div className="flex justify-center space-x-3 py-5 pb-10">
                                 <div className="flex w-1/3">
-                                    <em>What technologies are being used by staff?</em>
+                                    {/* lower font for the 3  */}
+                                    <em >What technologies are being used by staff?</em>
                                 </div>
                                 <div className="flex w-1/3">
                                     <em>How does the staff approach giving students support they need?</em>
@@ -224,19 +226,23 @@ export default function reachPage() {
                             {/* Notes */}
                             <div className='flex justify-center items-center flex-col py-5'>
                                 <Image
+                                    className="border 5px solid"
                                     src="/assets/notes.png"
                                     alt='final dash'
                                     width={600}
                                     height={400} />
-                                <em className="py-5">
+                                <em className="py-10">
                                     The main components we wanted to focus for the student profile was the live feed and REACH engagement section.
                                     The live feed was important because it shows a centralized place for all departments to comment about a student.
                                     It was an initial idea we all resonated with in our early discussions about a solution. We felt that we needed to revisit that in another page.
                                 </em>
+                                {/* Fix spacing between here
+                                 */}
                             </div>
                             {/* Engagement */}
-                            <div className='flex justify-center items-center flex-col '>
+                            <div className='flex justify-center items-center mt- flex-col '>
                                 <Image
+                                    className="border 5px solid"
                                     src="/assets/engagement.png"
                                     alt='final dash'
                                     width={600}
