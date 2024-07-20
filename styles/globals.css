@@ -7,7 +7,7 @@
 /* Helvetica Neue fallback */
 @font-face {
   font-family: 'Helvetica Neue';
-  src: local('Helvetica Neue'), local('Helvetica'), local('Arial'), sans-serif;
+  src: local('Helvetica Neue'), local('Helvetica Neue'), local('Helvetica Neue'), sans-serif;
 }
 
 html {
@@ -71,6 +71,15 @@ body::-webkit-scrollbar {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.img-border {
+  border: solid 3px #232121
+}
+
+/* use for other sections */
+.asj-padding {
+  margin: 5px;
 }
 
 /*************************** Nav-Bar ****************************/
@@ -154,15 +163,16 @@ body::-webkit-scrollbar {
 .about-video {
   border-radius: 50%;
   width: 400px;
-  height: 300px;
+  height: 250px;
   /* This makes it horizontally oval */
   object-fit: cover;
   border-bottom: 16px solid #000000;
 }
 
 .about-text {
-  width: 500px;
-  padding: 0 20px
+  width: 425px;
+  padding: 0 20px;
+  font-size: 14px;
 }
 
 .sub-text {
@@ -184,7 +194,7 @@ body::-webkit-scrollbar {
   border-bottom-left-radius: 28px;
   border-bottom-right-radius: 28px;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-  background: #a57cde;
+  background: #000000;
   margin: 0 20px;
 }
 

@@ -53,7 +53,7 @@ export default function aboutPage() {
                     <div className="about-boxes my-5 flex justify-center flex-col">
                         <div className="about-box1 items-center justify-center flex flex-row">
                             <video
-                                className=" about-video"
+                                className="mr-10 about-video"
                                 src="/assets/dance2.mp4"
                                 autoPlay
                                 muted
@@ -64,12 +64,13 @@ export default function aboutPage() {
                             </div>
                         </div>
                         <div className="about-box2 items-center justify-center  flex flex-row">
-                            <div className="about-text">
+                            <div className="about-text ">
                                 <p>Magic The Gathering is a new hobby I am adding into my life. Playing the social format called Commander is quite the spectacle.
                                     Expressing your creativity into your deck building is constant problem solving while factoring the social experience with the other three players</p>
                             </div>
                             <video
-                                className=" about-video"
+
+                                className="mb-5 ml-10 about-video"
                                 src="/assets/mtg.mp4"
                                 autoPlay
                                 muted
