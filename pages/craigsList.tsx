@@ -262,9 +262,9 @@ export default function CraigsList() {
                         />
                     </div>
                     <div className="py-5 pb-10 flex flex-row justify-center text-center">
-                        <button className="caro1-btn" onClick={handlePrev2}>&lt;</button>
+                        <button className="caro2-btn" onClick={handlePrev2}>&lt;</button>
                         <p className="flex flex-col justify-center">{images2[selectedIndex2].question}</p>
-                        <button className="caro1-btn" onClick={handleNext2}>&gt;</button>
+                        <button className="caro2-btn" onClick={handleNext2}>&gt;</button>
                     </div>
                     <em className="flex flex-col py-2 pb-10">
                         I decided to scrap the budget question only because that would be limiting on all the potential items can be considered for the mood board but also not entirely necessary for our redesigns main task.
