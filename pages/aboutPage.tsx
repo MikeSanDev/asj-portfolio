@@ -43,13 +43,13 @@ export default function aboutPage() {
             <div className="max-w-4xl mx-auto px-4 ">
                 {/* <h1 className="sub-header">Sub-Header</h1> */}
                 <div className="flex justify-center">
-                    <h2 className="sub-text  text-black">
+                    <p className="sub-text">
                         I am a product designer based out of Chicago with a passion to create effective and congenial designs.
                         I especially enjoy being part of the process where designs are coming to life and reviewed for user satisfaction.
-                    </h2>
+                    </p>
                 </div>
                 <div className="max-w-4xl mx-auto my-10 px-4">
-                    <h1 className="text-3xl underline bold ml-4 my-10">When I&rsquo;m not designing...</h1>
+                    <h1 className="sub-header ml-4 my-10">When I&rsquo;m not designing...</h1>
                     <div className="about-boxes my-5 flex justify-center flex-col">
                         <div className="about-box1 items-center justify-center flex flex-row">
                             <video

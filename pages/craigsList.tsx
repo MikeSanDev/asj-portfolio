@@ -65,17 +65,17 @@ export default function CraigsList() {
                         <h1 className="sub-header text-black py-8">Overview</h1>
                         <div className="flex justify-center space-x-3 py-2">
                             <div className="flex flex-col w-1/3">
-                                <em className="pb-5">Problem</em>
-                                <p className="pr-5">How and why would you redesign Craigslist&rsquo;s user interface?</p>
+                                <p className="pb-5 text-2xl">Problem</p>
+                                <em className="pr-5">How and why would you redesign Craigslist&rsquo;s user interface?</em>
                             </div>
                             <div className="flex flex-col w-1/3">
-                                <em className="pb-5">Goal</em>
-                                <p>Conduct user interviews to support your redesign while utilizing the basics of UI/UX principles.</p>
+                                <p className="pb-5 text-2xl">Goal</p>
+                                <em>Conduct user interviews to support your redesign while utilizing the basics of UI/UX principles.</em>
                             </div>
                             <div className="flex flex-col w-1/3">
-                                <em className="pb-5">Role</em>
-                                <p>Split into teams of 3</p>
-                                <p>My roles: UX Designer, Researcher, and Interviewer</p>
+                                <p className="pb-5 text-2xl">Role</p>
+                                <em>Split into teams of 3</em>
+                                <em>My roles: UX Designer, Researcher, and Interviewer</em>
                             </div>
                         </div>
                     </div>
@@ -84,14 +84,14 @@ export default function CraigsList() {
                         <h1 className="sub-header text-black py-8">Research</h1>
                         <div className="flex justify-center space-x-3 py-2 mb-5">
                             <div className="flex flex-col w-1/2">
-                                <strong className="pb-5 text-2xl">Amount of Interviews</strong>
+                                <p className="pb-5 text-2xl">Amount of Interviews</p>
                                 <ul className="list-disc italic pl-5">
                                     <li>Friends and Family 60%</li>
                                     <li>Coworkers 40%</li>
                                 </ul>
                             </div>
                             <div className="flex flex-col w-1/2">
-                                <strong className="pb-5 text-2xl">Target of Research</strong>
+                                <p className="pb-5 text-2xl">Target of Research</p>
                                 <ul className="list-disc italic pl-5">
                                     <li>How does Craigslist still maintain its user base?</li>
                                     <li>Why do people use Craigslist over its competition?</li>
@@ -110,7 +110,7 @@ export default function CraigsList() {
                                 Craigslist still has frequent usage because users accomplishing their purpose on the site is still easy despite the potential dangers.
                                 My team decided that interviews were required to fully develop empathy for our redesign.
                             </em>
-                            <strong className="text-2xl pt-5">Sample of questions asked</strong>
+                            <p className="text-2xl pt-5">Sample of questions asked</p>
                         </div>
                         <div className="flex justify-center space-x-3 py-5 pb-10">
                             <div className="flex w-1/3">
