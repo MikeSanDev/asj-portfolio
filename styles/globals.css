@@ -6,9 +6,26 @@
 
 /* Helvetica Neue fallback */
 @font-face {
-  font-family: 'Helvetica Neue';
-  src: local('Helvetica Neue'), local('Helvetica Neue'), local('Helvetica Neue'), sans-serif;
+  font-family: 'Avenir';
+  src: url('/fonts/Avenir.ttf') format('truetype');
+  font-weight: normal;
+  font-style: bold;
 }
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/fonts/helvetica-neue.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/fonts/helvetica-neue-italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
 
 html {
   scroll-behavior: smooth;
@@ -20,7 +37,7 @@ body {
   /* or overflow-y: scroll; */
   scrollbar-width: none;
   -ms-overflow-style: none;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'helvetica-neue', sans-serif;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -100,16 +117,19 @@ body::-webkit-scrollbar {
 
 /*************************** Body ****************************/
 .sub-header {
-  color: white;
+  color: black;
   font-size: 35px;
   text-decoration: underline;
+  font-family: 'Avenir', sans-serif;
 }
 
 .sub-text {
-  color: white;
+  color: black;
   font-size: 15px;
   width: 50%;
   margin-top: 20px;
+  font-family: 'helvetica-neue', sans-serif;
+
 }
 
 .wf2-sub-div {
