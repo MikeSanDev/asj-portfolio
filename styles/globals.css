@@ -117,7 +117,6 @@ body::-webkit-scrollbar {
 
 /*************************** Body ****************************/
 .sub-header {
-  color: black;
   font-size: 35px;
   text-decoration: underline;
   font-family: 'Avenir', sans-serif;
@@ -129,7 +128,6 @@ body::-webkit-scrollbar {
   width: 50%;
   margin-top: 20px;
   font-family: 'helvetica-neue', sans-serif;
-
 }
 
 .wf2-sub-div {
@@ -190,15 +188,10 @@ body::-webkit-scrollbar {
 }
 
 .about-text {
-  width: 425px;
-  padding: 0 20px;
+
   font-size: 14px;
 }
 
-.sub-text {
-  width: 75%;
-  font-size: 20px;
-}
 
 .caro1-btn {
   font-size: 30px;
