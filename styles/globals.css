@@ -94,9 +94,17 @@ body::-webkit-scrollbar {
   border: solid 3px #232121
 }
 
-/* use for other */
+/* generalized padding for work pages */
 .asj-padding {
-  margin: 5px;
+  margin: 15px 0;
+}
+
+.asj-width-margin {
+  max-width: 650px;
+}
+
+.footer-width-margin {
+  max-width: 675px;
 }
 
 /*************************** Nav-Bar ****************************/

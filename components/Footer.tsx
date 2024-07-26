@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Footer() {
     return (
         <footer className="bg-black p-10" >
-            <div className='text-white flex justify-center flex-col max-w-3xl mx-auto px-4 '>
+            <div className='text-white flex justify-center flex-col footer-width-margin mx-auto px-4 '>
                 <div className='pt-6 flex flex-row '>
                     <Link href="/">
                         <p className='underline italic'>Home</p>

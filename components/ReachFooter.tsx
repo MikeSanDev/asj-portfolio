@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function ReachFooter() {
   return (
     <footer className="bg-black p-4" >
-      <div className='text-white flex justify-center flex-col max-w-3xl mx-auto px-4 '>
+      <div className='text-white flex justify-center flex-col footer-width-margin mx-auto px-4 '>
         <div className='pt-6 flex flex-col'>
           <Link href="/craigsList" >Next / Coding Dojo</Link>
           <strong className='text-2xl'>Craigslist Moodboard - Creating a redesign of Craigslist that also incentivize user engagement</strong>

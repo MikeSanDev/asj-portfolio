@@ -29,9 +29,9 @@ export default function reachPage() {
 
                     </div>
                     {/* Overview - Adjust width here */}
-                    <div className="max-w-2xl mx-auto ">
+                    <div className="asj-width-margin mx-auto ">
                         <div>
-                            <h1 className="sub-header text-black py-8">Overview</h1>
+                            <h1 className="sub-header text-black asj-padding">Overview</h1>
                             <div className="flex justify-center space-x-3 py-2">
                                 <div className="flex flex-col w-1/3">
                                     <em className="pb-5">Problem</em>
@@ -50,7 +50,7 @@ export default function reachPage() {
                         </div>
                         <div>
                             {/* Research */}
-                            <h1 className="sub-header text-black py-8">Research</h1>
+                            <h1 className="sub-header text-black asj-padding">Research</h1>
                             <div className="flex justify-center space-x-3 py-2 mb-5">
                                 <div className="flex flex-col w-1/2">
                                     <strong className="pb-5 text-2xl">Amount of Interviews</strong>
@@ -69,14 +69,14 @@ export default function reachPage() {
                                 </div>
                             </div>
                             <div>
-                                <em className="flex flex-col py-5 pb-10">
+                                <em className="flex flex-col asj-padding pb-10">
                                     Competition to Chicago Scholars REACH Program were nonexistent. Majority of products or applications that could compare mainly focused on making friends with their fellow students.
                                     Nothing has surfaced with a product that schools provide a central hub of support the schools provide on their campuses.
                                     This encouraged the team to focus on user interviews with students and staff with the lack of competition.
                                 </em>
                                 <strong className="text-2xl pt-5">Sample of questions asked</strong>
                             </div>
-                            <div className="flex justify-center space-x-3 py-5 pb-10">
+                            <div className="flex justify-center space-x-3 asj-padding pb-10">
                                 <div className="flex w-1/3">
                                     {/* lower font for the 3  */}
                                     <em >What technologies are being used by staff?</em>
@@ -88,8 +88,8 @@ export default function reachPage() {
                                     <em>What is something they hope for to improve their tasks?</em>
                                 </div>
                             </div>
-                            <em className="bold text-2xl mt-5"> We established three trends after user interviews were conducted:</em>
-                            <div className="flex justify-center space-x-3 py-5">
+                            <em className="bold text-2xl mt-10"> We established three trends after user interviews were conducted:</em>
+                            <div className="flex justify-center space-x-3 asj-padding">
                                 <div className="flex flex-col w-1/3">
                                     <em>1: Students wanting more variety in scheduling or availability in career building workshops.</em>
                                 </div>
@@ -101,9 +101,9 @@ export default function reachPage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="pb-5">
+                        <div className="asj-padding">
                             {/* Conceptual Development */}
-                            <h1 className="sub-header text-black py-8">Conceptual Development</h1>
+                            <h1 className="sub-header text-black asj-padding">Conceptual Development</h1>
                             <div className="flex justify-center">
                                 <Image
                                     src="/assets/fariene.png"
@@ -114,18 +114,18 @@ export default function reachPage() {
                             <br />
                             <strong className="text-2xl">&rdquo;I want to arm students with the tools they need to succeed. I don&rsquo;t believe in gatekeeping.
                                 I don&rsquo;t believe school should be a survival of the fittest situation.&rdquo; <span>- Fareine Suarez </span></strong>
-                            <div className="flex flex-col justify-between py-8 h-full">
-                                <em className="py-5">
+                            <div className="flex flex-col justify-between asj-padding h-full">
+                                <em className="asj-padding">
                                     Fiona Madison, a student recruitment manager, needs a system to visualize students&rsquo; college journey and on-campus involvement so that she can create workshops and connections to promote student success and retention.
                                 </em>
-                                <em className="py-5">
+                                <em className="asj-padding">
                                     Fiona was inspired by Fareine Suarez&rsquo;s college admission recruiter for Illinois Institute of Technology, quote and dedication for every student to have equal chances for success.
                                     Other interviewees also shared equal motivation of providing every tool necessary for students to succeed academically and personally.
                                     Higher education staff persona was a unanimous decision from the team because majority (83%) of our interviewees shared that similar profession.
                                 </em>
                                 <div className="max-w-2xl mx-auto px-4">
-                                    <p className="flex justify-center text-black bold text-2xl py-5">Common trend that appeared from the team</p>
-                                    <div className="flex justify-center space-x-2 py-5">
+                                    <p className="flex justify-center text-black bold text-2xl asj-padding">Common trend that appeared from the team</p>
+                                    <div className="flex justify-center space-x-2 asj-padding">
                                         <em className="mb-4 ">
                                             &rdquo;Live feed&rdquo; concept that focuses on either career development or mental health support
                                         </em>
@@ -133,7 +133,7 @@ export default function reachPage() {
                                             Issue with the idea was that the scope was either too broad or does not fully solve our problems
                                         </em>
                                     </div>
-                                    <strong className="flex justify-center text-black bold text-2xl py-5">Solution</strong>
+                                    <strong className="flex justify-center text-black bold text-2xl asj-padding">Solution</strong>
                                     <em >
                                         A dashboard because it can also include a live feed while having more opportunity to have more features. We all agreed a dashboard felt the most appropriate solution because it allows customization with relation to the users liking.
                                         I suggested that the team perform a 6-8-5 sketching exercise for more concrete discovery on the product.
@@ -177,7 +177,7 @@ export default function reachPage() {
                         </div>
                         <div>
                             {/* Final Product & Development */}
-                            <h1 className="sub-header text-black py-5">Final Product & Development</h1>
+                            <h1 className="sub-header text-black asj-padding">Final Product & Development</h1>
                             <em className="mb-4 ">
                                 Our ideas were fully converging amongst each other with a common theme of cards displaying student information.
                                 The cards of the students would be the first component that captures Fiona&rsquo;s attention immediately when accessing the dashboard
@@ -191,7 +191,7 @@ export default function reachPage() {
                                     height={400} />
                                 <p className="py-3 text-center bold italic ">First Example Card</p>
                             </div>
-                            <em className="py-5">
+                            <em className="asj-padding">
                                 Our first iteration created above by Issac opened our teams&rsquo; eyes on what can be possible with our cards. A mood meter indicating whether students needed attention or assistance during their higher education journey was absolutely brilliant.
                                 The card felt crowded and the information presented had redundancy and was overwhelming.
                                 We felt that &rdquo;less was more&rdquo; would appropriately fit Fiona&rsquo;s needs with her busy schedule.
@@ -205,7 +205,7 @@ export default function reachPage() {
                                     height={400} />
                                 <p className="py-3 text-center bold italic">Final Example Card</p>
                             </div>
-                            <em className="py-5">
+                            <em className="asj-padding">
                                 I decided to modify Isaac&rsquo;s card to have more structure and negative space so the card can be viewed easily by Fiona.
                                 I decided to group related content into their own lines/categories for consistent and clean look.
                             </em>
@@ -218,15 +218,15 @@ export default function reachPage() {
                                     height={400} />
                                 <p className="py-3 italic bold text-center">Final Product of Dashboard</p>
                             </div>
-                            <em className="py-5">
+                            <em className="asj-padding">
                                 We used a Z pattern to ultimately decide where we would place components of the dashboard for Fiona. We kept in mind her desire to create workshops.
                                 Seeing how her students mood status is first allows us to strategically place our following components to what Fiona may find important after seeing her students&rsquo; information.
                                 We realized that having a &rdquo;Less is more&rdquo; student card is only appropriate if there was another page showing in depth details about the students as well.
                             </em>
                             {/* Notes */}
-                            <div className='flex justify-center items-center flex-col py-5'>
+                            <div className='flex justify-center items-center flex-col asj-padding'>
                                 <Image
-                                    className="border 5px solid"
+                                    className="border 5px solid asj-padding"
                                     src="/assets/notes.png"
                                     alt='final dash'
                                     width={600}
@@ -240,14 +240,14 @@ export default function reachPage() {
                                  */}
                             </div>
                             {/* Engagement */}
-                            <div className='flex justify-center items-center mt- flex-col '>
+                            <div className='flex justify-center items-center flex-col asj-padding'>
                                 <Image
-                                    className="border 5px solid"
+                                    className="border 5px solid asj-padding"
                                     src="/assets/engagement.png"
                                     alt='final dash'
                                     width={600}
                                     height={400} />
-                                <em className="py-5">
+                                <em className="asj-padding">
                                     Higher education staff ability to visualize students&rsquo; interactions with their gamification space on REACH was a must have on this page.
                                     We wanted to add this component fulfill our client&rsquo;s needs while considering what the staff involvement and expectations with REACH.
                                     Seeing the value they bring on their student is something Fiona needs to see that their investment into REACH is satisfactory.
@@ -265,7 +265,7 @@ export default function reachPage() {
                         </div>
                         {/* Whats next */}
                         <div className="pt-5 pb-10">
-                            <h1 className="sub-header text-black pb-10">What&rsquo;s Next</h1>
+                            <h1 className="sub-header text-black pb-5">What&rsquo;s Next</h1>
                             <em>
                                 The client loved our idea and was thankful on how it opened their eyes for new possibilities and who to communicate with to further advance our solution.
                                 We were aware that there was more we could have done if we had more time.
