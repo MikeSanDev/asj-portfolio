@@ -40,7 +40,7 @@ export default function aboutPage() {
                 <div className="pfp-border"></div>
             </div>
             {/* Main Body */}
-            <div className="max-w-4xl mx-auto px-4 ">
+            <div className="max-w-6xl mx-auto px-4 ">
                 {/* <h1 className="sub-header">Sub-Header</h1> */}
                 <div className="flex justify-center">
                     <em className="sub-text text-[25px] w-[75%]">
