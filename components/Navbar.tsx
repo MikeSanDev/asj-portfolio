@@ -25,7 +25,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="bg-black shadow-md mx-auto" style={{ width: '100%', maxWidth: 'auto', height: 'auto' }}>
+    <nav className="bg-black shadow-md mx-auto" >
       <div className="max-w-2xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-4">
@@ -34,9 +34,9 @@ export default function Navbar() {
               alt="Profile"
               width={50}
               height={50}
-              className="rounded-full z-10 lg:hidden"
+              className="rounded-full z-10 md:hidden lg:hidden"
             />
-            <Link href="/" className="text-l  font-bold text-white">Aaron San Jose</Link>
+            <Link href="/" className="font-bold text-white">Aaron San Jose</Link>
           </div>
           <div className="hidden md:flex items-center space-x-4">
             <li className="nav-item1 text-sm text-white hover:underline list-none">
@@ -59,17 +59,17 @@ export default function Navbar() {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden px-4 pt-4 pb-3">
-          <div className="flex items-center space-x-4 mb-4">
+        <div className="md:hidden px-4 py-4 ">
+          <div className="flex items-center justify-center ">
           </div>
-          <li className="nav-item1 text-sm text-white hover:underline list-none">
-            <Link href="/workPage">Work</Link>
+          <li className="nav-item1 text-2xl italic text-white hover:underline list-none">
+            <Link href="/workPage">- Work</Link>
           </li>
-          <li className="nav-item2 text-sm text-white hover:underline list-none">
-            <Link href="/aboutPage">About</Link>
+          <li className="nav-item2 text-2xl italic text-white hover:underline list-none">
+            <Link href="/aboutPage">- About</Link>
           </li>
-          <li className="text-sm text-white hover:underline list-none">
-            <Link href="/contact">Resume</Link>
+          <li className="text-2xl italic text-white hover:underline list-none">
+            <Link href="/contact">- Resume</Link>
           </li>
         </div>
       )}
