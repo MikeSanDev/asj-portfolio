@@ -47,19 +47,20 @@ export default function CraigsList() {
                     <Image
                         src="/assets/clist-photos/craig-logo.jpg"
                         alt='box'
-                        width={600}
+                        width={610}
                         height={500} />
                 </div>
             </div>
             <div className="flex-grow mx-auto w-4/5 max-w-5xl">
                 <div className="flex justify-center mt-5">
                     <Image
+                        className="img-border"
                         src="/assets/clist-photos/main-banner.jpg"
                         alt='box'
-                        width={620}
+                        width={610}
                         height={500} />
                 </div>
-                {/* Overview - Adjust width in global.css (asj-width-margin) */}
+                {/* Overview - */}
                 <div className="asj-width-margin mx-auto px-4">
                     <div>
                         <h1 className="sub-header text-black asj-padding">Overview</h1>

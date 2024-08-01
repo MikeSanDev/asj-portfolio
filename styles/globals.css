@@ -91,7 +91,7 @@ body::-webkit-scrollbar {
 }
 
 .img-border {
-  border: solid 3px #232121
+  border: solid 1px #878787
 }
 
 /* generalized padding for work pages */
@@ -103,8 +103,13 @@ body::-webkit-scrollbar {
   max-width: 650px;
 }
 
+.asj-width-margin-reach {
+  max-width: 650px;
+  margin-left: 15px;
+}
+
 .footer-width-margin {
-  max-width: 675px;
+  max-width: 650px;
 }
 
 /*************************** Nav-Bar ****************************/

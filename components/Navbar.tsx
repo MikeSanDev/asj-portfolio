@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -11,37 +12,40 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 768);
       if (window.innerWidth >= 768) {
         setIsOpen(false);
       }
     };
 
+    handleResize(); // Set the initial state
     window.addEventListener('resize', handleResize);
 
-    // Clean up event listener on component unmount
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
 
   return (
-    <nav className="bg-black shadow-md mx-auto" >
-      <div className="max-w-2xl mx-auto px-4">
+    <nav className="bg-black shadow-md mx-auto">
+      <div className="asj-width-margin mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-4">
-            <Image
-              src="/assets/asj-pfp.png"
-              alt="Profile"
-              width={50}
-              height={50}
-              className="rounded-full z-10 md:hidden lg:hidden"
-            />
+            {isSmallScreen && (
+              <Image
+                src="/assets/asj-pfp.png"
+                alt="Profile"
+                width={50}
+                height={50}
+                className="rounded-full z-10"
+              />
+            )}
             <Link href="/" className="font-bold text-white">Aaron San Jose</Link>
+            <li className="nav-item1 text-sm text-white hover:underline list-none md:block hidden">
+              <Link href="/workPage" >Work</Link>
+            </li>
           </div>
           <div className="hidden md:flex items-center space-x-4">
-            <li className="nav-item1 text-sm text-white hover:underline list-none">
-              <Link href="/workPage">Work</Link>
-            </li>
             <li className="nav-item2 text-sm text-white hover:underline list-none">
               <Link href="/aboutPage">About</Link>
             </li>
@@ -60,8 +64,6 @@ export default function Navbar() {
       </div>
       {isOpen && (
         <div className="md:hidden px-4 py-4 ">
-          <div className="flex items-center justify-center ">
-          </div>
           <li className="nav-item1 text-2xl italic text-white hover:underline list-none">
             <Link href="/workPage">- Work</Link>
           </li>
