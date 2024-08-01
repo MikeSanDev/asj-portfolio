@@ -7,29 +7,29 @@ import Link from "next/link";
 export default function reachPage() {
     return (
         <>
+            <Navbar />
             <div className="flex flex-col min-h-screen">
-                <Navbar />
                 <div className="bg-black shadow-md mx-auto w-full">
                     <em className='header-info text-white flex justify-center'>REACH Dashboard</em>
                     <div className='flex justify-center fig-box'>
                         <Image
                             src="/assets/reach.png"
                             alt='box'
-                            width={650}
+                            width={620}
                             height={600} />
                     </div>
                 </div>
-                <div className="flex-grow mx-auto w-4/5 max-w-5xl">
+                <div className="flex-grow mx-auto w-4/5 asj-width-margin">
                     <div className="flex mt-5 justify-center">
                         <Image
                             src="/assets/reach-banner.png"
                             alt='box'
-                            width={650}
+                            width={620}
                             height={500} />
 
                     </div>
-                    {/* Overview - Adjust width here */}
-                    <div className="asj-width-margin mx-auto ">
+                    {/* Overview */}
+                    <div className="asj-width-margin-reach flex justify-center flex-col ">
                         <div>
                             <h1 className="sub-header text-black asj-padding">Overview</h1>
                             <div className="flex justify-center space-x-3 py-2">
