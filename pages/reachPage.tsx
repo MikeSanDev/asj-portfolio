@@ -22,6 +22,7 @@ export default function reachPage() {
                 <div className="flex-grow mx-auto w-4/5 asj-width-margin">
                     <div className="flex mt-5 justify-center">
                         <Image
+                            className="reach-banner"
                             src="/assets/reach-banner.png"
                             alt='box'
                             width={620}
@@ -48,7 +49,7 @@ export default function reachPage() {
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div className="asj-width-margin-reach">
                             {/* Research */}
                             <h1 className="sub-header text-black asj-padding">Research</h1>
                             <div className="flex justify-center space-x-3 py-2 mb-5">
