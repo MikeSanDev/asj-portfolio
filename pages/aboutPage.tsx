@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-export default function aboutPage() {
+export default function AboutPage() {
     const [isOpen, setIsOpen] = useState(false);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
