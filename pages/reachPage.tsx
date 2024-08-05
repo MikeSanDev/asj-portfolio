@@ -33,19 +33,18 @@ export default function reachPage() {
                     <div className="asj-width-margin-reach flex justify-center flex-col ">
                         <div>
                             <h1 className="sub-header text-black asj-padding">Overview</h1>
-                            <div className="flex justify-center space-x-3 py-2">
+                            <div className=" flex justify-center space-x-2 py-2">
                                 <div className="flex flex-col w-1/3">
                                     <em className="pb-5">Problem</em>
-                                    <p className="pr-5">How to convince higher education organizations to invest in their REACH platform</p>
+                                    <p className="pr-5 reach-cols">How to convince higher education organizations to invest in their REACH platform</p>
                                 </div>
                                 <div className="flex flex-col w-1/3">
                                     <em className="pb-5">Goal</em>
-                                    <p>Understanding how higher education staff would provide support for their students</p>
+                                    <p className="reach-cols">Understanding how higher education staff would provide support for their students</p>
                                 </div>
                                 <div className="flex flex-col w-1/3">
                                     <em className="pb-5">Role</em>
-                                    <p>Split into teams of 5</p>
-                                    <p>My roles: UX Designer, Researcher, and Interviewer</p>
+                                    <p className="reach-cols">Split into teams of 5 <br /> My roles: UX Designer, Researcher, and Interviewer</p>
                                 </div>
                             </div>
                         </div>
@@ -141,7 +140,7 @@ export default function reachPage() {
                                     </em>
                                 </div>
                             </div>
-                            <div className="four-box grid grid-cols-2 gap-2 justify-items-center pb-5">
+                            <div className="four-box grid grid-cols-2 gap-2 justify-items-center  pb-5">
                                 <div className='flex justify-center items-center flex-col'>
                                     <p className="py-4 text-center">Aaron</p>
                                     <Image

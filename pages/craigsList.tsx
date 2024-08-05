@@ -61,22 +61,22 @@ export default function CraigsList() {
                         height={500} />
                 </div>
                 {/* Overview - */}
-                <div className="asj-width-margin mx-auto px-4">
+                <div className="asj-width-margin-craig mx-auto px-4">
                     <div>
                         <h1 className="sub-header text-black asj-padding">Overview</h1>
                         <div className="flex justify-center space-x-3 py-2">
                             <div className="flex flex-col w-1/3">
                                 <p className="pb-5 text-2xl">Problem</p>
-                                <em className="pr-5">How and why would you redesign Craigslist&rsquo;s user interface?</em>
+                                <em className="pr-5 reach-cols">How and why would you redesign Craigslist&rsquo;s user interface?</em>
                             </div>
                             <div className="flex flex-col w-1/3">
                                 <p className="pb-5 text-2xl">Goal</p>
-                                <em>Conduct user interviews to support your redesign while utilizing the basics of UI/UX principles.</em>
+                                <em className="reach-cols">Conduct user interviews to support your redesign while utilizing the basics of UI/UX principles.</em>
                             </div>
                             <div className="flex flex-col w-1/3">
                                 <p className="pb-5 text-2xl">Role</p>
                                 <em>Split into teams of 3</em>
-                                <em>My roles: UX Designer, Researcher, and Interviewer</em>
+                                <em className="reach-cols">My roles: UX Designer, Researcher, and Interviewer</em>
                             </div>
                         </div>
                     </div>
