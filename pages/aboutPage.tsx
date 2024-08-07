@@ -30,7 +30,7 @@ export default function AboutPage() {
 
     return (
         <div>
-            <nav className="    bg-[#bb9f8c] shadow-md mx-auto">
+            <nav className="bg-[#bb9f8c] shadow-md mx-auto">
                 <div className="asj-width-margin mx-auto px-4">
                     <div className="flex justify-between items-center h-16">
                         <div className="flex items-center space-x-4">
@@ -45,7 +45,7 @@ export default function AboutPage() {
                             )}
                             <Link href="/" className="font-bold text-black">Aaron San Jose</Link>
                             <li className="nav-item1 text-sm text-black hover:underline list-none md:block hidden">
-                                <Link href="/workPage" >Work</Link>
+                                <Link href="/workPage">Work</Link>
                             </li>
                         </div>
                         <div className="hidden md:flex items-center space-x-4">

@@ -285,7 +285,7 @@ body::-webkit-scrollbar {
   }
 
   .asj-width-margin-craig {
-    max-width: 500rem;
+    max-width: 100%;
     margin-left: 0;
   }
 
@@ -293,10 +293,8 @@ body::-webkit-scrollbar {
     font-size: 15px;
   }
 
-  .four-box {
-    display: flex;
-    flex-direction: column;
-    grid: none;
-    gap: none;
+  .carousel1 {
+    width: 1000px !important;
+    height: auto;
   }
 }
