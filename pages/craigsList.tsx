@@ -61,7 +61,7 @@ export default function CraigsList() {
                         height={500} />
                 </div>
                 {/* Overview - */}
-                <div className="asj-width-margin-craig mx-auto px-4">
+                <div className="asj-width-margin-reach mx-auto px-4">
                     <div>
                         <h1 className="sub-header text-black asj-padding">Overview</h1>
                         <div className="flex justify-center space-x-3 py-2">
