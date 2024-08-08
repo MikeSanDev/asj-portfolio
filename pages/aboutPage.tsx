@@ -40,10 +40,10 @@ export default function AboutPage() {
                                     alt="Profile"
                                     width={50}
                                     height={50}
-                                    className="rounded-full z-10"
+                                    className="rounded-full  z-10"
                                 />
                             )}
-                            <Link href="/" className="font-bold text-black">Aaron San Jose</Link>
+                            <Link href="/" className="font-bold  text-black">Aaron San Jose</Link>
                             <li className="nav-item1 text-sm text-black hover:underline list-none md:block hidden">
                                 <Link href="/workPage">Work</Link>
                             </li>
@@ -53,7 +53,9 @@ export default function AboutPage() {
                                 <Link href="/aboutPage">About</Link>
                             </li>
                             <li className="text-sm text-black hover:underline list-none">
-                                <Link href="/contact">Resume</Link>
+                                <Link href="/assets/ASJ-resume.pdf" legacyBehavior>
+                                    <a target="_blank" rel="noopener noreferrer">Resume</a>
+                                </Link>
                             </li>
                         </div>
                         <div className="md:hidden">
@@ -74,7 +76,9 @@ export default function AboutPage() {
                             <Link href="/aboutPage">- About</Link>
                         </li>
                         <li className="text-2xl italic text-black hover:underline list-none">
-                            <Link href="/contact">- Resume</Link>
+                            <Link href="/assets/ASJ-resume.pdf" legacyBehavior>
+                                <a target="_blank" rel="noopener noreferrer">- Resume</a>
+                            </Link>
                         </li>
                     </div>
                 )}
@@ -92,15 +96,14 @@ export default function AboutPage() {
                 <div className="pfp-border"></div>
             </div>
             {/* Main Body */}
-            <div className="max-w-6xl mx-auto px-4 ">
-                {/* <h1 className="sub-header">Sub-Header</h1> */}
+            <div className="max-w-6xl mx-auto px-4 res-width ">
                 <div className="flex justify-center">
                     <em className="sub-text text-[25px] w-[75%]">
                         I am a product designer based out of Chicago with a passion to create effective and congenial designs.
                         I especially enjoy being part of the process where designs are coming to life and reviewed for user satisfaction.
                     </em>
                 </div>
-                <div className="max-w-4xl mx-auto my-10 px-4">
+                <div className="max-w-4xl mx-auto my-10 px-4 res-width2">
                     <h1 className="sub-header ml-4 my-10">When I&rsquo;m not designing...</h1>
                     <div className="about-boxes my-5 flex justify-center flex-col">
                         <div className="about-box1 items-center justify-center flex flex-row">

@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="relative w-full h-screen">
+      <div className="relative w-full h-screen pkmn-page">
         <Image
           src="/assets/pkmn-bg.png"
           alt="background"
@@ -40,6 +40,7 @@ export default function Home() {
               alt="ball1"
               width={150}
               height={100}
+              className="ball1"
             />
           </li>
         </Link>
@@ -52,6 +53,7 @@ export default function Home() {
               alt="ball2"
               width={150}
               height={100}
+              className="ball2"
             />
           </li>
         </Link>
@@ -64,6 +66,7 @@ export default function Home() {
               alt="ball3"
               width={150}
               height={100}
+              className="ball3"
             />
           </a>
         </Link>
