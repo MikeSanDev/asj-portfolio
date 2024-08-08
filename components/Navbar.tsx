@@ -50,7 +50,9 @@ export default function Navbar() {
               <Link href="/aboutPage">About</Link>
             </li>
             <li className="text-sm text-white hover:underline list-none">
-              <Link href="/contact">Resume</Link>
+              <Link href="/assets/ASJ-resume.pdf" legacyBehavior>
+                <a target="_blank" rel="noopener noreferrer">Resume</a>
+              </Link>
             </li>
           </div>
           <div className="md:hidden">
@@ -71,7 +73,9 @@ export default function Navbar() {
             <Link href="/aboutPage">- About</Link>
           </li>
           <li className="text-2xl italic text-white hover:underline list-none">
-            <Link href="/contact">- Resume</Link>
+            <Link href="/assets/ASJ-resume.pdf" legacyBehavior>
+              <a target="_blank" rel="noopener noreferrer">- Resume</a>
+            </Link>
           </li>
         </div>
       )}
