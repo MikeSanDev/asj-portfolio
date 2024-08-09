@@ -29,7 +29,7 @@ export default function workPage() {
                     <h1 className="sub-header text-black pt-5 ">Case Studies</h1>
                     <div className="py-5">
                         <p className="from-neutral-300">Chicago Scholars</p>
-                        <h2 className="text-2xl pb-5">Reach Dashboard - Building a product that creates a system for higher education staff to support their students.</h2>
+                        <p className="text-2xl work-text pb-5">Reach Dashboard - Building a product that creates a system for higher education staff to support their students.</p>
                         <Link href="/reachPage">
                             <Image
                                 className="img-border"
@@ -41,7 +41,7 @@ export default function workPage() {
                     </div>
                     <div className="py-5">
                         <p className="from-neutral-300">Coding Dojo</p>
-                        <h2 className="text-2xl pb-5">Craiglist Moodboard - Creating a redesign of Craigslist that also incentivize user engagement</h2>
+                        <h2 className="text-2xl work-text pb-5 ">Craiglist Moodboard - Creating a redesign of Craigslist that also incentivize user engagement</h2>
                         <Link href="/craigsList">
                             <Image
                                 className="mb-10"
