@@ -41,15 +41,15 @@ export default function Navbar() {
               />
             )}
             <Link href="/" className="font-bold text-white">Aaron San Jose</Link>
-            <li className="nav-item1 text-sm text-white hover:underline list-none md:block hidden">
+            <li className="nav-item1 font-bold text-white hover:underline list-none md:block hidden">
               <Link href="/workPage" >Work</Link>
             </li>
           </div>
-          <div className="hidden md:flex items-center space-x-4">
-            <li className="nav-item2 text-sm text-white hover:underline list-none">
+          <div className="hidden md:flex items-center space-x-4 nav-item2">
+            <li className="font-bold text-white hover:underline list-none">
               <Link href="/aboutPage">About</Link>
             </li>
-            <li className="text-sm text-white hover:underline list-none">
+            <li className="font-bold text-white hover:underline list-none">
               <Link href="/assets/ASJ-resume.pdf" legacyBehavior>
                 <a target="_blank" rel="noopener noreferrer">Resume</a>
               </Link>

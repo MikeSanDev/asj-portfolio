@@ -9,8 +9,8 @@ export default function reachPage() {
         <>
             <Navbar />
             <div className="flex flex-col min-h-screen">
-                <div className="bg-black shadow-md mx-auto w-full">
-                    <em className='header-info text-white flex justify-center'>REACH Dashboard</em>
+                <div className="bg-black  mx-auto w-full">
+                    <strong className='header-info italic text-white flex justify-center'>REACH Dashboard</strong>
                     <div className='flex justify-center fig-box'>
                         <Image
                             src="/assets/reach.png"
@@ -35,26 +35,26 @@ export default function reachPage() {
                             <h1 className="sub-header text-black asj-padding">Overview</h1>
                             <div className=" flex justify-center space-x-2 py-2">
                                 <div className="flex flex-col w-1/3">
-                                    <em className="pb-5">Problem</em>
-                                    <p className="pr-5 reach-cols">How to convince higher education organizations to invest in their REACH platform</p>
+                                    <strong className="pb-5">Problem</strong>
+                                    <p className="pr-5 reach-cols font-light">How to convince higher education organizations to invest in their REACH platform</p>
                                 </div>
                                 <div className="flex flex-col w-1/3">
-                                    <em className="pb-5">Goal</em>
-                                    <p className="reach-cols">Understanding how higher education staff would provide support for their students</p>
+                                    <strong className="pb-5">Goal</strong>
+                                    <p className="reach-cols font-light">Understanding how higher education staff would provide support for their students</p>
                                 </div>
                                 <div className="flex flex-col w-1/3">
-                                    <em className="pb-5">Role</em>
-                                    <p className="reach-cols">Split into teams of 5 <br /> My roles: UX Designer, Researcher, and Interviewer</p>
+                                    <strong className="pb-5">Role</strong>
+                                    <p className="reach-cols font-light">Split into teams of 5 <br /> My roles: UX Designer, Researcher, and Interviewer</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="asj-width-margin-reach">
+                        <div className="flex justify-center flex-col">
                             {/* Research */}
                             <h1 className="sub-header text-black asj-padding">Research</h1>
-                            <div className="flex justify-center space-x-3 py-2 mb-5">
+                            <div className="flex justify-center space-x-3 py-2 mb-5 asj-width-margin-reach ">
                                 <div className="flex flex-col w-1/2">
                                     <strong className="pb-5 text-2xl">Amount of Interviews</strong>
-                                    <ul className="list-disc italic pl-5">
+                                    <ul className="list-disc italic pl-5 font-light">
                                         <li >Admission Recruiters 66%</li>
                                         <li>Communication Strategist 17%</li>
                                         <li>Students 17%</li>
@@ -62,7 +62,7 @@ export default function reachPage() {
                                 </div>
                                 <div className="flex flex-col w-1/2">
                                     <strong className="pb-5 text-2xl">Target of Research</strong>
-                                    <ul className="list-disc italic pl-5">
+                                    <ul className="list-disc italic pl-5 font-light">
                                         <li>What is the competition doing?</li>
                                         <li>How do schools currently promote support to their students?</li>
                                     </ul>
@@ -76,7 +76,7 @@ export default function reachPage() {
                                 </em>
                                 <strong className="text-2xl pt-5">Sample of questions asked</strong>
                             </div>
-                            <div className="flex justify-center space-x-3 asj-padding pb-10">
+                            <div className="flex justify-center space-x-3 asj-padding pb-5 font-extralight">
                                 <div className="flex w-1/3">
                                     {/* lower font for the 3  */}
                                     <em >What technologies are being used by staff?</em>
@@ -88,8 +88,8 @@ export default function reachPage() {
                                     <em>What is something they hope for to improve their tasks?</em>
                                 </div>
                             </div>
-                            <em className="bold text-2xl mt-10"> We established three trends after user interviews were conducted:</em>
-                            <div className="flex justify-center space-x-3 asj-padding">
+                            <em className="bold text-2xl my-5"> We established three trends after user interviews were conducted:</em>
+                            <div className="flex justify-center space-x-3 asj-padding font-extralight">
                                 <div className="flex flex-col w-1/3">
                                     <em>1: Students wanting more variety in scheduling or availability in career building workshops.</em>
                                 </div>
@@ -112,7 +112,7 @@ export default function reachPage() {
                                     height={300} />
                             </div>
                             <br />
-                            <strong className="text-2xl">&rdquo;I want to arm students with the tools they need to succeed. I don&rsquo;t believe in gatekeeping.
+                            <strong className="text-2xl italic">&rdquo;I want to arm students with the tools they need to succeed. I don&rsquo;t believe in gatekeeping.
                                 I don&rsquo;t believe school should be a survival of the fittest situation.&rdquo; <span>- Fareine Suarez </span></strong>
                             <div className="flex flex-col justify-between asj-padding h-full">
                                 <em className="asj-padding">
@@ -124,12 +124,12 @@ export default function reachPage() {
                                     Higher education staff persona was a unanimous decision from the team because majority (83%) of our interviewees shared that similar profession.
                                 </em>
                                 <div className="max-w-2xl mx-auto px-4">
-                                    <p className="flex justify-center text-black bold text-2xl asj-padding">Common trend that appeared from the team</p>
-                                    <div className="flex justify-center space-x-2 asj-padding">
-                                        <em className="mb-4 ">
+                                    <strong className="flex justify-center text-black bold text-2xl asj-padding">Common trend that appeared from the team</strong>
+                                    <div className="flex justify-center space-x-3 asj-padding">
+                                        <em className="mr-4 font-extralight">
                                             &rdquo;Live feed&rdquo; concept that focuses on either career development or mental health support
                                         </em>
-                                        <em className="mb-4">
+                                        <em className="mb-4 font-extralight">
                                             Issue with the idea was that the scope was either too broad or does not fully solve our problems
                                         </em>
                                     </div>
@@ -142,7 +142,7 @@ export default function reachPage() {
                             </div>
                             <div className="four-box grid grid-cols-2 gap-2 justify-items-center  pb-5">
                                 <div className='flex justify-center items-center flex-col'>
-                                    <p className="py-4 text-center">Aaron</p>
+                                    <strong className="py-4 text-[16px] text-center ">Aaron</strong>
                                     <Image
                                         src="/assets/asj-sketch.png"
                                         alt='Aaron sketch'
@@ -150,7 +150,7 @@ export default function reachPage() {
                                         height={400} />
                                 </div>
                                 <div className='flex justify-center items-center flex-col'>
-                                    <p className="py-4 text-center">Isaac</p>
+                                    <strong className="py-4 text-[16px] text-center">Isaac</strong>
                                     <Image
                                         src="/assets/isaac-sketch.png"
                                         alt='Isaac sketch'
@@ -158,7 +158,7 @@ export default function reachPage() {
                                         height={400} />
                                 </div>
                                 <div className='flex justify-center items-center flex-col'>
-                                    <p className="py-4 text-center">Demetrius</p>
+                                    <strong className="py-4 text-[16px] text-center">Demetrius</strong>
                                     <Image
                                         src="/assets/dem-sketch.png"
                                         alt='Demetrius sketch'
@@ -166,7 +166,7 @@ export default function reachPage() {
                                         height={400} />
                                 </div>
                                 <div className='flex justify-center items-center flex-col'>
-                                    <p className="py-4 text-center">Janelle</p>
+                                    <strong className="py-4 text-[16px] text-center">Janelle</strong>
                                     <Image
                                         src="/assets/jan-sketch.png"
                                         alt='Janelle sketch'
@@ -189,7 +189,7 @@ export default function reachPage() {
                                     alt='activity card'
                                     width={400}
                                     height={400} />
-                                <p className="py-3 text-center bold italic ">First Example Card</p>
+                                <p className="py-3 text-center font-semibold italic ">First Example Card</p>
                             </div>
                             <em className="asj-padding">
                                 Our first iteration created above by Issac opened our teams&rsquo; eyes on what can be possible with our cards. A mood meter indicating whether students needed attention or assistance during their higher education journey was absolutely brilliant.
@@ -203,7 +203,7 @@ export default function reachPage() {
                                     alt='final card'
                                     width={400}
                                     height={400} />
-                                <p className="py-3 text-center bold italic">Final Example Card</p>
+                                <p className="py-3 text-center font-semibold italic">Final Example Card</p>
                             </div>
                             <em className="asj-padding">
                                 I decided to modify Isaac&rsquo;s card to have more structure and negative space so the card can be viewed easily by Fiona.
@@ -216,7 +216,7 @@ export default function reachPage() {
                                     alt='final dash'
                                     width={600}
                                     height={400} />
-                                <p className="py-3 italic bold text-center">Final Product of Dashboard</p>
+                                <p className="py-3 italic font-semibold text-center">Final Product of Dashboard</p>
                             </div>
                             <em className="asj-padding">
                                 We used a Z pattern to ultimately decide where we would place components of the dashboard for Fiona. We kept in mind her desire to create workshops.
@@ -260,7 +260,7 @@ export default function reachPage() {
                                     alt='final dash'
                                     width={600}
                                     height={400} />
-                                <p className="py-3 text-center">Final Product of Student Profile</p>
+                                <p className="py-3 asj-img-title text-center">Final Product of Student Profile</p>
                             </div>
                         </div>
                         {/* Whats next */}
