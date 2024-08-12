@@ -108,6 +108,11 @@ body::-webkit-scrollbar {
   margin-left: 15px;
 }
 
+.asj-width-margin-reach1 {
+  max-width: 650px;
+
+}
+
 .footer-width-margin {
   max-width: 650px;
 }
@@ -124,7 +129,13 @@ body::-webkit-scrollbar {
   margin-top: 10px;
 }
 
+.nav-item1 {
+  padding-top: 0.10rem;
+}
 
+.nav-item2 {
+  padding-bottom: 0.30rem;
+}
 
 
 
@@ -163,7 +174,18 @@ body::-webkit-scrollbar {
   margin-top: 20px;
 }
 
+.asj-sketch1 {
+  height: 800px;
+  width: 300px;
+}
 
+.asj-img-title {
+  font-weight: 600;
+}
+
+.asj-carousel-font {
+  font-weight: 600;
+}
 
 /*************************** About Page ****************************/
 
@@ -202,7 +224,7 @@ body::-webkit-scrollbar {
 
 .about-text {
 
-  font-size: 14px;
+  font-size: 15px;
 }
 
 
@@ -444,4 +466,10 @@ body::-webkit-scrollbar {
     margin: 0 !important;
     margin: 20px 0 !important;
   }
+
+  /* Footer */
+
+  /* .footer-text {
+    font-size: 12px !important;
+  } */
 }

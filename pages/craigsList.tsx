@@ -9,7 +9,7 @@ export default function CraigsList() {
     const [selectedIndex2, setSelectedIndex2] = useState(0);
 
     const images1 = [
-        { src: '/assets/clist-photos/caro1.jpg', alt: 'choose int design', question: 'Question 1' },
+        { src: '/assets/clist-photos/caro1.jpg', alt: 'choose int design', question: 'Question 1', className: 'asj-carousel-font' },
         { src: '/assets/clist-photos/caro2.jpg', alt: 'color pallette', question: 'Question 2' },
         { src: '/assets/clist-photos/caro3.jpg', alt: 'furniture', question: 'Question 3' },
         { src: '/assets/clist-photos/caro4.jpg', alt: 'budget', question: 'Question 4' },
@@ -42,7 +42,7 @@ export default function CraigsList() {
         <div>
             <Navbar />
             <div className="bg-black shadow-md mx-auto w-full">
-                <em className='header-info text-white flex justify-center'>Craigslist Moodboard</em>
+                <strong className='header-info italic text-white flex justify-center'>Craigslist Moodboard</strong>
                 <div className='flex justify-center fig-box'>
                     <Image
                         src="/assets/clist-photos/craig-logo.jpg"
@@ -66,17 +66,17 @@ export default function CraigsList() {
                         <h1 className="sub-header text-black asj-padding">Overview</h1>
                         <div className="flex justify-center space-x-3 py-2">
                             <div className="flex flex-col w-1/3">
-                                <p className="pb-5 text-2xl">Problem</p>
-                                <em className="pr-5 reach-cols">How and why would you redesign Craigslist&rsquo;s user interface?</em>
+                                <strong className="pb-5 ">Problem</strong>
+                                <em className="pr-5 reach-cols font-light">How and why would you redesign Craigslist&rsquo;s user interface?</em>
                             </div>
                             <div className="flex flex-col w-1/3">
-                                <p className="pb-5 text-2xl">Goal</p>
-                                <em className="reach-cols">Conduct user interviews to support your redesign while utilizing the basics of UI/UX principles.</em>
+                                <strong className="pb-5 ">Goal</strong>
+                                <em className="reach-cols font-light">Conduct user interviews to support your redesign while utilizing the basics of UI/UX principles.</em>
                             </div>
                             <div className="flex flex-col w-1/3">
-                                <p className="pb-5 text-2xl">Role</p>
-                                <em>Split into teams of 3</em>
-                                <em className="reach-cols">My roles: UX Designer, Researcher, and Interviewer</em>
+                                <strong className="pb-5 ">Role</strong>
+                                <em className="reach-cols font-light">Split into teams of 3</em>
+                                <em className="reach-cols font-light">My roles: UX Designer, Researcher, and Interviewer</em>
                             </div>
                         </div>
                     </div>
@@ -85,42 +85,42 @@ export default function CraigsList() {
                         <h1 className="sub-header text-black asj-padding">Research</h1>
                         <div className="flex justify-center space-x-3 py-2 mb-5">
                             <div className="flex flex-col w-1/2">
-                                <p className="pb-5 text-2xl">Amount of Interviews</p>
-                                <ul className="list-disc italic pl-5">
+                                <strong className="pb-5 text-2xl">Amount of Interviews</strong>
+                                <ul className="list-disc italic pl-5 font-light">
                                     <li>Friends and Family 60%</li>
                                     <li>Coworkers 40%</li>
                                 </ul>
                             </div>
                             <div className="flex flex-col w-1/2">
-                                <p className="pb-5 text-2xl">Target of Research</p>
-                                <ul className="list-disc italic pl-5">
+                                <strong className="pb-5 text-2xl">Target of Research</strong>
+                                <ul className="list-disc italic pl-5 font-light">
                                     <li>How does Craigslist still maintain its user base?</li>
                                     <li>Why do people use Craigslist over its competition?</li>
                                 </ul>
                             </div>
                         </div>
                         <div>
-                            <em className="flex flex-col asj-paddingasj-padding">
+                            <em className="flex flex-col asj-padding">
                                 Craigslist has fierce competition on what it does well especially from Facebook Marketplace and Trovit.
                                 They use a modern design for clearer accessibility and navigation through pages compared to Craigslist.
                                 They also have profile customization to support a more comfortable and marketable experience.
                             </em>
-                            <em className="flex flex-col asj-paddingasj-padding">
+                            <em className="flex flex-col asj-padding pb-5">
                                 Craigslist does have a bad reputation of scams or endangerment due to the users being anonymous.
                                 There also isn&rsquo;t a system that proves the credibility of the product and user.
                                 Craigslist still has frequent usage because users accomplishing their purpose on the site is still easy despite the potential dangers.
                                 My team decided that interviews were required to fully develop empathy for our redesign.
                             </em>
-                            <p className="text-2xl pt-5">Sample of questions asked</p>
+                            <strong className="text-2xl py-10">Sample of questions asked</strong>
                         </div>
-                        <div className="flex justify-center space-x-3 asj-padding">
-                            <div className="flex w-1/3">
+                        <div className="flex justify-center space-x-3 asj-padding py-5">
+                            <div className="flex w-1/3 font-extralight">
                                 <em>How often do you use Craigslist?</em>
                             </div>
-                            <div className="flex w-1/3">
+                            <div className="flex w-1/3 font-extralight">
                                 <em>Describe a transaction where you had uncertainty when using Craigslist</em>
                             </div>
-                            <div className="flex w-1/3">
+                            <div className="flex w-1/3 font-extralight">
                                 <em>What positive experiences did you have with Craigslist</em>
                             </div>
                         </div>
@@ -174,7 +174,7 @@ export default function CraigsList() {
                                     height={400} />
                             </div>
                         </div>
-                        <div className="asj-padding text-center">
+                        <div className="asj-padding text-center asj-img-title">
                             <p >Early Wireframe Ideas</p>
                         </div>
                         <div className="flex flex-col justify-between py-3 h-full">
@@ -190,15 +190,15 @@ export default function CraigsList() {
                             </em>
                         </div>
                     </div>
-                    <h1 className="text-2xl asj-padding">Questions Created</h1>
-                    <div className="flex justify-center space-x-3 asj-padding">
-                        <div className="flex w-1/3">
+                    <strong className="text-2xl asj-padding">Questions Created</strong>
+                    <div className="flex justify-center space-x-3 asj-padding py-5">
+                        <div className="flex w-1/3 font-extralight">
                             <em>What furniture would you like? What is the budget?</em>
                         </div>
-                        <div className="flex w-1/3">
+                        <div className="flex w-1/3 font-extralight">
                             <em>What type of design you looking for?</em>
                         </div>
-                        <div className="flex w-1/3">
+                        <div className="flex w-1/3 font-extralight">
                             <em>What color palette are you looking for?</em>
                         </div>
                     </div>
@@ -220,9 +220,9 @@ export default function CraigsList() {
                             height={400}
                         />
                     </div>
-                    <div className="asj-padding  flex flex-row justify-center text-center">
+                    <div className="asj-padding  flex flex-row justify-center text-center py-5">
                         <button className="caro1-btn" onClick={handlePrev1}>&lt;</button>
-                        <p className="flex flex-col justify-center">{images1[selectedIndex1].question}</p>
+                        <strong className="flex flex-col justify-center">{images1[selectedIndex1].question}</strong>
                         <button className="caro1-btn" onClick={handleNext1}>&gt;</button>
                     </div>
 
@@ -241,7 +241,7 @@ export default function CraigsList() {
                     </div>
                     <div className='flex justify-center items-center flex-col'>
                         <Image
-                            className="border 5px solid mb-8"
+                            className="border 5px solid my-5"
                             src="/assets/clist-photos/clist-styletile.png"
                             alt='Craigslist Style Tile'
                             width={700}
@@ -253,7 +253,7 @@ export default function CraigsList() {
                         </em>
                     </div>
                     {/* Carousel 2 */}
-                    <div className="carousel1 pt-8  flex items-center justify-center">
+                    <div className="carousel1 pt-5  flex items-center justify-center">
                         <Image
                             className="border 5px solid "
                             src={images2[selectedIndex2].src}
@@ -262,9 +262,9 @@ export default function CraigsList() {
                             height={400}
                         />
                     </div>
-                    <div className="py-5 flex flex-row justify-center text-center">
+                    <div className="py-10 flex flex-row justify-center text-center">
                         <button className="caro2-btn" onClick={handlePrev2}>&lt;</button>
-                        <p className="flex flex-col justify-center">{images2[selectedIndex2].question}</p>
+                        <strong className="flex flex-col justify-center asj-carousel-font">{images2[selectedIndex2].question}</strong>
                         <button className="caro2-btn" onClick={handleNext2}>&gt;</button>
                     </div>
                     <em className="flex flex-col py-2asj-padding">
@@ -274,7 +274,7 @@ export default function CraigsList() {
                     </em>
 
                     {/* Whats next */}
-                    <div className=" pb-5">
+                    <div className=" py-5">
                         <h1 className="sub-header text-black asj-padding">What&rsquo;s Next</h1>
                         <em className="flex flex-col asj-padding ">
                             Overall executing a redesign based off user needs was an eye opening experience. Trying to create a redesign with other aspiring designers was difficult to manage.
@@ -289,10 +289,10 @@ export default function CraigsList() {
                         </em>
                         <div className="flex flex-col asj-padding">
                             <Link href="https://www.figma.com/proto/33UDTpUCByNJpE9FhnGdOT/Team-2-Converged-Prototype?page-id=55%3A218&node-id=55-457&scaling=min-zoom&starting-point-node-id=55%3A457" legacyBehavior>
-                                <a target="_blank" rel="noopener noreferrer" className="text-2xl bold underline pb-5">Prototype Version 1</a>
+                                <a target="_blank" rel="noopener noreferrer" className="text-2xl bold underline py-5">Prototype Version 1</a>
                             </Link>
                             <Link href="https://www.figma.com/proto/EXS7vyz9N2XWODGzG3bjIU/High-Fidelity-Prototype?page-id=10%3A1263&node-id=10-1399&scaling=min-zoom&starting-point-node-id=10%3A1399" legacyBehavior>
-                                <a target="_blank" rel="noopener noreferrer" className="text-2xl bold underline">Final Prototype</a>
+                                <a target="_blank" rel="noopener noreferrer" className="text-2xl bold underline py-5">Final Prototype</a>
                             </Link>
                         </div>
                     </div>

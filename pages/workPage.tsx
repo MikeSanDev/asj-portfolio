@@ -11,8 +11,8 @@ export default function workPage() {
                 <Navbar />
                 {/* Header info */}
                 <div className="bg-black shadow-md mx-auto" style={{ width: '100%', maxWidth: 'auto', height: 'auto' }}>
-                    <div className="asj-width-margin mx-auto px-4 ">
-                        <em className='header-info text-white flex justify-center'>Hello! I am Aaron San Jose and I welcome you to my portfolio!</em>
+                    <div className="asj-width-margin mx-auto px-4 text-center">
+                        <strong className='header-info text-white italic '>Hello! I'm Aaron San Jose. <br />A UX/UI Designer</strong>
                         <div className='flex justify-center fig-box'>
                             <Image
                                 className="yokai-img"
@@ -28,8 +28,8 @@ export default function workPage() {
                     {/* Case Studies */}
                     <h1 className="sub-header text-black pt-5 ">Case Studies</h1>
                     <div className="py-5">
-                        <p className="from-neutral-300">Chicago Scholars</p>
-                        <p className="text-2xl work-text pb-5">Reach Dashboard - Building a product that creates a system for higher education staff to support their students.</p>
+                        <strong className="from-neutral-300">Chicago Scholars</strong>
+                        <p className="text-2xl italic font-extralight work-text pb-5">Reach Dashboard - A product that manages student support systems for continuing education staff.</p>
                         <Link href="/reachPage">
                             <Image
                                 className="img-border"
@@ -40,8 +40,8 @@ export default function workPage() {
                         </Link>
                     </div>
                     <div className="py-5">
-                        <p className="from-neutral-300">Coding Dojo</p>
-                        <h2 className="text-2xl work-text pb-5 ">Craiglist Moodboard - Creating a redesign of Craigslist that also incentivize user engagement</h2>
+                        <strong className="from-neutral-300">Coding Dojo</strong>
+                        <p className="text-2xl italic font-extralight work-text pb-5 ">Craiglist Moodboard - A redesign of Craigslist encouraging user engagement.</p>
                         <Link href="/craigsList">
                             <Image
                                 className="mb-10"

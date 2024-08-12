@@ -43,16 +43,16 @@ export default function AboutPage() {
                                     className="rounded-full  z-10"
                                 />
                             )}
-                            <Link href="/" className="font-bold  text-black">Aaron San Jose</Link>
-                            <li className="nav-item1 text-sm text-black hover:underline list-none md:block hidden">
+                            <Link href="/" className="text-black font-bold">Aaron San Jose</Link>
+                            <li className="nav-item1 text-sm text-black font-bold hover:underline list-none md:block hidden">
                                 <Link href="/workPage">Work</Link>
                             </li>
                         </div>
-                        <div className="hidden md:flex items-center space-x-4">
-                            <li className="nav-item2 text-sm text-black hover:underline list-none">
+                        <div className="nav-item2 hidden md:flex items-center space-x-4">
+                            <li className="text-sm text-black font-bold hover:underline list-none">
                                 <Link href="/aboutPage">About</Link>
                             </li>
-                            <li className="text-sm text-black hover:underline list-none">
+                            <li className="text-sm text-black font-bold hover:underline list-none">
                                 <Link href="/assets/ASJ-resume.pdf" legacyBehavior>
                                     <a target="_blank" rel="noopener noreferrer">Resume</a>
                                 </Link>
@@ -85,7 +85,7 @@ export default function AboutPage() {
             </nav>
             {/* PFP */}
             <div className="pfp-container">
-                <div className='flex justify-center  my-5'>
+                <div className='flex justify-center  my-10'>
                     <Image
                         className=" shadow-md pfp mx-auto"
                         src="/assets/asj-pfp.png"
@@ -98,30 +98,30 @@ export default function AboutPage() {
             {/* Main Body */}
             <div className="max-w-6xl mx-auto px-4 res-width ">
                 <div className="flex justify-center">
-                    <em className="sub-text text-[25px] w-[75%]">
+                    <strong className="sub-text text-[20px] w-[75%] italic">
                         I am a product designer based out of Chicago with a passion to create effective and congenial designs.
                         I especially enjoy being part of the process where designs are coming to life and reviewed for user satisfaction.
-                    </em>
+                    </strong>
                 </div>
-                <div className="max-w-4xl mx-auto my-10 px-4 res-width2">
+                <div className="max-w-4xl mx-auto my-5 px-4 res-width2">
                     <h1 className="sub-header ml-4 my-10">When I&rsquo;m not designing...</h1>
-                    <div className="about-boxes my-5 flex justify-center flex-col">
-                        <div className="about-box1 items-center justify-center flex flex-row">
+                    <div className="about-boxes mb-5 flex justify-center flex-col">
+                        <div className="about-box1 items-center justify-center flex flex-row mb-10">
                             <video
                                 className="mr-10 about-video w-1/2"
                                 src="/assets/dance2.mp4"
                                 autoPlay
                                 muted
                                 loop />
-                            <div className="about-text text-[18px] w-1/2">
+                            <div className="about-text w-1/2 font-extralight">
                                 <p>Dance is my main form of expression. Navigating your creativity to rhythms of the music is my muse.
                                     It is my passion and continues to be the fuel of my creativity. I am seeking to cross over my creativity into dance into UX design.</p>
                             </div>
                         </div>
-                        <div className="about-box2 items-center justify-center  flex flex-row">
-                            <div className="about-text text-[18px] w-1/2">
-                                <p>Magic The Gathering is a new hobby I am adding into my life. Playing the social format called Commander is quite the spectacle.
-                                    Expressing your creativity into your deck building is constant problem solving while factoring the social experience with the other three players</p>
+                        <div className="about-box2 items-center justify-center  flex flex-row mb-10">
+                            <div className="about-text w-1/2 font-extralight">
+                                <p>Magic The Gathering is a welcomed addition into my life. Playing the social format called Commander is quite the spectacle.
+                                    Expressing creativity into your deck building is constant problem solving while factoring the social experience with the other three players</p>
                             </div>
                             <video
 
