@@ -61,9 +61,9 @@ export default function CraigsList() {
                         height={500} />
                 </div>
                 {/* Overview - */}
-                <div className="asj-width-margin-reach mx-auto px-4">
+                <div className="asj-width-margin-reach mx-auto px-4 res-margin-top">
                     <div>
-                        <h1 className="sub-header text-black asj-padding">Overview</h1>
+                        <h1 className="sub-header text-black asj-padding ">Overview</h1>
                         <div className="flex justify-center space-x-3 py-2">
                             <div className="flex flex-col w-1/3">
                                 <strong className="pb-5 ">Problem</strong>
@@ -211,7 +211,7 @@ export default function CraigsList() {
                         </em>
                     </div>
                     {/* Carousel */}
-                    <div className="carousel1 pt-5  flex items-center justify-center">
+                    <div className="carousel-res pt-5  flex items-center justify-center">
                         <Image
                             // className="border 5px solid"
                             src={images1[selectedIndex1].src}
@@ -220,9 +220,9 @@ export default function CraigsList() {
                             height={400}
                         />
                     </div>
-                    <div className="asj-padding  flex flex-row justify-center text-center py-5">
+                    <div className="asj-padding  flex flex-row justify-center text-center py-5 caro-btns-res">
                         <button className="caro1-btn" onClick={handlePrev1}>&lt;</button>
-                        <strong className="flex flex-col justify-center">{images1[selectedIndex1].question}</strong>
+                        <strong className="flex flex-col justify-center ">{images1[selectedIndex1].question}</strong>
                         <button className="caro1-btn" onClick={handleNext1}>&gt;</button>
                     </div>
 
@@ -253,7 +253,7 @@ export default function CraigsList() {
                         </em>
                     </div>
                     {/* Carousel 2 */}
-                    <div className="carousel1 pt-5  flex items-center justify-center">
+                    <div className="carousel-res pt-5  flex items-center justify-center">
                         <Image
                             className="border 5px solid "
                             src={images2[selectedIndex2].src}
@@ -262,7 +262,7 @@ export default function CraigsList() {
                             height={400}
                         />
                     </div>
-                    <div className="py-10 flex flex-row justify-center text-center">
+                    <div className="py-10 flex flex-row justify-center text-center caro-btns-res">
                         <button className="caro2-btn" onClick={handlePrev2}>&lt;</button>
                         <strong className="flex flex-col justify-center asj-carousel-font">{images2[selectedIndex2].question}</strong>
                         <button className="caro2-btn" onClick={handleNext2}>&gt;</button>

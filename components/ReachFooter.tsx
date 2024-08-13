@@ -6,7 +6,7 @@ export default function ReachFooter() {
       <div className='text-white flex justify-center flex-col footer-width-margin mx-auto px-4 '>
         <div className='pt-6 flex flex-col'>
           <Link href="/craigsList" >Next / Coding Dojo</Link>
-          <strong className='text-2xl'>Craigslist Moodboard - Creating a redesign of Craigslist that also incentivize user engagement</strong>
+          <strong className='text-2xl reach-footer-title'>Craigslist Moodboard - Creating a redesign of Craigslist that also incentivize user engagement</strong>
         </div>
         <div className='pt-6 flex flex-row '>
           <Link href="https://www.linkedin.com/in/asanjose/" legacyBehavior>
