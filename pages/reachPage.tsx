@@ -30,9 +30,9 @@ export default function reachPage() {
 
                     </div>
                     {/* Overview */}
-                    <div className="asj-width-margin-reach flex justify-center flex-col ">
+                    <div className="asj-width-margin-reach flex justify-center flex-col res-margin-top">
                         <div>
-                            <h1 className="sub-header text-black asj-padding">Overview</h1>
+                            <h1 className="sub-header text-black asj-padding ">Overview</h1>
                             <div className=" flex justify-center space-x-2 py-2">
                                 <div className="flex flex-col w-1/3">
                                     <strong className="pb-5">Problem</strong>
@@ -48,9 +48,9 @@ export default function reachPage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex justify-center flex-col">
+                        <div className="flex justify-center flex-col res-margin-top">
                             {/* Research */}
-                            <h1 className="sub-header text-black asj-padding">Research</h1>
+                            <h1 className="sub-header text-black asj-padding ">Research</h1>
                             <div className="flex justify-center space-x-3 py-2 mb-5 asj-width-margin-reach ">
                                 <div className="flex flex-col w-1/2">
                                     <strong className="pb-5 text-2xl">Amount of Interviews</strong>
