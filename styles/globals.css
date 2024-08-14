@@ -137,7 +137,55 @@ body::-webkit-scrollbar {
   padding-bottom: 0.30rem;
 }
 
+.navbar-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: black;
+  /* Match your navbar background */
+  z-index: 1000;
+  /* Ensure it overlays other content */
+}
 
+.about-navbar-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #bb9f8c;
+  /* Match your navbar background */
+  z-index: 1000;
+  /* Ensure it overlays other content */
+}
+
+.navbar-dropdown li {
+  padding: 2px 0;
+  /* Adjust padding for menu items */
+}
+
+.about-navbar-dropdown li {
+  padding: 2px 0;
+  /* Adjust padding for menu items */
+}
+
+.navbar-container {
+  position: relative;
+  /* To contain the absolute dropdown */
+}
+
+/* 
+Blurred background when menu is open */
+/* .blur-background {
+  filter: blur(8px);
+  transition: filter 0.3s ease;
+} */
+
+/* For smooth transition back to normal */
+/* .no-blur {
+  filter: blur(0);
+  transition: filter 0.3s ease;
+} */
 
 /*************************** Body ****************************/
 .sub-header {
@@ -350,6 +398,22 @@ body::-webkit-scrollbar {
 
 /* Extra small devices (phones, less than 576px) */
 @media only screen and (max-width: 375px) {
+  /* Navbar */
+
+  .navbar-container {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+  }
+
+  .about-navbar-container {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+  }
+
+
+
   .ball1 {
     width: 65px !important;
     height: 50px !important;

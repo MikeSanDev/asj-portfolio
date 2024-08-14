@@ -12,7 +12,7 @@ export default function workPage() {
                 {/* Header info */}
                 <div className="bg-black shadow-md mx-auto" style={{ width: '100%', maxWidth: 'auto', height: 'auto' }}>
                     <div className="asj-width-margin mx-auto px-4 text-center">
-                        <strong className='header-info text-white italic '>Hello! I'm Aaron San Jose. <br />A UX/UI Designer</strong>
+                        <strong className='header-info text-white italic '>Hello! I&apos;m Aaron San Jose. <br />A UX/UI Designer</strong>
                         <div className='flex justify-center fig-box'>
                             <Image
                                 className="yokai-img"

@@ -28,7 +28,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-black shadow-md mx-auto">
-      <div className="asj-width-margin mx-auto px-4">
+      <div className="asj-width-margin mx-auto px-4 navbar-container">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-4">
             {isSmallScreen && (
@@ -42,7 +42,7 @@ export default function Navbar() {
             )}
             <Link href="/" className="font-bold text-white">Aaron San Jose</Link>
             <li className="nav-item1 font-bold text-white hover:underline list-none md:block hidden">
-              <Link href="/workPage" >Work</Link>
+              <Link href="/workPage">Work</Link>
             </li>
           </div>
           <div className="hidden md:flex items-center space-x-4 nav-item2">
@@ -63,22 +63,22 @@ export default function Navbar() {
             </button>
           </div>
         </div>
+        {isOpen && (
+          <div className="navbar-dropdown px-4 py-4">
+            <li className="nav-item1 text-2xl italic text-white hover:underline list-none">
+              <Link href="/workPage">- Work</Link>
+            </li>
+            <li className="nav-item2 text-2xl italic text-white hover:underline list-none">
+              <Link href="/aboutPage">- About</Link>
+            </li>
+            <li className="text-2xl italic text-white hover:underline list-none">
+              <Link href="/assets/ASJ-resume.pdf" legacyBehavior>
+                <a target="_blank" rel="noopener noreferrer">- Resume</a>
+              </Link>
+            </li>
+          </div>
+        )}
       </div>
-      {isOpen && (
-        <div className="md:hidden px-4 py-4 ">
-          <li className="nav-item1 text-2xl italic text-white hover:underline list-none">
-            <Link href="/workPage">- Work</Link>
-          </li>
-          <li className="nav-item2 text-2xl italic text-white hover:underline list-none">
-            <Link href="/aboutPage">- About</Link>
-          </li>
-          <li className="text-2xl italic text-white hover:underline list-none">
-            <Link href="/assets/ASJ-resume.pdf" legacyBehavior>
-              <a target="_blank" rel="noopener noreferrer">- Resume</a>
-            </Link>
-          </li>
-        </div>
-      )}
     </nav>
   );
 }
