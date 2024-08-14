@@ -31,7 +31,7 @@ export default function AboutPage() {
     return (
         <div>
             <nav className="bg-[#bb9f8c] shadow-md mx-auto">
-                <div className="asj-width-margin mx-auto px-4">
+                <div className="asj-width-margin mx-auto px-4 navbar-container">
                     <div className="flex justify-between items-center h-16">
                         <div className="flex items-center space-x-4">
                             {isSmallScreen && (
@@ -40,19 +40,19 @@ export default function AboutPage() {
                                     alt="Profile"
                                     width={50}
                                     height={50}
-                                    className="rounded-full  z-10"
+                                    className="rounded-full z-10"
                                 />
                             )}
-                            <Link href="/" className="text-black font-bold">Aaron San Jose</Link>
-                            <li className="nav-item1 text-sm text-black font-bold hover:underline list-none md:block hidden">
+                            <Link href="/" className="font-bold text-black">Aaron San Jose</Link>
+                            <li className="nav-item1 font-bold text-black hover:underline list-none md:block hidden">
                                 <Link href="/workPage">Work</Link>
                             </li>
                         </div>
-                        <div className="nav-item2 hidden md:flex items-center space-x-4">
-                            <li className="text-sm text-black font-bold hover:underline list-none">
+                        <div className="hidden md:flex items-center space-x-4 nav-item2">
+                            <li className="font-bold text-black hover:underline list-none">
                                 <Link href="/aboutPage">About</Link>
                             </li>
-                            <li className="text-sm text-black font-bold hover:underline list-none">
+                            <li className="font-bold text-black hover:underline list-none">
                                 <Link href="/assets/ASJ-resume.pdf" legacyBehavior>
                                     <a target="_blank" rel="noopener noreferrer">Resume</a>
                                 </Link>
@@ -66,22 +66,22 @@ export default function AboutPage() {
                             </button>
                         </div>
                     </div>
+                    {isOpen && (
+                        <div className="about-navbar-dropdown px-4 py-4">
+                            <li className="nav-item1 text-2xl italic text-black hover:underline list-none">
+                                <Link href="/workPage">- Work</Link>
+                            </li>
+                            <li className="nav-item2 text-2xl italic text-black hover:underline list-none">
+                                <Link href="/aboutPage">- About</Link>
+                            </li>
+                            <li className="text-2xl italic text-black hover:underline list-none">
+                                <Link href="/assets/ASJ-resume.pdf" legacyBehavior>
+                                    <a target="_blank" rel="noopener noreferrer">- Resume</a>
+                                </Link>
+                            </li>
+                        </div>
+                    )}
                 </div>
-                {isOpen && (
-                    <div className="md:hidden px-4 py-4 ">
-                        <li className="nav-item1 text-2xl italic text-black hover:underline list-none">
-                            <Link href="/workPage">- Work</Link>
-                        </li>
-                        <li className="nav-item2 text-2xl italic text-black hover:underline list-none">
-                            <Link href="/aboutPage">- About</Link>
-                        </li>
-                        <li className="text-2xl italic text-black hover:underline list-none">
-                            <Link href="/assets/ASJ-resume.pdf" legacyBehavior>
-                                <a target="_blank" rel="noopener noreferrer">- Resume</a>
-                            </Link>
-                        </li>
-                    </div>
-                )}
             </nav>
             {/* PFP */}
             <div className="pfp-container">
