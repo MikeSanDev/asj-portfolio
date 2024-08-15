@@ -32,7 +32,7 @@ export default function Home() {
           className="w-full h-full"
         />
         <Link href="/workPage">
-          <li className="absolute no-bullets" style={{ top: '30%', left: '15%' }} onClick={() => handleBallClick('/workPage')}
+          <li className="absolute no-bullets ball1" style={{ top: '30%', left: '15%' }} onClick={() => handleBallClick('/workPage')}
             onMouseEnter={() => handleMouseEnter('Work Experience')}
             onMouseLeave={handleMouseLeave}>
             <Image
@@ -40,12 +40,11 @@ export default function Home() {
               alt="ball1"
               width={150}
               height={100}
-              className="ball1"
             />
           </li>
         </Link>
         <Link href="/aboutPage">
-          <li className="absolute no-bullets" style={{ top: '30%', right: '17%' }} onClick={() => handleBallClick('/aboutPage')}
+          <li className="absolute no-bullets ball2" style={{ top: '30%', right: '17%' }} onClick={() => handleBallClick('/aboutPage')}
             onMouseEnter={() => handleMouseEnter('About Me')}
             onMouseLeave={handleMouseLeave}>
             <Image
@@ -53,12 +52,11 @@ export default function Home() {
               alt="ball2"
               width={150}
               height={100}
-              className="ball2"
             />
           </li>
         </Link>
         <Link href="/assets/ASJ-resume.pdf" legacyBehavior>
-          <a target="_blank" rel="noopener noreferrer" className="absolute no-bullets" style={{ bottom: '20%', left: '44.3%' }} onClick={() => handleBallClick('https://drive.google.com/file/d/1XN3fCDg3PXbmL4PLIJiW_nkYljsL2e9j/view')}
+          <a target="_blank" rel="noopener noreferrer" className="absolute no-bullets ball3" style={{ bottom: '20%', left: '44.3%' }} onClick={() => handleBallClick('https://drive.google.com/file/d/1XN3fCDg3PXbmL4PLIJiW_nkYljsL2e9j/view')}
             onMouseEnter={() => handleMouseEnter('Resume')}
             onMouseLeave={handleMouseLeave}>
             <Image
@@ -66,7 +64,6 @@ export default function Home() {
               alt="ball3"
               width={150}
               height={100}
-              className="ball3"
             />
           </a>
         </Link>

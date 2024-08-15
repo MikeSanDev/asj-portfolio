@@ -329,12 +329,63 @@ Blurred background when menu is open */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {}
 
 /* Medium devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .pkmn-page img {
+    object-position: 48% center;
+  }
+
+  .ball1 {
+    width: 100px !important;
+    height: 50px !important;
+    top: 55% !important;
+    left: 10% !important;
+  }
+
+  .ball2 {
+    width: 100px !important;
+    height: 50px !important;
+    top: 55% !important;
+    right: 10% !important;
+  }
+
+  .ball3 {
+    width: 100px !important;
+    height: 50px !important;
+    top: 70% !important;
+    left: 44% !important;
+  }
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width: 376px) and (max-width: 767px) {
 
   /* About  */
+
+  .pkmn-page img {
+    object-position: 48% center;
+  }
+
+  .ball1 {
+    width: 75px !important;
+    height: 50px !important;
+    top: 55% !important;
+    left: 10% !important;
+  }
+
+  .ball2 {
+    width: 75px !important;
+    height: 50px !important;
+    top: 55% !important;
+    right: 10% !important;
+  }
+
+  .ball3 {
+    width: 75px !important;
+    height: 50px !important;
+    top: 70% !important;
+    left: 43% !important;
+  }
+
 
   .pfp {
     width: 300px;
@@ -412,22 +463,29 @@ Blurred background when menu is open */
     z-index: 1000 !important;
   }
 
-
+  .pkmn-page img {
+    object-position: 48% center;
+  }
 
   .ball1 {
     width: 65px !important;
     height: 50px !important;
-    top: 50% !important;
+    top: 55% !important;
+    left: 10% !important;
   }
 
   .ball2 {
     width: 65px !important;
     height: 50px !important;
+    top: 55% !important;
+    right: 9% !important;
   }
 
   .ball3 {
     width: 65px !important;
     height: 50px !important;
+    top: 70% !important;
+    left: 43% !important;
   }
 
   .work-text {
