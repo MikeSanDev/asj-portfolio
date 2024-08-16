@@ -30,7 +30,7 @@ export default function AboutPage() {
 
     return (
         <div>
-            <nav className="bg-[#bb9f8c] shadow-md mx-auto">
+            <nav className="bg-[#bb9f8c] shadow-md mx-auto sticky top-0 z-50">
                 <div className="asj-width-margin mx-auto px-4 navbar-container">
                     <div className="flex justify-between items-center h-16">
                         <div className="flex items-center space-x-4">
