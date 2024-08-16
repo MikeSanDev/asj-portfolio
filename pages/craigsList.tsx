@@ -39,7 +39,7 @@ export default function CraigsList() {
     };
 
     return (
-        <div>
+        <div >
             <Navbar />
             <div className="bg-black shadow-md mx-auto w-full">
                 <strong className='header-info italic text-white flex justify-center'>Craigslist Moodboard</strong>
