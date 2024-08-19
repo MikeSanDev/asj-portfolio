@@ -4,6 +4,6 @@
 <p>Like me, Aaron transitioned into tech a year after I did and is looking for his first opporunity. With this website we hope he will be able to land interviews easier and show off his projects to finally land that job. </p>
 
 <h2> Tech Stack: 
-Next.JS, Tailwind, Framer Motion </h2>
+<br> Next.JS, Tailwind, Framer Motion </h2>
 
 <img width="1428" alt="Screen Shot 2024-08-19 at 12 33 06 PM" src="https://github.com/user-attachments/assets/76aa890f-677f-4adf-9d9b-de365290adc5">
