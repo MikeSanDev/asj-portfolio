@@ -6,6 +6,7 @@ import { useState } from 'react';
 import "../styles/globals.css";
 
 export default function Home() {
+  // Animations
   const fadeInBackground = {
     hidden: { opacity: 0 },
     visible: {
@@ -25,7 +26,7 @@ export default function Home() {
       },
     },
   };
-
+  // Pokeball Message
   const [message, setMessage] = useState("");
 
   const handleBallClick = (route: string) => {
