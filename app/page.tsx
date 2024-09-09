@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from 'next/link';
 import { useState } from 'react';
 import "../styles/globals.css";
+import Navbar from '@/components/Navbar';
 
 export default function Home() {
   // Animations
@@ -49,13 +50,9 @@ export default function Home() {
         animate="visible"
         variants={fadeInBackground}
       >
-        <Image
-          src="/assets/pkmn-bg.png"
-          alt="background"
-          fill
-          style={{ objectFit: "cover" }}
-          className="w-full h-full"
-        />
+        <Navbar />
+        {/* POKEBALLS - SAVE FOR SECTION 2 OF THIS PAGE */}
+        {/* 
         <Link href="/workPage">
           <li className="absolute no-bullets ball1" style={{ top: '30%', left: '15%' }} onClick={() => handleBallClick('/workPage')}
             onMouseEnter={() => handleMouseEnter('Work Experience')}
@@ -100,11 +97,9 @@ export default function Home() {
               variants={fadeInBalls}
             />
           </a>
-        </Link>
+        </Link> */}
       </motion.div>
-      <div className={`pkmn-msg ${message ? 'opacity-100' : 'opacity-0'} transition-opacity fixed bottom-0 left-0 right-1 mx-auto p-4 mb-4`}>
-        {message}
-      </div>
+
     </div>
   );
 }
