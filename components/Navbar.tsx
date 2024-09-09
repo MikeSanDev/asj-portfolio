@@ -27,7 +27,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="bg-black shadow-md mx-auto sticky top-0 z-50">
+    <nav className="bg-white mx-auto sticky top-0 z-50">
       <div className="asj-width-margin mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-4">
@@ -40,23 +40,23 @@ export default function Navbar() {
                 className="rounded-full z-10"
               />
             )}
-            <Link href="/" className="font-bold text-white">Aaron San Jose</Link>
-            <li className="nav-item1 font-bold text-white hover:underline list-none md:block hidden">
-              <Link href="/workPage" >Work</Link>
-            </li>
+            <Link href="/" className="font-bold black">ASJ</Link>
           </div>
           <div className="hidden md:flex items-center space-x-4 nav-item2">
-            <li className="font-bold text-white hover:underline list-none">
+            <li className="font-bold black hover:underline list-none ">
+              <Link href="/workPage" >Work</Link>
+            </li>
+            <li className="font-bold black hover:underline list-none">
               <Link href="/aboutPage">About</Link>
             </li>
-            <li className="font-bold text-white hover:underline list-none">
+            <li className="font-bold black hover:underline list-none">
               <Link href="/assets/ASJ-resume.pdf" legacyBehavior>
                 <a target="_blank" rel="noopener noreferrer">Resume</a>
               </Link>
             </li>
           </div>
           <div className="md:hidden">
-            <button onClick={toggleMenu} className="text-white focus:outline-none">
+            <button onClick={toggleMenu} className="black focus:outline-none">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
@@ -66,13 +66,13 @@ export default function Navbar() {
       </div>
       {isOpen && (
         <div className="md:hidden px-4 py-4  ">
-          <li className="nav-item1 text-2xl italic text-white hover:underline list-none">
+          <li className="nav-item1 text-2xl italic black hover:underline list-none">
             <Link href="/workPage">- Work</Link>
           </li>
-          <li className="nav-item2 text-2xl italic text-white hover:underline list-none">
+          <li className="nav-item2 text-2xl italic black hover:underline list-none">
             <Link href="/aboutPage">- About</Link>
           </li>
-          <li className="text-2xl italic text-white hover:underline list-none">
+          <li className="text-2xl italic black hover:underline list-none">
             <Link href="/assets/ASJ-resume.pdf" legacyBehavior>
               <a target="_blank" rel="noopener noreferrer">- Resume</a>
             </Link>
