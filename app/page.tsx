@@ -55,7 +55,7 @@ export default function Home() {
       <section id='section1'>
         {/* SECTION 1 - INTRO */}
         <div className="asj-width-margin mx-auto px-4 py-20 bg-white">
-          <h1 className="from-neutral-300 text-center text-2xl italic font-extrabold">Hello there! I'm Aaron San Jose A product designer focused on congenial and effective designs</h1>
+          <h1 className="from-neutral-300 text-center text-2xl italic font-extrabold">Hello there! I am Aaron San Jose A product designer focused on congenial and effective designs</h1>
 
         </div>
       </section>
@@ -152,7 +152,7 @@ export default function Home() {
             <Link href="/reachPage">
               <Image
                 className="img-border"
-                src="/assets/dashboard.png"
+                src="/assets/reach-work.png"
                 alt='Reach Dashboard'
                 width={800}
                 height={400} />
@@ -175,7 +175,48 @@ export default function Home() {
 
       {/* SECTION 4 - ABOUT */}
       <section id='section4'>
+        <div className="asj-width-margin mx-auto px-4 py-10" style={{ backgroundColor: '#9647ff' }}>
+          <h1 className="text-black text-center text-2xl italic font-extrabold underline"
+            style={{ textShadow: '2px 2px 0 #ffffff, -2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px -2px 0 #ffffff' }}>
+            About
+          </h1>
 
+          <div className="">
+            <div className="flex flex-row items-center">
+              <div>
+                <Image
+                  className="img-border"
+                  src="/assets/asj-pfp.png"
+                  alt='ASJ'
+                  width={400}
+                  height={400} />
+              </div>
+              <div>
+                <p>I am a product designer based out of Chicago. I especially enjoy being part of the process where designs are coming to life and reviewed for user satisfaction.</p>
+                <p>When I am not designing, you can catch me either practicing my dance moves, casting spells with Magic The Gathering and scoping out vintage clothing from my childhood.</p>
+              </div>
+            </div>
+            <div className='videos flex flex-col'>
+              <div className="flex flex-col items-center">
+                <video
+                  className="mr-10 about-video w-1/2"
+                  src="/assets/dance2.mp4"
+                  autoPlay
+                  muted
+                  loop />
+              </div>
+
+              <div className="flex flex-col items-center">
+                <video
+                  className="mb-5 ml-10 about-video w-1/2"
+                  src="/assets/mtg.mp4"
+                  autoPlay
+                  muted
+                  loop />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       {/* Footer */}
       < Footer />
