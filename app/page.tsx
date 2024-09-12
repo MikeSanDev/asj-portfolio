@@ -61,7 +61,7 @@ export default function Home() {
       </section>
       {/* SECTION 2 - POKEBALLS */}
       <section id='section2'>
-        <div className="asj-width-margin mx-auto px-4 py-10" style={{ backgroundColor: '#9647ff' }}>
+        <div className="asj-width-margin-wide mx-auto px-4 py-10" style={{ backgroundColor: '#9647ff' }}>
           <h1 className="text-black text-center text-2xl italic font-extrabold"
             style={{ textShadow: '2px 2px 0 #ffffff, -2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px -2px 0 #ffffff' }}>
             The most influential decision I experienced growing up was...
@@ -138,7 +138,7 @@ export default function Home() {
       </section>
 
       {/* SECTION3 - WORK */}
-      <section id='section3'>
+      <section id='work'>
         < motion.div
           className="asj-width-margin mx-auto px-4 py-10"
           initial="hidden"
@@ -174,32 +174,30 @@ export default function Home() {
       </section>
 
       {/* SECTION 4 - ABOUT */}
-      <section id='section4'>
-        <div className="asj-width-margin mx-auto px-4 py-10" style={{ backgroundColor: '#9647ff' }}>
-          <h1 className="text-black text-center text-2xl italic font-extrabold underline"
-            style={{ textShadow: '2px 2px 0 #ffffff, -2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px -2px 0 #ffffff' }}>
+      <section id='section4' className='asj-width-margin-wide' style={{ backgroundColor: '#9647ff' }}>
+        <div className="asj-width-margin mx-auto px-4 py-5" >
+          <h1 className="text-black text-4xl italic font-extrabold underline pb-5"
+            style={{ textShadow: '1px 1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -2px -2px 0 #ffffff' }}>
             About
           </h1>
 
-          <div className="">
+          <div className="asj-width-margin mx-auto">
             <div className="flex flex-row items-center">
-              <div>
-                <Image
-                  className="img-border"
-                  src="/assets/asj-pfp.png"
-                  alt='ASJ'
-                  width={400}
-                  height={400} />
-              </div>
-              <div>
-                <p>I am a product designer based out of Chicago. I especially enjoy being part of the process where designs are coming to life and reviewed for user satisfaction.</p>
-                <p>When I am not designing, you can catch me either practicing my dance moves, casting spells with Magic The Gathering and scoping out vintage clothing from my childhood.</p>
+              <Image
+                className="w-1/2"
+                src="/assets/about-img.jpg"
+                alt='ASJ'
+                width={200}
+                height={200} />
+              <div className='w-1/2 px-7'>
+                <p className='pb-5 about-text' style={{ textShadow: '1px 1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -1px -1px 0 #ffffff' }}>I am a product designer based out of Chicago. I especially enjoy being part of the process where designs are coming to life and reviewed for user satisfaction.</p>
+                <p className='about-text' style={{ textShadow: '1px 1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -1px -1px 0 #ffffff' }}>When I am not designing, you can catch me either practicing my dance moves, casting spells with Magic The Gathering and scoping out vintage clothing from my childhood.</p>
               </div>
             </div>
-            <div className='videos flex flex-col'>
+            <div className=' flex flex-col'>
               <div className="flex flex-col items-center">
                 <video
-                  className="mr-10 about-video w-1/2"
+                  className="about-video my-5 "
                   src="/assets/dance2.mp4"
                   autoPlay
                   muted
@@ -208,7 +206,7 @@ export default function Home() {
 
               <div className="flex flex-col items-center">
                 <video
-                  className="mb-5 ml-10 about-video w-1/2"
+                  className="my-5 about-video "
                   src="/assets/mtg.mp4"
                   autoPlay
                   muted
