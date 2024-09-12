@@ -44,10 +44,10 @@ export default function Navbar() {
           </div>
           <div className="hidden md:flex items-center space-x-4 nav-item2">
             <li className="font-bold black hover:underline list-none ">
-              <Link href="/workPage" >Work</Link>
+              <Link href="/#section3" >Work</Link>
             </li>
             <li className="font-bold black hover:underline list-none">
-              <Link href="/aboutPage">About</Link>
+              <Link href="/#section4">About</Link>
             </li>
             <li className="font-bold black hover:underline list-none">
               <Link href="/assets/ASJ-resume.pdf" legacyBehavior>
@@ -67,10 +67,10 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden px-4 py-4  ">
           <li className="nav-item1 text-2xl italic black hover:underline list-none">
-            <Link href="/workPage">- Work</Link>
+            <Link href="/#section3">- Work</Link>
           </li>
           <li className="nav-item2 text-2xl italic black hover:underline list-none">
-            <Link href="/aboutPage">- About</Link>
+            <Link href="/#section4">- About</Link>
           </li>
           <li className="text-2xl italic black hover:underline list-none">
             <Link href="/assets/ASJ-resume.pdf" legacyBehavior>
