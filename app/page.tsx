@@ -54,15 +54,17 @@ export default function Home() {
       <Navbar />
       <section id='section1'>
         {/* SECTION 1 - INTRO */}
-        <div className="asj-width-margin mx-auto px-4 py-20 bg-white">
-          <h1 className="from-neutral-300 text-center text-2xl italic font-extrabold">Hello there! I am Aaron San Jose A product designer focused on congenial and effective designs</h1>
+        <div className="asj-width-margin mx-auto px-4 py-20  my-20 bg-white">
+          <h1 className="from-neutral-300 text-center text-3xl italic font-extrabold">Hello there! I am Aaron San Jose A product designer focused on congenial and effective designs</h1>
 
         </div>
       </section>
       {/* SECTION 2 - POKEBALLS */}
-      <section id='section2'>
-        <div className="asj-width-margin-wide mx-auto px-4 py-10" style={{ backgroundColor: '#9647ff' }}>
-          <h1 className="text-black text-center text-2xl italic font-extrabold"
+      <section id='section2' style={{
+        minHeight: '100vh', backgroundColor: '#9647ff'
+      }}>
+        <div className="asj-width-margin-wide mx-auto flex justify-center flex-col items-center h-full " >
+          <h1 className="text-black text-center text-3xl italic font-extrabold"
             style={{ textShadow: '2px 2px 0 #ffffff, -2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px -2px 0 #ffffff' }}>
             The most influential decision I experienced growing up was...
           </h1>
@@ -73,7 +75,7 @@ export default function Home() {
                 <motion.img
                   src="/assets/ball1.png"
                   alt="ball1"
-                  width={150}
+                  width={200}
                   height={100}
                   className="cursor-pointer"
                   initial="hidden"
@@ -93,7 +95,7 @@ export default function Home() {
                 <motion.img
                   src="/assets/ball2.png"
                   alt="ball2"
-                  width={150}
+                  width={200}
                   height={100}
                   className="cursor-pointer"
                   initial="hidden"
@@ -114,7 +116,7 @@ export default function Home() {
                   <motion.img
                     src="/assets/ball3.png"
                     alt="ball3"
-                    width={150}
+                    width={200}
                     height={100}
                     className="cursor-pointer"
                     initial="hidden"
@@ -130,7 +132,7 @@ export default function Home() {
               <p className="text-white mt-4">Contact</p>
             </div>
           </div>
-          <h1 className="text-black text-center text-2xl italic font-extrabold pt-10"
+          <h1 className="text-black text-center text-3xl italic font-extrabold pt-10"
             style={{ textShadow: '2px 2px 0 #ffffff, -2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px -2px 0 #ffffff' }}>
             Choose your starter
           </h1>
@@ -138,14 +140,14 @@ export default function Home() {
       </section>
 
       {/* SECTION3 - WORK */}
-      <section id='work'>
+      <section id='work' style={{ minHeight: '100vh' }}>
         < motion.div
-          className="asj-width-margin mx-auto px-4 py-10"
+          className="asj-width-margin mx-auto px-4"
           initial="hidden"
           animate="visible"
         >
           {/* Case Studies */}
-          <h1 className="sub-header text-black pt-5" > Case Studies</h1 >
+          <h1 className="sub-header text-black " > Case Studies</h1 >
           <div className="py-5">
             <strong className="from-neutral-300">Chicago Scholars</strong>
             <p className="text-2xl italic font-extralight work-text pb-5">Reach Dashboard - A product that manages student support systems for continuing education staff.</p>
