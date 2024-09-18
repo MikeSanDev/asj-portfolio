@@ -31,26 +31,7 @@ export default function workPage() {
         <>
             <div>
                 <Navbar />
-                {/* Header info */}
-                <div className="bg-black shadow-md mx-auto" style={{ width: '100%', maxWidth: 'auto', height: 'auto' }}>
-                    <motion.div
-                        className="asj-width-margin mx-auto px-4 text-center"
-                        initial="hidden"
-                        animate="visible"
-                        variants={fadeInFirst}
-                    >
-                        <strong className='header-info text-white italic'>Hello! I&apos;m Aaron San Jose. <br />A UX/UI Designer</strong>
-                        <div className='flex justify-center fig-box'>
-                            <Image
-                                className="yokai-img"
-                                src="/assets/yokai.png"
-                                alt='box'
-                                width={650}
-                                height={600}
-                            />
-                        </div>
-                    </motion.div>
-                </div>
+
                 {/* Main */}
                 <motion.div
                     className="asj-width-margin mx-auto px-4"
