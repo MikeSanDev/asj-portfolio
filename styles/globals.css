@@ -32,12 +32,14 @@ html {
 }
 
 body {
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
+
   /* or overflow-y: scroll; */
   scrollbar-width: none;
   -ms-overflow-style: none;
-  font-family: 'helvetica-neue', sans-serif;
+  font-family: 'helvetica-neue',
+    sans-serif;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -182,7 +184,7 @@ section {
   z-index: 1000;
   width: 100%;
   background-color: white;
-  height: auto;
+
 }
 
 /* 
@@ -283,7 +285,7 @@ Blurred background when menu is open */
 
 .about-text {
 
-  font-size: 15px;
+  font-size: 17px;
 }
 
 
