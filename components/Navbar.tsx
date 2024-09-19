@@ -1,8 +1,12 @@
-import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 
-export default function Navbar() {
+interface NavbarProps {
+  backgroundColor?: string; // Optional prop with a string type
+}
+
+export default function Navbar({ backgroundColor = 'bg-white' }: NavbarProps) { // Default to white if no prop is provided
   const [isOpen, setIsOpen] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -27,7 +31,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="navbar-container mx-auto sticky top-0 z-50">
+    <nav className={`navbar-container mx-auto sticky top-0 z-50 ${backgroundColor}`}>
       <div className="asj-width-margin mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-4">

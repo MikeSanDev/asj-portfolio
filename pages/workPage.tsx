@@ -47,7 +47,7 @@ export default function workPage() {
                         <Link href="/reachPage">
                             <Image
                                 className="img-border"
-                                src="/assets/dashboard.png"
+                                src="/assets/reach-work.png"
                                 alt='Reach Dashboard'
                                 width={800}
                                 height={400} />

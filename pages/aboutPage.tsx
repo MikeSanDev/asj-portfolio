@@ -54,7 +54,7 @@ export default function AboutPage() {
 
     return (
         <div>
-            <nav className="bg-[#bb9f8c] shadow-md mx-auto sticky top-0 z-50">
+            <nav className="bg-white  mx-auto sticky top-0 z-50">
                 <div className="asj-width-margin mx-auto px-4 navbar-container">
                     <div className="flex justify-between items-center h-16">
                         <div className="flex items-center space-x-4">
@@ -118,7 +118,7 @@ export default function AboutPage() {
                         className=" shadow-md pfp mx-auto"
                         src="/assets/asj-pfp.png"
                         alt='box'
-                        width={400}
+                        width={350}
                         height={400} />
                 </motion.div>
                 <div className="pfp-border"></div>
