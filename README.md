@@ -6,4 +6,3 @@
 <h2> Tech Stack: 
 <br> Next.JS, Tailwind, Framer Motion </h2>
 
-<img width="1428" alt="Screen Shot 2024-08-19 at 12 33 06 PM" src="https://github.com/user-attachments/assets/76aa890f-677f-4adf-9d9b-de365290adc5">
