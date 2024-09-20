@@ -4,9 +4,10 @@ import { useState, useEffect } from 'react';
 
 interface NavbarProps {
   backgroundColor?: string; // Optional prop with a string type
+  textColor?: string;
 }
 
-export default function Navbar({ backgroundColor = 'bg-white' }: NavbarProps) { // Default to white if no prop is provided
+export default function Navbar({ backgroundColor = 'bg-white', textColor = 'text-black' }: NavbarProps) { // Default to white if no prop is provided
   const [isOpen, setIsOpen] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -34,7 +35,7 @@ export default function Navbar({ backgroundColor = 'bg-white' }: NavbarProps) { 
     <nav className={`navbar-container mx-auto sticky top-0 z-50 ${backgroundColor}`}>
       <div className="asj-width-margin mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center space-x-4">
+          <div className={`flex items-center space-x-4 ${textColor}`}>
             {isSmallScreen && (
               <Image
                 src="/assets/asj-pfp.png"
@@ -44,23 +45,23 @@ export default function Navbar({ backgroundColor = 'bg-white' }: NavbarProps) { 
                 className="rounded-full z-10"
               />
             )}
-            <Link href="/" className="font-bold black">ASJ</Link>
+            <Link href="/" className={`font-bold ${textColor}`}>ASJ</Link>
           </div>
           <div className="hidden md:flex items-center space-x-4 nav-item2">
-            <li className="font-bold black hover:underline list-none">
+            <li className={`font-bold hover:underline list-none ${textColor}`}>
               <Link href="/#work">Work</Link>
             </li>
-            <li className="font-bold black hover:underline list-none">
+            <li className={`font-bold hover:underline list-none ${textColor}`}>
               <Link href="/#about">About</Link>
             </li>
-            <li className="font-bold black hover:underline list-none">
+            <li className={`font-bold hover:underline list-none ${textColor}`}>
               <Link href="/assets/ASJ-resume.pdf" legacyBehavior>
                 <a target="_blank" rel="noopener noreferrer">Resume</a>
               </Link>
             </li>
           </div>
           <div className="md:hidden">
-            <button onClick={toggleMenu} className="black focus:outline-none">
+            <button onClick={toggleMenu} className={`${textColor} focus:outline-none`}>
               <svg
                 className="w-6 h-6"
                 fill="none"
@@ -81,10 +82,10 @@ export default function Navbar({ backgroundColor = 'bg-white' }: NavbarProps) { 
       </div>
       {isOpen && (
         <div className="md:hidden px-4 py-4">
-          <li className="nav-item1 text-2xl italic">
+          <li className={`nav-item1 text-2xl italic ${textColor}`}>
             <Link href="/#work">Work</Link>
           </li>
-          <li className="nav-item1 text-2xl italic">
+          <li className={`nav-item1 text-2xl italic ${textColor}`}>
             <Link href="/#about">About</Link>
           </li>
         </div>

@@ -7,9 +7,9 @@ import Link from "next/link";
 export default function reachPage() {
     return (
         <>
-            <Navbar />
+            <Navbar backgroundColor="bg-[#333333]" textColor="text-white" />
             <div className="flex flex-col min-h-screen">
-                <div className="bg-black  mx-auto w-full">
+                <div className="bg-[#333333]  mx-auto w-full">
                     <strong className='header-info italic text-white flex justify-center'>REACH Dashboard</strong>
                     <div className='flex justify-center fig-box'>
                         <Image
