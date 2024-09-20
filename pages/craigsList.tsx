@@ -40,8 +40,8 @@ export default function CraigsList() {
 
     return (
         <div >
-            <Navbar />
-            <div className="bg-black shadow-md mx-auto w-full">
+            <Navbar backgroundColor="bg-[#333333]" textColor="text-white" />
+            <div className="bg-[#333333] shadow-md mx-auto w-full">
                 <strong className='header-info italic text-white flex justify-center'>Craigslist Moodboard</strong>
                 <div className='flex justify-center fig-box'>
                     <Image
@@ -61,7 +61,7 @@ export default function CraigsList() {
                         height={500} />
                 </div>
                 {/* Overview - */}
-                <div className="asj-width-margin-reach mx-auto px-4 res-margin-top">
+                <div className="asj-width-margin-reach  mx-auto px-4 res-margin-top">
                     <div>
                         <h1 className="sub-header text-black asj-padding ">Overview</h1>
                         <div className="flex justify-center space-x-3 py-2">

@@ -5,8 +5,10 @@ export default function ReachFooter() {
     <footer className="bg-black p-4" >
       <div className='text-white flex justify-center flex-col footer-width-margin mx-auto px-4 '>
         <div className='pt-6 flex flex-col'>
-          <Link href="/craigsList" >Next / Coding Dojo</Link>
-          <strong className='text-2xl reach-footer-title'>Craigslist Moodboard - Creating a redesign of Craigslist that also incentivize user engagement</strong>
+          <Link href="/craigsList" >
+            <p>Next / Coding Dojo</p>
+            <strong className='text-2xl reach-footer-title'>Craigslist Moodboard - Creating a redesign of Craigslist that also incentivize user engagement</strong>
+          </Link>
         </div>
         <div className='pt-6 flex flex-row '>
           <Link href="https://www.linkedin.com/in/asanjose/" legacyBehavior>
