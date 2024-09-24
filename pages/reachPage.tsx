@@ -48,17 +48,47 @@ export default function reachPage() {
                                     Less like schoolwork and more like a video game, REACH provides fun and rewarding pathways to college and career.
                                 </p>
                             </div>
+                            <div className='flex justify-center py-5 fig-box'>
+                                <Image
+                                    src="/assets/reach-banner.png"
+                                    alt='box'
+                                    width={620}
+                                    height={600} />
+                            </div>
+                        </div>
+                    </div>
+                    {/* Goal/Role */}
+                    <div className="flex justify-center flex-col items-center">
+                        <div className="asj-width-margin-reach flex justify-center flex-col items-center py-5">
+                            <h1 className="sub-header text-black font-bold py-5">THE GOAL</h1>
+                            <p className="font-light text-center text-2xl">Improve how higher education staff can provide support for their students.</p>
+                        </div>
+                        <div className="asj-width-margin-reach flex justify-center flex-col items-center py-5">
+                            <h1 className="sub-header text-black font-bold py-5">THE SOLUTION AND IMPACT </h1>
+                            <p className="font-light ">A dashboard that provides functionality and features to assist staff with providing purposeful support to their students and this is the result we made.</p>
+                        </div>
+                        <div className="asj-width-margin-reach flex justify-center flex-col py-5">
+                            {/* should this sub-header be all caps? */}
+                            <h1 className="sub-header text-left text-black font-bold py-5">My Role</h1>
+                            <p className="font-light ">I led the conduction of interviews, designer meetings, and research for the first month of the project. I collaborated with two other designers in the research and interviews.</p>
+                            <br />
+                            <p className="font-light ">I led the final visual designs for the dashboard and designer meetings after three more designers were added into our team for the second month of the project.</p>
                         </div>
                     </div>
 
-
-
                     <div className="flex justify-center flex-col res-margin-top">
                         {/* Research */}
-                        <h1 className="sub-header text-black asj-padding ">Research</h1>
+                        <div>
+                            <h1 className="sub-header text-black asj-padding ">Research</h1>
+                            <em className="flex flex-col asj-padding pb-10">
+                                Competition to Chicago Scholars REACH Program were nonexistent. Majority of products or applications that could compare mainly focused on making friends with their fellow students.
+                                Nothing has surfaced with a product that schools provide a central hub of support the schools provide on their campuses.
+                                This encouraged the team to focus on user interviews with students and staff with the lack of competition.
+                            </em>
+                        </div>
                         <div className="flex justify-center space-x-3 py-2 mb-5 asj-width-margin-reach ">
                             <div className="flex flex-col w-1/2">
-                                <strong className="pb-5 text-2xl">Amount of Interviews</strong>
+                                <strong className="pb-5 text-2xl">Interviews(6)</strong>
                                 <ul className="list-disc italic pl-5 font-light">
                                     <li >Admission Recruiters 66%</li>
                                     <li>Communication Strategist 17%</li>
@@ -66,21 +96,14 @@ export default function reachPage() {
                                 </ul>
                             </div>
                             <div className="flex flex-col w-1/2">
-                                <strong className="pb-5 text-2xl">Target of Research</strong>
+                                <strong className="pb-5 text-2xl">Goals</strong>
                                 <ul className="list-disc italic pl-5 font-light">
                                     <li>What is the competition doing?</li>
                                     <li>How do schools currently promote support to their students?</li>
                                 </ul>
                             </div>
                         </div>
-                        <div>
-                            <em className="flex flex-col asj-padding pb-10">
-                                Competition to Chicago Scholars REACH Program were nonexistent. Majority of products or applications that could compare mainly focused on making friends with their fellow students.
-                                Nothing has surfaced with a product that schools provide a central hub of support the schools provide on their campuses.
-                                This encouraged the team to focus on user interviews with students and staff with the lack of competition.
-                            </em>
-                            <strong className="text-2xl pt-5">Sample of questions asked</strong>
-                        </div>
+                        <strong className="text-2xl pt-5">Sample of questions asked</strong>
                         <div className="flex justify-center space-x-3 asj-padding pb-5 font-extralight">
                             <div className="flex w-1/3">
                                 {/* lower font for the 3  */}
