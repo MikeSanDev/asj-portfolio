@@ -9,6 +9,8 @@ export default function reachPage() {
         <>
             <Navbar backgroundColor="bg-[#333333]" textColor="text-white" />
             <div className="flex flex-col min-h-screen">
+
+                {/* Header */}
                 <div className="bg-[#333333]  mx-auto w-full">
                     <strong className='header-info italic text-white flex justify-center'>REACH Dashboard</strong>
                     <div className='flex justify-center fig-box'>
@@ -19,9 +21,10 @@ export default function reachPage() {
                             height={600} />
                     </div>
                 </div>
-                <div className="flex-grow mx-auto flex justify-center flex-col res-margin-top">
 
-                    {/* Overview */}
+
+                {/* Overview */}
+                <div className="flex-grow mx-auto flex justify-center flex-col res-margin-top">
                     <div className="bg-[#cccccc] flex justify-center flex-col items-center">
                         <div className="asj-width-margin-reach flex justify-center flex-col w-full ">
                             <div className="py-5">
@@ -57,38 +60,43 @@ export default function reachPage() {
                             </div>
                         </div>
                     </div>
+
+
+
                     {/* Goal/Role */}
-                    <div className="flex justify-center flex-col items-center">
+                    <div className="flex justify-center flex-col items-center py-5">
                         <div className="asj-width-margin-reach flex justify-center flex-col items-center py-5">
-                            <h1 className="sub-header text-black font-bold py-5">THE GOAL</h1>
+                            <h1 className="sub-header text-black py-5">THE GOAL</h1>
                             <p className="font-light text-center text-2xl">Improve how higher education staff can provide support for their students.</p>
                         </div>
                         <div className="asj-width-margin-reach flex justify-center flex-col items-center py-5">
-                            <h1 className="sub-header text-black font-bold py-5">THE SOLUTION AND IMPACT </h1>
+                            <h1 className="sub-header text-black py-5">THE SOLUTION AND IMPACT </h1>
                             <p className="font-light ">A dashboard that provides functionality and features to assist staff with providing purposeful support to their students and this is the result we made.</p>
                         </div>
                         <div className="asj-width-margin-reach flex justify-center flex-col py-5">
                             {/* should this sub-header be all caps? */}
-                            <h1 className="sub-header text-left text-black font-bold py-5">My Role</h1>
+                            <h1 className="sub-header text-left text-black">My Role</h1>
                             <p className="font-light ">I led the conduction of interviews, designer meetings, and research for the first month of the project. I collaborated with two other designers in the research and interviews.</p>
                             <br />
                             <p className="font-light ">I led the final visual designs for the dashboard and designer meetings after three more designers were added into our team for the second month of the project.</p>
                         </div>
                     </div>
 
-                    <div className="flex justify-center flex-col res-margin-top">
-                        {/* Research */}
-                        <div>
+
+
+                    {/* Research */}
+                    <div className="bg-[#cccccc] flex justify-center flex-col items-center">
+                        <div className="asj-width-margin-reach flex justify-center flex-col  py-5">
                             <h1 className="sub-header text-black asj-padding ">Research</h1>
-                            <em className="flex flex-col asj-padding pb-10">
+                            <em className="flex flex-col asj-padding">
                                 Competition to Chicago Scholars REACH Program were nonexistent. Majority of products or applications that could compare mainly focused on making friends with their fellow students.
                                 Nothing has surfaced with a product that schools provide a central hub of support the schools provide on their campuses.
                                 This encouraged the team to focus on user interviews with students and staff with the lack of competition.
                             </em>
                         </div>
-                        <div className="flex justify-center space-x-3 py-2 mb-5 asj-width-margin-reach ">
+                        <div className="flex justify-center space-x-3 py-5 asj-width-margin-reach ">
                             <div className="flex flex-col w-1/2">
-                                <strong className="pb-5 text-2xl">Interviews(6)</strong>
+                                <strong className="pb-5 text-2xl">Interviews(6):</strong>
                                 <ul className="list-disc italic pl-5 font-light">
                                     <li >Admission Recruiters 66%</li>
                                     <li>Communication Strategist 17%</li>
@@ -96,41 +104,47 @@ export default function reachPage() {
                                 </ul>
                             </div>
                             <div className="flex flex-col w-1/2">
-                                <strong className="pb-5 text-2xl">Goals</strong>
+                                <strong className="pb-5 text-2xl">Goals:</strong>
                                 <ul className="list-disc italic pl-5 font-light">
                                     <li>What is the competition doing?</li>
                                     <li>How do schools currently promote support to their students?</li>
                                 </ul>
                             </div>
                         </div>
-                        <strong className="text-2xl pt-5">Sample of questions asked</strong>
-                        <div className="flex justify-center space-x-3 asj-padding pb-5 font-extralight">
-                            <div className="flex w-1/3">
-                                {/* lower font for the 3  */}
-                                <em >What technologies are being used by staff?</em>
-                            </div>
-                            <div className="flex w-1/3">
-                                <em>How does the staff approach giving students support they need?</em>
-                            </div>
-                            <div className="flex w-1/3">
-                                <em>What is something they hope for to improve their tasks?</em>
+                        <div className="asj-width-margin-reach flex justify-center flex-col py-5">
+                            <strong className="text-2xl py-5 italic text-center">Sample of questions asked</strong>
+                            <div className="flex flex-row">
+                                <div className="flex w-1/2">
+                                    <em >What technologies are being used by staff?</em>
+                                </div>
+                                <div className="flex w-1/2">
+                                    <em>How does the staff approach giving students support they need?</em>
+                                </div>
+                                <div className="flex w-1/2">
+                                    <em>What is something they hope for to improve their tasks?</em>
+                                </div>
                             </div>
                         </div>
-                        <em className="bold text-2xl my-5"> We established three trends after user interviews were conducted:</em>
-                        <div className="flex justify-center space-x-3 asj-padding font-extralight">
-                            <div className="flex flex-col w-1/3">
-                                <em>1: Students wanting more variety in scheduling or availability in career building workshops.</em>
-                            </div>
-                            <div className="flex flex-col w-1/3">
-                                <em>2: 100% of higher education staff desire to lower student retention and increase a sense of belonging within campus.</em>
-                            </div>
-                            <div className="flex flex-col w-1/3">
-                                <em>3: Higher education departments do not have one place where they can freely share and communicate information amongst each other.</em>
+                        <div className="asj-width-margin-reach flex justify-center flex-col py-5">
+                            <em className="text-center font-light py-5"> We established three trends after user interviews were conducted:</em>
+                            <div className="asj-width-margin-reach flex flex-col">
+                                <div className="flex py-2 font-semibold">
+                                    <em>1: Students wanting more variety in scheduling or availability in career building workshops.</em>
+                                </div>
+                                <div className="flex py-2 font-semibold">
+                                    <em>2: 100% of higher education staff desire to lower student retention and increase a sense of belonging within campus.</em>
+                                </div>
+                                <div className="flex py-2 font-semibold">
+                                    <em>3: Higher education departments do not have one place where they can freely share and communicate information amongst each other.</em>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+
+
+                    {/* Conceptual Development */}
                     <div className="asj-padding">
-                        {/* Conceptual Development */}
                         <h1 className="sub-header text-black asj-padding">Conceptual Development</h1>
                         <div className="flex justify-center">
                             <Image
