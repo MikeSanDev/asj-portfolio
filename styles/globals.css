@@ -205,6 +205,7 @@ Blurred background when menu is open */
   font-size: 35px;
   text-decoration: underline;
   font-family: 'Avenir', sans-serif;
+  font-weight: bold;
 }
 
 .sub-text {
