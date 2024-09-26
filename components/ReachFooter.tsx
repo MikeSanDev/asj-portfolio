@@ -10,12 +10,15 @@ export default function ReachFooter() {
             <strong className='text-2xl reach-footer-title'>Craigslist Moodboard - Creating a redesign of Craigslist that also incentivize user engagement</strong>
           </Link>
         </div>
-        <div className='pt-6 flex flex-row '>
+        <div className='py-4 flex flex-row justify-between'>
           <Link href="https://www.linkedin.com/in/asanjose/" legacyBehavior>
-            <a target="_blank" rel="noopener noreferrer" className='underline italic'>Linkedin</a>
+            <a target="_blank" rel="noopener noreferrer" className='text-[20px] italic hover:underline'>Linkedin</a>
           </Link>
-          <Link href="https://drive.google.com/file/d/1XN3fCDg3PXbmL4PLIJiW_nkYljsL2e9j/view" legacyBehavior>
-            <a target="_blank" rel="noopener noreferrer" className='ml-4 underline italic'>Resume</a>
+          <Link href="https://www.instagram.com/ernsanjose/" legacyBehavior>
+            <a target="_blank" rel="noopener noreferrer" className='text-[20px] italic hover:underline'>Instagram</a>
+          </Link>
+          <Link href="/assets/ASJ-resume.pdf" legacyBehavior>
+            <a target="_blank" rel="noopener noreferrer" className='text-[20px] italic hover:underline '>Resume</a>
           </Link>
         </div>
       </div>
