@@ -144,55 +144,47 @@ export default function reachPage() {
 
 
                     {/* Conceptual Development */}
-                    <div className="asj-padding">
-                        <h1 className="sub-header text-black asj-padding">Conceptual Development</h1>
-                        <div className="flex justify-center">
-                            <Image
-                                src="/assets/fariene.png"
-                                alt='box'
-                                width={300}
-                                height={300} />
+                    <div className="flex justify-center flex-col items-center pt-5">
+                        <div className="asj-width-margin-reach py-5">
+                            <h1 className="sub-header text-black text-left ">Conceptual Development</h1>
+                            <div className="flex justify-center py-10">
+                                <Image
+                                    src="/assets/fariene.png"
+                                    alt='box'
+                                    width={300}
+                                    height={300} />
+                            </div>
+                            <p className="text-2xl py-5  italic">&rdquo;I want to arm students with the tools they need to succeed. I don&rsquo;t believe in gatekeeping.
+                                I don&rsquo;t believe school should be a survival of the fittest situation.&rdquo; <span className="font-semibold">- Fareine Suarez </span></p>
                         </div>
-                        <br />
-                        <strong className="text-2xl italic">&rdquo;I want to arm students with the tools they need to succeed. I don&rsquo;t believe in gatekeeping.
-                            I don&rsquo;t believe school should be a survival of the fittest situation.&rdquo; <span>- Fareine Suarez </span></strong>
-                        <div className="flex flex-col justify-between asj-padding h-full">
-                            <em className="asj-padding">
+
+                        <div className="asj-width-margin-reach flex flex-col">
+                            <em className="font-light italic">
                                 Fiona Madison, a student recruitment manager, needs a system to visualize students&rsquo; college journey and on-campus involvement so that she can create workshops and connections to promote student success and retention.
                             </em>
-                            <em className="asj-padding">
+                            <br />
+                            <em className="font-light italic">
                                 Fiona was inspired by Fareine Suarez&rsquo;s college admission recruiter for Illinois Institute of Technology, quote and dedication for every student to have equal chances for success.
                                 Other interviewees also shared equal motivation of providing every tool necessary for students to succeed academically and personally.
                                 Higher education staff persona was a unanimous decision from the team because majority (83%) of our interviewees shared that similar profession.
                             </em>
-                            <div className="max-w-2xl mx-auto px-4">
-                                <strong className="flex justify-center text-black bold text-2xl asj-padding">Common trend that appeared from the team</strong>
-                                <div className="flex justify-center space-x-3 asj-padding">
-                                    <em className="mr-4 font-extralight">
-                                        &rdquo;Live feed&rdquo; concept that focuses on either career development or mental health support
-                                    </em>
-                                    <em className="mb-4 font-extralight">
-                                        Issue with the idea was that the scope was either too broad or does not fully solve our problems
-                                    </em>
-                                </div>
-                                <strong className="flex justify-center text-black bold text-2xl asj-padding">Solution</strong>
-                                <em >
-                                    A dashboard because it can also include a live feed while having more opportunity to have more features. We all agreed a dashboard felt the most appropriate solution because it allows customization with relation to the users liking.
-                                    I suggested that the team perform a 6-8-5 sketching exercise for more concrete discovery on the product.
-                                </em>
-                            </div>
+                            <br />
+                            <em className="font-light italic">
+                                What can solve Fiona&rsquo;s problem? I suggested that we use a dashboard because it could be filled and organized with any feature Fiona would need. We all agreed a dashboard felt the most appropriate solution because it allows customization with relation to the users liking. I suggested that the team perform a 6-8-5 Sketching exercise for more concrete discovery on the product.
+                            </em>
                         </div>
+                        {/* 4 images  */}
                         <div className="four-box grid grid-cols-2 gap-2 justify-items-center  pb-5">
                             <div className='flex justify-center items-center flex-col'>
-                                <strong className="py-4 text-[16px] text-center ">Aaron</strong>
+                                <p className="py-4 text-[16px] font-light text-center ">Aaron</p>
                                 <Image
                                     src="/assets/asj-sketch.png"
                                     alt='Aaron sketch'
-                                    width={300}
+                                    width={315}
                                     height={400} />
                             </div>
                             <div className='flex justify-center items-center flex-col'>
-                                <strong className="py-4 text-[16px] text-center">Isaac</strong>
+                                <p className="py-4 text-[16px] font-light text-center">Isaac</p>
                                 <Image
                                     src="/assets/isaac-sketch.png"
                                     alt='Isaac sketch'
@@ -200,7 +192,7 @@ export default function reachPage() {
                                     height={400} />
                             </div>
                             <div className='flex justify-center items-center flex-col'>
-                                <strong className="py-4 text-[16px] text-center">Demetrius</strong>
+                                <p className="py-4 text-[16px] font-light text-center">Demetrius</p>
                                 <Image
                                     src="/assets/dem-sketch.png"
                                     alt='Demetrius sketch'
@@ -208,7 +200,7 @@ export default function reachPage() {
                                     height={400} />
                             </div>
                             <div className='flex justify-center items-center flex-col'>
-                                <strong className="py-4 text-[16px] text-center">Janelle</strong>
+                                <p className="py-4 text-[16px] font-light text-center">Janelle</p>
                                 <Image
                                     src="/assets/jan-sketch.png"
                                     alt='Janelle sketch'
@@ -217,8 +209,12 @@ export default function reachPage() {
                             </div>
                         </div>
                     </div>
+
+
+
+
+                    {/* Final Product & Development */}
                     <div>
-                        {/* Final Product & Development */}
                         <h1 className="sub-header text-black asj-padding">Final Product & Development</h1>
                         <em className="mb-4 ">
                             Our ideas were fully converging amongst each other with a common theme of cards displaying student information.
@@ -305,23 +301,27 @@ export default function reachPage() {
                             <p className="py-3 asj-img-title text-center">Final Product of Student Profile</p>
                         </div>
                     </div>
+
+
                     {/* Whats next */}
-                    <div className="pt-5 pb-10">
-                        <h1 className="sub-header text-black pb-5">What&rsquo;s Next</h1>
-                        <em>
-                            The client loved our idea and was thankful on how it opened their eyes for new possibilities and who to communicate with to further advance our solution.
-                            We were aware that there was more we could have done if we had more time.
-                            <br />
-                            <br />
-                            One of the first steps we would take would be to perform more user interviews.
-                            We had a limited interviewee base to further discoveries and validations of our design. We can merely speculate on what we thought the user needs were with our persona Fiona.
-                            We would have hoped to discover what we were missing and did right in order to create an impact with our design.
-                            <br />
-                            <br />
-                            Finally we would have focused on the students and generate a dashboard specifically for them.
-                            We mainly focused on our higher education user base because our client resonated with our problem statement stated earlier with Fiona.
-                            Knowing what benefits the students would in turn benefit the higher education staff. It would give us more clarity on what components they should have with relation to the students.
-                        </em>
+                    <div className="flex justify-center flex-col items-center py-5">
+                        <div className="asj-width-margin-reach flex justify-center flex-col py-5">
+                            <h1 className="sub-header text-left text-black pb-5">What&rsquo;s Next</h1>
+                            <em>
+                                The client loved our idea and was thankful on how it opened their eyes for new possibilities and who to communicate with to further advance our solution.
+                                We were aware that there was more we could have done if we had more time.
+                                <br />
+                                <br />
+                                One of the first steps we would take would be to perform more user interviews.
+                                We had a limited interviewee base to further discoveries and validations of our design. We can merely speculate on what we thought the user needs were with our persona Fiona.
+                                We would have hoped to discover what we were missing and did right in order to create an impact with our design.
+                                <br />
+                                <br />
+                                Finally we would have focused on the students and generate a dashboard specifically for them.
+                                We mainly focused on our higher education user base because our client resonated with our problem statement stated earlier with Fiona.
+                                Knowing what benefits the students would in turn benefit the higher education staff. It would give us more clarity on what components they should have with relation to the students.
+                            </em>
+                        </div>
                     </div>
                 </div>
             </div >
