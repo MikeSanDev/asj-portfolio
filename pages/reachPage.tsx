@@ -24,8 +24,8 @@ export default function reachPage() {
 
 
                 {/* Overview */}
-                <div className="flex-grow mx-auto flex justify-center flex-col res-margin-top">
-                    <div className="bg-[#cccccc] flex justify-center flex-col items-center">
+                <div className="flex-grow  flex justify-center flex-col res-margin-top">
+                    <div className="bg-[#cccccc] mx-auto  w-full  flex justify-center flex-col items-center">
                         <div className="asj-width-margin-reach flex justify-center flex-col w-full ">
                             <div className="py-5">
                                 <h1 className="sub-header  text-black asj-padding">Overview</h1>
@@ -69,11 +69,11 @@ export default function reachPage() {
                             <h1 className="sub-header text-black py-5">THE GOAL</h1>
                             <p className="font-light text-center text-2xl">Improve how higher education staff can provide support for their students.</p>
                         </div>
-                        <div className="asj-width-margin-reach flex justify-center flex-col items-center py-5">
+                        <div className="asj-width-margin-reach flex justify-center flex-col  py-5">
                             <h1 className="sub-header text-black py-5">THE SOLUTION AND IMPACT </h1>
                             <p className="font-light ">A dashboard that provides functionality and features to assist staff with providing purposeful support to their students and this is the result we made.</p>
                         </div>
-                        <div className="asj-width-margin-reach flex justify-center flex-col py-5">
+                        <div className="asj-width-margin-reach flex justify-center flex-col pt-10 py-5">
                             {/* should this sub-header be all caps? */}
                             <h1 className="sub-header text-left text-black">My Role</h1>
                             <p className="font-light ">I led the conduction of interviews, designer meetings, and research for the first month of the project. I collaborated with two other designers in the research and interviews.</p>
@@ -85,8 +85,8 @@ export default function reachPage() {
 
 
                     {/* Research */}
-                    <div className="bg-[#cccccc] flex justify-center flex-col items-center">
-                        <div className="asj-width-margin-reach flex justify-center flex-col  py-5">
+                    <div className="bg-[#cccccc] w-full flex justify-center flex-col items-center">
+                        <div className="asj-width-margin-reach  w-full flex justify-center flex-col  py-5">
                             <h1 className="sub-header text-black asj-padding ">Research</h1>
                             <em className="flex flex-col asj-padding">
                                 Competition to Chicago Scholars REACH Program were nonexistent. Majority of products or applications that could compare mainly focused on making friends with their fellow students.
@@ -214,81 +214,64 @@ export default function reachPage() {
 
 
                     {/* Final Product & Development */}
-                    <div>
-                        <h1 className="sub-header text-black asj-padding">Final Product & Development</h1>
-                        <em className="mb-4 ">
-                            Our ideas were fully converging amongst each other with a common theme of cards displaying student information.
-                            The cards of the students would be the first component that captures Fiona&rsquo;s attention immediately when accessing the dashboard
-                        </em>
-                        {/* First Card */}
-                        <div className='flex justify-center items-center flex-col pt-10 pb-5'>
-                            <Image
-                                src="/assets/activity-card.png"
-                                alt='activity card'
-                                width={400}
-                                height={400} />
-                            <p className="py-3 text-center font-semibold italic ">First Example Card</p>
+                    <div className="bg-[#cccccc]  w-full flex justify-center flex-col items-center py-5">
+                        <div className="asj-width-margin-reach flex justify-center flex-col py-5">
+                            <h1 className="sub-header text-black asj-padding pb-5">Final Product & Development</h1>
+                            <em className="mb-5 ">
+                                It was obvious with our sketches that cards were a focal point on the dashboard. The first iteration of the card was constructed by our team member Issac. I felt the card was crowded and the information presented redundancy. I changed the card to have less features and consistent structure.
+                            </em>
+                            <em>
+                                I decided to combine several buttons on the bottom because their functions were going to same place. I decided to locate students&rsquo; class year and major on the top right to perfectly line up with the name for it to be scannable. I made the fonts larger for identifying and important information so it doesn&rsquo;t go unnoticed.
+                            </em>
                         </div>
-                        <em className="asj-padding">
-                            Our first iteration created above by Issac opened our teams&rsquo; eyes on what can be possible with our cards. A mood meter indicating whether students needed attention or assistance during their higher education journey was absolutely brilliant.
-                            The card felt crowded and the information presented had redundancy and was overwhelming.
-                            We felt that &rdquo;less was more&rdquo; would appropriately fit Fiona&rsquo;s needs with her busy schedule.
-                        </em>
-                        {/* Final Card */}
-                        <div className='flex justify-center items-center flex-col pt-10 pb-5'>
-                            <Image
-                                src="/assets/final-act-card.png"
-                                alt='final card'
-                                width={400}
-                                height={400} />
-                            <p className="py-3 text-center font-semibold italic">Final Example Card</p>
+                        {/* Cards */}
+                        <div className="flex flex-row py-10">
+                            <div className='flex justify-center items-center flex-col pr-5'>
+                                <Image
+                                    src="/assets/activity-card.png"
+                                    alt='activity card'
+                                    width={250}
+                                    height={300} />
+                                <p className="py-3 text-center font-semibold italic ">Before</p>
+                            </div>
+
+                            <div className='flex justify-center items-center flex-col pl-5'>
+                                <Image
+                                    src="/assets/final-act-card.png"
+                                    alt='final card'
+                                    width={285}
+                                    height={300} />
+                                <p className="py-3 text-center font-semibold italic">Final </p>
+                            </div>
                         </div>
-                        <em className="asj-padding">
-                            I decided to modify Isaac&rsquo;s card to have more structure and negative space so the card can be viewed easily by Fiona.
-                            I decided to group related content into their own lines/categories for consistent and clean look.
+                        <em className="asj-width-margin-reach flex justify-center py-5">
+                            I suggested using a Z pattern on ordering the components of the dashboard. Cards being at the very top highlights what our users would see and interact with first. We followed up the cards because of Fiona&rsquo;s desire to create workshops. We decided to add specific data to show records of the users&rsquo; efforts and to keep track of their progress. Finally having visual graphs at the end just in case Fiona needs to look at her students at a broader level.
                         </em>
                         {/* Final Dashboard */}
-                        <div className='flex justify-center items-center flex-col pt-10 pb-5'>
+                        <div className='asj-width-margin-reach flex justify-center items-center flex-col py-10'>
                             <Image
                                 src="/assets/dashboard.png"
                                 alt='final dash'
                                 width={600}
                                 height={400} />
-                            <p className="py-3 italic font-semibold text-center">Final Product of Dashboard</p>
-                        </div>
-                        <em className="asj-padding">
-                            We used a Z pattern to ultimately decide where we would place components of the dashboard for Fiona. We kept in mind her desire to create workshops.
-                            Seeing how her students mood status is first allows us to strategically place our following components to what Fiona may find important after seeing her students&rsquo; information.
-                            We realized that having a &rdquo;Less is more&rdquo; student card is only appropriate if there was another page showing in depth details about the students as well.
-                        </em>
-                        {/* Notes */}
-                        <div className='flex justify-center items-center flex-col asj-padding'>
-                            <Image
-                                className="border 5px solid asj-padding"
-                                src="/assets/notes.png"
-                                alt='final dash'
-                                width={600}
-                                height={400} />
-                            <em className="py-10">
-                                The main components we wanted to focus for the student profile was the live feed and REACH engagement section.
-                                The live feed was important because it shows a centralized place for all departments to comment about a student.
-                                It was an initial idea we all resonated with in our early discussions about a solution. We felt that we needed to revisit that in another page.
+                            <p className="py-5 italic font-semibold text-center">Final Dashboard</p>
+                            <em className="asj-padding ">
+                                After finishing the initial dashboard, I encouraged our team to create a student profile page because we had the extra time and it will assist us on further questions that could come up in our presentation.
                             </em>
-                            {/* Fix spacing between here
-                                 */}
                         </div>
                         {/* Engagement */}
-                        <div className='flex justify-center items-center flex-col asj-padding'>
+                        <div className='asj-width-margin-reach flex justify-center items-center flex-col asj-padding'>
                             <Image
-                                className="border 5px solid asj-padding"
+                                className="asj-padding"
                                 src="/assets/engagement.png"
                                 alt='final dash'
                                 width={600}
                                 height={400} />
+                            <em className="asj-padding pt-5">
+                                I contributed on adding the feature of showing letter grades for students engagement with the REACH platform. Tying in the business owner&rsquo;s product into the student profile felt necessary. It shows the client how they can check in on their students within the virtual reality. Potentially giving a tangible reason for investing into REACH.
+                            </em>
                             <em className="asj-padding">
-                                Higher education staff ability to visualize students&rsquo; interactions with their gamification space on REACH was a must have on this page.
-                                We wanted to add this component fulfill our client&rsquo;s needs while considering what the staff involvement and expectations with REACH.
-                                Seeing the value they bring on their student is something Fiona needs to see that their investment into REACH is satisfactory.
+                                I also decided the structure and spacing for the student profile. I wanted information to have enough space to be scanned and completely visualized with quality information.
                             </em>
                         </div>
                         {/* Final Profile */}
