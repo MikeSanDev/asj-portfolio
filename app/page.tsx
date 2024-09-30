@@ -149,9 +149,9 @@ export default function Home() {
             {/* Case Studies */}
             <h1 className="sub-header text-black pt-5" > Case Studies</h1 >
             <div className="py-5">
-              <strong className="from-neutral-300">Chicago Scholars</strong>
-              <p className="text-2xl italic font-extralight work-text pb-5">Reach Dashboard - A product that manages student support systems for continuing education staff.</p>
               <Link href="/reachPage">
+                <strong className="from-neutral-300">Chicago Scholars</strong>
+                <p className="text-2xl italic font-extralight work-text pb-5">Reach Dashboard - A product that manages student support systems for continuing education staff.</p>
                 <Image
                   className="img-border"
                   src="/assets/reach-work.png"
@@ -161,9 +161,9 @@ export default function Home() {
               </Link>
             </div>
             <div className="py-5">
-              <strong className="from-neutral-300">Coding Dojo</strong>
-              <p className="text-2xl italic font-extralight work-text pb-5">Craigslist Moodboard - A redesign of Craigslist encouraging user engagement.</p>
               <Link href="/craigsList">
+                <strong className="from-neutral-300">Coding Dojo</strong>
+                <p className="text-2xl italic font-extralight work-text pb-5">Craigslist Moodboard - A redesign of Craigslist encouraging user engagement.</p>
                 <Image
                   className="mb-10"
                   src="/assets/craiglist-dash.png"
