@@ -39,48 +39,80 @@ export default function CraigsList() {
     };
 
     return (
-        <div >
+        < >
             <Navbar backgroundColor="bg-[#333333]" textColor="text-white" />
-            <div className="bg-[#333333] shadow-md mx-auto w-full">
-                <strong className='header-info italic text-white flex justify-center'>Craigslist Moodboard</strong>
-                <div className='flex justify-center fig-box'>
-                    <Image
-                        src="/assets/clist-photos/craig-logo.jpg"
-                        alt='box'
-                        width={610}
-                        height={500} />
+            <div className="flex flex-col min-h-screen">
+
+                {/* Header  */}
+                <div className="bg-[#333333] shadow-md mx-auto w-full">
+                    <div className='flex justify-center fig-box'>
+                        <Image
+                            src="/assets/craiglist-dash.png"
+                            alt='box'
+                            width={620}
+                            height={500} />
+                    </div>
                 </div>
-            </div>
-            <div className="flex-grow mx-auto w-4/5 max-w-5xl">
-                <div className="flex justify-center mt-5">
-                    <Image
-                        className="img-border"
-                        src="/assets/clist-photos/main-banner.jpg"
-                        alt='box'
-                        width={610}
-                        height={500} />
-                </div>
-                {/* Overview - */}
-                <div className="asj-width-margin-reach  mx-auto px-4 res-margin-top">
-                    <div>
-                        <h1 className="sub-header text-black asj-padding ">Overview</h1>
-                        <div className="flex justify-center space-x-3 py-2">
-                            <div className="flex flex-col w-1/3">
-                                <strong className="pb-5 ">Problem</strong>
-                                <em className="pr-5 reach-cols font-light">How and why would you redesign Craigslist&rsquo;s user interface?</em>
+
+
+
+                {/* Overview */}
+                <div className="flex-grow  flex justify-center flex-col res-margin-top">
+                    <div className="bg-[#cccccc] mx-auto  w-full  flex justify-center flex-col items-center">
+                        <div className="asj-width-margin-reach flex justify-center flex-col w-full ">
+                            <div className="py-5">
+                                <h1 className="sub-header  text-black asj-padding">Overview</h1>
+                                <p className="pr-5 reach-cols font-light">
+                                    Coding dojo bootcamp cohort were assigned to create a redesign of Craigslist in teams of 3. We were tasked to conduct our own interviews, research, and design process for understanding what a UX/UI designer does. We were given one month and half to work as a team and half a month as an individual.
+                                </p>
                             </div>
-                            <div className="flex flex-col w-1/3">
-                                <strong className="pb-5 ">Goal</strong>
-                                <em className="reach-cols font-light">Conduct user interviews to support your redesign while utilizing the basics of UI/UX principles.</em>
+                            <div className="flex justify-center py-5">
+                                <div className="flex flex-col text-center">
+                                    <strong className="py-2 underline text-3xl"> What is the problem?</strong>
+                                    <p className="pr-5 reach-cols text-2xl font-light">
+                                        Craigslist user experience and user interface has consistently stayed the same since its creation. Why hasn&rsquo;t it changed? Does it need to be changed?
+                                    </p>
+                                </div>
                             </div>
-                            <div className="flex flex-col w-1/3">
-                                <strong className="pb-5 ">Role</strong>
-                                <em className="reach-cols font-light">Split into teams of 3</em>
-                                <em className="reach-cols font-light">My roles: UX Designer, Researcher, and Interviewer</em>
+                            <div>
+                                <h1 className="sub-header text-black py-5">What is Craigslist?</h1>
+                                <p className="pr-5 reach-cols font-light">
+                                    Craigslist was initially made for buyers and sellers to have a platform to make transactions amongst each other. It focuses on a simple and primitive user interface that make it straightforward for users to complete their purpose on their website without distractions. It also has features of forums and job postings that promote community and multiple usages of the platform.
+                                </p>
+                            </div>
+                            <div className='flex justify-center py-5 fig-box'>
+                                <Image
+                                    src="/assets/clist-photos/main-banner.jpg"
+                                    alt='box'
+                                    width={620}
+                                    height={600} />
                             </div>
                         </div>
                     </div>
+                </div>
+
+
+
+                {/* Goal/Role */}
+                <div className="flex justify-center flex-col items-center py-5">
+                    <div className="asj-width-margin-reach flex justify-center flex-col items-center py-5">
+                        {/* inconsistency - should these be all caps? */}
+                        <h1 className="sub-header text-black py-5">THE GOAL</h1>
+                        <p className="font-light text-center text-2xl">Construct a redesign that solves the problems that arise from your teams&rsquo; user interviews.</p>
+                    </div>
+                    <div className="asj-width-margin-reach flex justify-center flex-col  py-5">
+                        <h1 className="sub-header text-black py-5">THE SOLUTION AND IMPACT </h1>
+                        <p className="font-light ">A mood-board that is generated with user&rsquo;s answers from a preset of questions regarding specific categories to encourage continuous user engagement.</p>
+                    </div>
+                    <div className="asj-width-margin-reach flex justify-center flex-col pt-10 py-5">
+                        {/* should this sub-header be all caps? */}
+                        <h1 className="sub-header text-left text-black">My Role</h1>
+                        <p className="font-light pt-5">I conducted interviews with colleagues and friends who have used Craigslist on a consistent basis. I collaborated with two other designers on the ideation and production of the redesign.</p>
+                    </div>
                     <div>
+
+
+
                         {/* Research */}
                         <h1 className="sub-header text-black asj-padding">Research</h1>
                         <div className="flex justify-center space-x-3 py-2 mb-5">
@@ -299,6 +331,6 @@ export default function CraigsList() {
                 </div>
             </div>
             <Footer />
-        </div >
+        </>
     )
 }

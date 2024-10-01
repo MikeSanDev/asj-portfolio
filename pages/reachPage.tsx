@@ -35,28 +35,28 @@ export default function reachPage() {
                                     and to present our product to the Chicago Scholars REACH board.
                                 </p>
                             </div>
-                            <div className="flex justify-center py-5">
+                            <div className="flex justify-center flex-col py-5">
                                 <div className="flex flex-col text-center">
-                                    <strong className="py-2 underline text-3xl"> What is the problem?</strong>
+                                    <strong className="py-5 underline text-3xl"> What is the problem?</strong>
                                     <p className="pr-5 reach-cols text-2xl font-light">
                                         Higher education organizations are not investing in their REACH Platform.
                                     </p>
                                 </div>
-                            </div>
-                            <div>
-                                <h1 className="sub-header text-black py-5">What is REACH?</h1>
-                                <p className="pr-5 reach-cols font-light">
-                                    REACH is a college and career pathway of the nexus of companies and communities.
-                                    Reach is a virtual world where students can REACH mentors, jobs, guidance, and community at their fingertips.
-                                    Less like schoolwork and more like a video game, REACH provides fun and rewarding pathways to college and career.
-                                </p>
-                            </div>
-                            <div className='flex justify-center py-5 fig-box'>
-                                <Image
-                                    src="/assets/reach-banner.png"
-                                    alt='box'
-                                    width={620}
-                                    height={600} />
+                                <div className="py-5">
+                                    <h1 className="sub-header text-black py-5">What is REACH?</h1>
+                                    <p className="pr-5 reach-cols font-light">
+                                        REACH is a college and career pathway of the nexus of companies and communities.
+                                        Reach is a virtual world where students can REACH mentors, jobs, guidance, and community at their fingertips.
+                                        Less like schoolwork and more like a video game, REACH provides fun and rewarding pathways to college and career.
+                                    </p>
+                                </div>
+                                <div className='flex justify-center py-5 fig-box'>
+                                    <Image
+                                        src="/assets/reach-banner.png"
+                                        alt='box'
+                                        width={620}
+                                        height={600} />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -66,6 +66,7 @@ export default function reachPage() {
                     {/* Goal/Role */}
                     <div className="flex justify-center flex-col items-center py-5">
                         <div className="asj-width-margin-reach flex justify-center flex-col items-center py-5">
+                            {/* inconsistency - should these be all caps? */}
                             <h1 className="sub-header text-black py-5">THE GOAL</h1>
                             <p className="font-light text-center text-2xl">Improve how higher education staff can provide support for their students.</p>
                         </div>
@@ -76,7 +77,7 @@ export default function reachPage() {
                         <div className="asj-width-margin-reach flex justify-center flex-col pt-10 py-5">
                             {/* should this sub-header be all caps? */}
                             <h1 className="sub-header text-left text-black">My Role</h1>
-                            <p className="font-light ">I led the conduction of interviews, designer meetings, and research for the first month of the project. I collaborated with two other designers in the research and interviews.</p>
+                            <p className="font-light  pt-5">I led the conduction of interviews, designer meetings, and research for the first month of the project. I collaborated with two other designers in the research and interviews.</p>
                             <br />
                             <p className="font-light ">I led the final visual designs for the dashboard and designer meetings after three more designers were added into our team for the second month of the project.</p>
                         </div>
