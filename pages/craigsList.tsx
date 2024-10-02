@@ -109,154 +109,137 @@ export default function CraigsList() {
                         <h1 className="sub-header text-left text-black">My Role</h1>
                         <p className="font-light pt-5">I conducted interviews with colleagues and friends who have used Craigslist on a consistent basis. I collaborated with two other designers on the ideation and production of the redesign.</p>
                     </div>
-                    <div>
 
 
 
-                        {/* Research */}
-                        <h1 className="sub-header text-black asj-padding">Research</h1>
-                        <div className="flex justify-center space-x-3 py-2 mb-5">
-                            <div className="flex flex-col w-1/2">
-                                <strong className="pb-5 text-2xl">Amount of Interviews</strong>
-                                <ul className="list-disc italic pl-5 font-light">
-                                    <li>Friends and Family 60%</li>
-                                    <li>Coworkers 40%</li>
-                                </ul>
+
+                    {/* Research */}
+                    <div className="bg-[#cccccc] w-full flex justify-center flex-col items-center">
+                        <div className="asj-width-margin-reach  w-full flex justify-center flex-col  py-10">
+                            <h1 className="sub-header text-black asj-padding">Research</h1>
+                            <p className="pb-5">Craigslist has fierce competition on what it does well especially from Facebook Marketplace and Trovit. They use a modern design for clearer accessibility and navigation through pages compared to Craigslist. They also have profile customization to support a more comfortable and marketable experience.</p>
+                            <div className="flex flex-row py-5">
+                                <div className="flex flex-col w-1/2">
+                                    <strong className="pb-5 text-2xl">Interviews (5)</strong>
+                                    <ul className="list-disc italic pl-5 font-light">
+                                        <li>Friends and Family 60%</li>
+                                        <li>Coworkers 40%</li>
+                                    </ul>
+                                </div>
+                                <div className="flex flex-col w-1/2">
+                                    <strong className="pb-5 text-2xl">Goals</strong>
+                                    <ul className="list-disc italic pl-5 font-light">
+                                        <li>How does Craigslist still maintain its user base?</li>
+                                        <li>Why do people use Craigslist over its competition?</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div className="flex flex-col w-1/2">
-                                <strong className="pb-5 text-2xl">Target of Research</strong>
-                                <ul className="list-disc italic pl-5 font-light">
-                                    <li>How does Craigslist still maintain its user base?</li>
-                                    <li>Why do people use Craigslist over its competition?</li>
-                                </ul>
+                            <strong className="text-2xl font-light text-center py-5">Sample of questions asked</strong>
+                            <div className="flex justify-center space-x-3 asj-padding py-5">
+                                <div className="flex w-1/3 font-extralight">
+                                    <em>What type of design are you looking for?</em>
+                                </div>
+                                <div className="flex w-1/3 font-extralight">
+                                    <em>Why do you use Craigslist?</em>
+                                </div>
+                                <div className="flex w-1/3 font-extralight">
+                                    <em>What color palette are you looking for?</em>
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <em className="flex flex-col asj-padding">
-                                Craigslist has fierce competition on what it does well especially from Facebook Marketplace and Trovit.
-                                They use a modern design for clearer accessibility and navigation through pages compared to Craigslist.
-                                They also have profile customization to support a more comfortable and marketable experience.
-                            </em>
-                            <em className="flex flex-col asj-padding pb-5">
-                                Craigslist does have a bad reputation of scams or endangerment due to the users being anonymous.
-                                There also isn&rsquo;t a system that proves the credibility of the product and user.
-                                Craigslist still has frequent usage because users accomplishing their purpose on the site is still easy despite the potential dangers.
-                                My team decided that interviews were required to fully develop empathy for our redesign.
-                            </em>
-                            <strong className="text-2xl py-10">Sample of questions asked</strong>
-                        </div>
-                        <div className="flex justify-center space-x-3 asj-padding py-5">
-                            <div className="flex w-1/3 font-extralight">
-                                <em>How often do you use Craigslist?</em>
-                            </div>
-                            <div className="flex w-1/3 font-extralight">
-                                <em>Describe a transaction where you had uncertainty when using Craigslist</em>
-                            </div>
-                            <div className="flex w-1/3 font-extralight">
-                                <em>What positive experiences did you have with Craigslist</em>
+                            <div className="flex flex-col py-5">
+                                <em className=" asj-padding">We established three trends after user interviews were conducted. </em>
+                                <strong>1: 100% interviewees see Craigslist as one time usage or by need basis specifically furniture and expensive rare items. </strong>
+                                <strong>2: Lack of information in postings caused concern for safety with making transactions.</strong>
+                                <strong>3: 100% interviewees shared a concern for sustainability.</strong>
                             </div>
                         </div>
-                        <em className=" asj-padding"> We discovered that 100% of the interviewees see Craigslist as one time usage or need by basis.
-                            Those usages were related to purchasing furniture and rare items that are too expensive to obtain through normal channels.
-                            They also were concerned with Craigslist not being completely safe to make transactions.
-                            If there were a lack of information in a posting, they would turn it away.
-                            Amazingly all of interviewees shared a concern for sustainability.</em>
                     </div>
-                    <div>
-                        {/* Conceptual Development */}
-                        <div className="flex flex-col justify-between asj-padding h-full">
-                            <h1 className="sub-header text-black asj-padding">Conceptual Development</h1>
-                            <em className="asj-padding">
-                                We needed to address either creating more confidence for buyers making purchases or to encourage Craigslist users to use the product consistently instead of one time usages.
-                                Other redesigns either focused on modernizing the user interface or creating a user profile system to boost user credibility.
-                                We felt that with time constraints and wanting to have a new approach, we decided to avoid focusing on user security. </em>
-                            <em className="asj-padding">
-                                Promoting user usage was more interesting to create instead of a detailed user profile because of common redesign for user profiles.
-                                Funnily, we realized that using Pinterest for inspirations of user interfaces finalized our decision on our redesign.
-                                Pinterest has a system of saving posts and creating mood boards. We thought that Craigslist could do it similarly while maintaining its primary function.
-                            </em>
-                        </div>
-                        <div className="four-box grid grid-cols-2 gap-2 justify-items-center pb-5">
-                            <div className='flex justify-center items-center flex-col'>
+
+
+
+                    {/* Conceptual Development */}
+                    <div className="flex justify-center flex-col items-center py-5">
+                        <div className="asj-width-margin-reach flex justify-center flex-col items-center py-5">
+                            <div className="flex flex-col py-5">
+                                <h1 className="sub-header text-black asj-padding">Conceptual Development</h1>
+                                <em className="asj-padding">
+                                    We needed to address either creating more confidence for buyers making purchases or to encourage Craigslist users to use the product consistently instead of one time usages.
+                                    Other redesigns either focused on modernizing the user interface or creating a user profile system to boost user credibility.
+                                    We felt that with time constraints and wanting to have a new approach, we decided to avoid focusing on user security. </em>
+                                <em className="asj-padding">
+                                    Promoting user usage was more interesting to create instead of a detailed user profile because of common redesign for user profiles.
+                                    Funnily, we realized that using Pinterest for inspirations of user interfaces finalized our decision on our redesign.
+                                    Pinterest has a system of saving posts and creating mood boards. We thought that Craigslist could do it similarly while maintaining its primary function.
+                                </em>
+                            </div>
+                            <div className="four-box grid grid-cols-2 gap-2 justify-items-center pb-5">
+                                <div className='flex justify-center items-center flex-col'>
+                                    <Image
+                                        src="/assets/clist-photos/cd-1.jpg"
+                                        alt='Aaron sketch'
+                                        width={400}
+                                        height={400} />
+                                </div>
+                                <div className='flex justify-center items-center flex-col'>
+                                    <Image
+                                        src="/assets/clist-photos/cd-2.jpg"
+                                        alt='Isaac sketch'
+                                        width={400}
+                                        height={400} />
+                                </div>
+                                <div className='flex justify-center items-center flex-col'>
+                                    <Image
+                                        src="/assets/clist-photos/cd-3.jpg"
+                                        alt='Demetrius sketch'
+                                        width={400}
+                                        height={400} />
+                                </div>
+                                <div className='flex justify-center items-center flex-col'>
+                                    <Image
+                                        src="/assets/clist-photos/cd-4.jpg"
+                                        alt='Janelle sketch'
+                                        width={400}
+                                        height={400} />
+                                </div>
+                            </div>
+                            <div className="asj-padding text-center asj-img-title">
+                                <p >Early Wireframe Ideas</p>
+                            </div>
+                            <div className="flex flex-col justify-between py-3 h-full">
+                                <em className="py-3">
+                                    Since there wasn&rsquo;t a focus to on what exactly the mood board will do, these challenges were halting the process.
+                                    We had to refer back to our user interviews to narrow down the mood board&rsquo;s focus.</em>
+                                <em className="py-3">
+                                    100% of our user interviewees have bought furniture from Craigslist to promote sustainability and to fill up space in their homes.
+                                    Our interviewees either didn&rsquo;t have time to build or afford brand new furniture items through major retailers. This sparked the idea of focusing entirely on interior design with only Craigslist products.
+                                </em>
+                                <em className="py-3">
+                                    I was tasked on creating the questionnaire pages of the product and prototyping the pages to go from one to another. Please refer below the
+                                </em>
+                            </div>
+
+                            {/* Carousel */}
+                            <div className="carousel-res pt-5  flex items-center justify-center">
                                 <Image
-                                    src="/assets/clist-photos/cd-1.jpg"
-                                    alt='Aaron sketch'
-                                    width={400}
-                                    height={400} />
+                                    // className="border 5px solid"
+                                    src={images1[selectedIndex1].src}
+                                    alt={images1[selectedIndex1].alt}
+                                    width={700}
+                                    height={400}
+                                />
                             </div>
-                            <div className='flex justify-center items-center flex-col'>
-                                <Image
-                                    src="/assets/clist-photos/cd-2.jpg"
-                                    alt='Isaac sketch'
-                                    width={400}
-                                    height={400} />
-                            </div>
-                            <div className='flex justify-center items-center flex-col'>
-                                <Image
-                                    src="/assets/clist-photos/cd-3.jpg"
-                                    alt='Demetrius sketch'
-                                    width={400}
-                                    height={400} />
-                            </div>
-                            <div className='flex justify-center items-center flex-col'>
-                                <Image
-                                    src="/assets/clist-photos/cd-4.jpg"
-                                    alt='Janelle sketch'
-                                    width={400}
-                                    height={400} />
+                            <div className="asj-padding  flex flex-row justify-center text-center py-5 caro-btns-res">
+                                <button className="caro1-btn" onClick={handlePrev1}>&lt;</button>
+                                <strong className="flex flex-col justify-center ">{images1[selectedIndex1].question}</strong>
+                                <button className="caro1-btn" onClick={handleNext1}>&gt;</button>
                             </div>
                         </div>
-                        <div className="asj-padding text-center asj-img-title">
-                            <p >Early Wireframe Ideas</p>
-                        </div>
-                        <div className="flex flex-col justify-between py-3 h-full">
-                            <em className="py-3">
-                                Since there wasn&rsquo;t a focus to on what exactly the mood board will do, these challenges were halting the process.
-                                We had to refer back to our user interviews to narrow down the mood board&rsquo;s focus.</em>
-                            <em className="py-3">
-                                100% of our user interviewees have bought furniture from Craigslist to promote sustainability and to fill up space in their homes.
-                                Our interviewees either didn&rsquo;t have time to build or afford brand new furniture items through major retailers. This sparked the idea of focusing entirely on interior design with only Craigslist products.
-                            </em>
-                            <em className="py-3">
-                                I was tasked on creating the questionnaire pages of the product and prototyping the pages to go from one to another. Please refer below the
-                            </em>
-                        </div>
                     </div>
-                    <strong className="text-2xl asj-padding">Questions Created</strong>
-                    <div className="flex justify-center space-x-3 asj-padding py-5">
-                        <div className="flex w-1/3 font-extralight">
-                            <em>What furniture would you like? What is the budget?</em>
-                        </div>
-                        <div className="flex w-1/3 font-extralight">
-                            <em>What type of design you looking for?</em>
-                        </div>
-                        <div className="flex w-1/3 font-extralight">
-                            <em>What color palette are you looking for?</em>
-                        </div>
-                    </div>
-                    <div className="asj-padding">
-                        <em >
-                            I choose these questions because these questions commonly came from the team.
-                            These converged thoughts affirmed us that these will be asked when it comes developing a mood board.
-                            I believed narrowing down the users&rsquo; choices on what they want would increase their confidence on selecting products from Craigslist.
-                            These findings made the early redesign go smoothly. Please refer to low fidelity project my team I created below
-                        </em>
-                    </div>
-                    {/* Carousel */}
-                    <div className="carousel-res pt-5  flex items-center justify-center">
-                        <Image
-                            // className="border 5px solid"
-                            src={images1[selectedIndex1].src}
-                            alt={images1[selectedIndex1].alt}
-                            width={700}
-                            height={400}
-                        />
-                    </div>
-                    <div className="asj-padding  flex flex-row justify-center text-center py-5 caro-btns-res">
-                        <button className="caro1-btn" onClick={handlePrev1}>&lt;</button>
-                        <strong className="flex flex-col justify-center ">{images1[selectedIndex1].question}</strong>
-                        <button className="caro1-btn" onClick={handleNext1}>&gt;</button>
-                    </div>
+
+
+
+
+
 
                     {/* Final Product & Development */}
                     <h1 className="sub-header text-black asj-padding">Final Product & Development</h1>
@@ -329,7 +312,7 @@ export default function CraigsList() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
             <Footer />
         </>
     )
