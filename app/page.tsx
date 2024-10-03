@@ -63,12 +63,12 @@ export default function Home() {
         {/* SECTION 2 - POKEBALLS */}
         <section id='section2' style={{ minHeight: '100vh', backgroundColor: '#9647ff', display: 'flex', alignItems: 'center' }}>
           <div className="asj-width-margin-wide mx-auto flex justify-center flex-col items-center h-full">
-            <h1 className="text-black text-center text-4xl italic font-extrabold pb-5"
+            <h1 className="text-black text-center text-4xl italic font-extrabold pb-10"
               style={{ textShadow: '2px 2px 0 #ffffff, -2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px -2px 0 #ffffff' }}>
               The most influential decision I experienced growing up was...
             </h1>
 
-            <div className="flex justify-center items-center space-x-20 pt-10">
+            <div className="flex justify-center items-center space-x-20 py-10">
               <div className="flex flex-col items-center">
                 <Link href="/workPage">
                   <motion.img
@@ -86,7 +86,7 @@ export default function Home() {
                     onMouseLeave={handleMouseLeave}
                   />
                 </Link>
-                <p className="text-white mt-4 text-2xl">Work</p>
+                <p className="text-white mt-5 text-2xl">Work</p>
               </div>
 
               <div className="flex flex-col items-center">
@@ -106,7 +106,7 @@ export default function Home() {
                     onMouseLeave={handleMouseLeave}
                   />
                 </Link>
-                <p className="text-white mt-4 text-2xl">About</p>
+                <p className="text-white mt-5 text-2xl">About</p>
               </div>
 
               <div className="flex flex-col items-center">
@@ -128,11 +128,11 @@ export default function Home() {
                     />
                   </a>
                 </Link>
-                <p className="text-white mt-4 text-2xl">Contact</p>
+                <p className="text-white mt-5 text-2xl">Contact</p>
               </div>
             </div>
 
-            <h1 className="text-black text-center text-4xl italic font-extrabold pt-10"
+            <h1 className="text-black text-center text-4xl italic font-extrabold pt-5"
               style={{ textShadow: '2px 2px 0 #ffffff, -2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px -2px 0 #ffffff' }}>
               Choose your starter
             </h1>

@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from 'react';
+import CraigFooter from "@/components/CraigFooter";
 
 export default function CraigsList() {
     const [selectedIndex1, setSelectedIndex1] = useState(0);
@@ -230,7 +231,7 @@ export default function CraigsList() {
                             </div>
                             <div className="asj-padding  flex flex-row justify-center text-center py-5 caro-btns-res">
                                 <button className="caro1-btn" onClick={handlePrev1}>&lt;</button>
-                                <strong className="flex flex-col justify-center ">{images1[selectedIndex1].question}</strong>
+                                <p className="flex flex-col font-semibold justify-center ">{images1[selectedIndex1].question}</p>
                                 <button className="caro1-btn" onClick={handleNext1}>&gt;</button>
                             </div>
                         </div>
@@ -242,78 +243,89 @@ export default function CraigsList() {
 
 
                     {/* Final Product & Development */}
-                    <h1 className="sub-header text-black asj-padding">Final Product & Development</h1>
-                    <div className="pb-1">
-                        <em className="flex flex-col py-2 ">
-                            Our instructor challenged each individual to take their converged prototype and redesign it with your own personal style.
-                            Hearing this at first was a little daunting because I wasn&rsquo;t sure on how to change what we just made.
-                            I decided to focus on what makes Craigslist what it is. Simple and functional but with a modern style current to our time.
-                        </em>
-                        <em className="flex flex-col asj-padding">
-                            Minimalism was the first thing that stuck out to because it focuses on keeping things simple and utilizing white or negative space to create structure.
-                            I created a style tile focused around minimalism because it is a style I personally enjoy and it would also maintain Craigslist&rsquo;s identity.
-                        </em>
-                    </div>
-                    <div className='flex justify-center items-center flex-col'>
-                        <Image
-                            className="border 5px solid my-5"
-                            src="/assets/clist-photos/clist-styletile.png"
-                            alt='Craigslist Style Tile'
-                            width={700}
-                            height={400} />
-                        <em className="flex flex-col asj-padding ">
-                            Using this style tile sped up my process on redesigning what my team had previously into something I resonate with.
-                            I had more confidence about becoming a UX designer since this iteration would be solely defined by me.
-                            I wanted to display what I believed in with respect to my team&rsquo;s work when redesigning this iteration.
-                        </em>
-                    </div>
-                    {/* Carousel 2 */}
-                    <div className="carousel-res pt-5  flex items-center justify-center">
-                        <Image
-                            className="border 5px solid "
-                            src={images2[selectedIndex2].src}
-                            alt={images2[selectedIndex2].alt}
-                            width={700}
-                            height={400}
-                        />
-                    </div>
-                    <div className="py-10 flex flex-row justify-center text-center caro-btns-res">
-                        <button className="caro2-btn" onClick={handlePrev2}>&lt;</button>
-                        <strong className="flex flex-col justify-center asj-carousel-font">{images2[selectedIndex2].question}</strong>
-                        <button className="caro2-btn" onClick={handleNext2}>&gt;</button>
-                    </div>
-                    <em className="flex flex-col py-2asj-padding">
-                        I decided to scrap the budget question only because that would be limiting on all the potential items can be considered for the mood board but also not entirely necessary for our redesigns main task.
-                        I decided to add descriptions associated with the items because it would boost user confidence on their choices by understanding the products more.
-                        Finally I focused on using black to dictate space and white to accent the text for a more cohesive aesthetic. I wanted the text to stand out while being easy to read.
-                    </em>
-
-                    {/* Whats next */}
-                    <div className=" py-5">
-                        <h1 className="sub-header text-black asj-padding">What&rsquo;s Next</h1>
-                        <em className="flex flex-col asj-padding ">
-                            Overall executing a redesign based off user needs was an eye opening experience. Trying to create a redesign with other aspiring designers was difficult to manage.
-                            If we had more time, I would have obtained more user data for product affirmation and modify features influenced by user testing.
-                            Finding what patterns surface after observing our users execute tests of the product.
-                            I would definitely add the ability to see the products&rsquo; info over a hover of the item and saving a specific item on the mood board before refreshing a new one.
-                            We would have focused on the other issue our interviewees&rsquo; expressed with the security and validation of users in Craigslist if we had more time.
-                        </em>
-                        <em className="flex flex-col asj-padding ">
-                            We would have conducted more interviews on what makes the user more comfortable to make a transaction.
-                            We understood that security would lead to more confidence and user usage of the product. The mood board doesn&rsquo;t entirely solve the problem our users may have with their future purchases.
-                        </em>
-                        <div className="flex flex-col asj-padding">
-                            <Link href="https://www.figma.com/proto/33UDTpUCByNJpE9FhnGdOT/Team-2-Converged-Prototype?page-id=55%3A218&node-id=55-457&scaling=min-zoom&starting-point-node-id=55%3A457" legacyBehavior>
-                                <a target="_blank" rel="noopener noreferrer" className="text-2xl bold underline py-5">Prototype Version 1</a>
-                            </Link>
-                            <Link href="https://www.figma.com/proto/EXS7vyz9N2XWODGzG3bjIU/High-Fidelity-Prototype?page-id=10%3A1263&node-id=10-1399&scaling=min-zoom&starting-point-node-id=10%3A1399" legacyBehavior>
-                                <a target="_blank" rel="noopener noreferrer" className="text-2xl bold underline py-5">Final Prototype</a>
-                            </Link>
+                    <div className="bg-[#cccccc] w-full flex justify-center flex-col items-center">
+                        <div className="asj-width-margin-reach  w-full flex justify-center flex-col  py-10">
+                            <h1 className="sub-header text-black asj-padding">Final Product & Development</h1>
+                            <div className="pb-1">
+                                <em className="flex flex-col py-2 ">
+                                    Our instructor challenged each individual to take their converged prototype and redesign it with your own personal style.
+                                    Hearing this at first was a little daunting because I wasn&rsquo;t sure on how to change what we just made.
+                                    I decided to focus on what makes Craigslist what it is. Simple and functional but with a modern style current to our time.
+                                </em>
+                                <em className="flex flex-col asj-padding">
+                                    Minimalism was the first thing that stuck out to because it focuses on keeping things simple and utilizing white or negative space to create structure.
+                                    I created a style tile focused around minimalism because it is a style I personally enjoy and it would also maintain Craigslist&rsquo;s identity.
+                                </em>
+                            </div>
+                            <div className='flex justify-center items-center flex-col'>
+                                <Image
+                                    className="border 5px solid my-5"
+                                    src="/assets/clist-photos/clist-styletile.png"
+                                    alt='Craigslist Style Tile'
+                                    width={700}
+                                    height={400} />
+                                <em className="flex flex-col asj-padding ">
+                                    Using this style tile sped up my process on redesigning what my team had previously into something I resonate with.
+                                    I had more confidence about becoming a UX designer since this iteration would be solely defined by me.
+                                    I wanted to display what I believed in with respect to my team&rsquo;s work when redesigning this iteration.
+                                </em>
+                            </div>
+                            {/* Carousel 2 */}
+                            <div className="carousel-res pt-5  flex items-center justify-center">
+                                <Image
+                                    className="border 5px solid "
+                                    src={images2[selectedIndex2].src}
+                                    alt={images2[selectedIndex2].alt}
+                                    width={700}
+                                    height={400}
+                                />
+                            </div>
+                            <div className="py-10 flex flex-row justify-center text-center caro-btns-res">
+                                <button className="caro2-btn" onClick={handlePrev2}>&lt;</button>
+                                <p className="flex flex-col justify-center  font-semibold ">{images2[selectedIndex2].question}</p>
+                                <button className="caro2-btn" onClick={handleNext2}>&gt;</button>
+                            </div>
+                            <em className="flex flex-col py-2asj-padding">
+                                I decided to scrap the budget question only because that would be limiting on all the potential items can be considered for the mood board but also not entirely necessary for our redesigns main task.
+                                I decided to add descriptions associated with the items because it would boost user confidence on their choices by understanding the products more.
+                                Finally I focused on using black to dictate space and white to accent the text for a more cohesive aesthetic. I wanted the text to stand out while being easy to read.
+                            </em>
                         </div>
                     </div>
+
+
+
+
+                    {/* Whats next */}
+                    <div className="flex justify-center flex-col py-5">
+                        <div className="asj-width-margin-reach flex justify-center flex-col ">
+                            <h1 className="sub-header text-black asj-padding">What&rsquo;s Next</h1>
+                            <em className="flex flex-col asj-padding ">
+                                Overall executing a redesign based off user needs was an eye opening experience. Trying to create a redesign with other aspiring designers was difficult to manage.
+                                If we had more time, I would have obtained more user data for product affirmation and modify features influenced by user testing.
+                                Finding what patterns surface after observing our users execute tests of the product.
+                                I would definitely add the ability to see the products&rsquo; info over a hover of the item and saving a specific item on the mood board before refreshing a new one.
+                                We would have focused on the other issue our interviewees&rsquo; expressed with the security and validation of users in Craigslist if we had more time.
+                            </em>
+                            <em className="flex flex-col asj-padding ">
+                                We would have conducted more interviews on what makes the user more comfortable to make a transaction.
+                                We understood that security would lead to more confidence and user usage of the product. The mood board doesn&rsquo;t entirely solve the problem our users may have with their future purchases.
+                            </em>
+                            <div className="flex flex-col asj-padding">
+                                <Link href="https://www.figma.com/proto/33UDTpUCByNJpE9FhnGdOT/Team-2-Converged-Prototype?page-id=55%3A218&node-id=55-457&scaling=min-zoom&starting-point-node-id=55%3A457" legacyBehavior>
+                                    <a target="_blank" rel="noopener noreferrer" className="text-2xl bold underline py-5">Prototype Version 1</a>
+                                </Link>
+                                <Link href="https://www.figma.com/proto/EXS7vyz9N2XWODGzG3bjIU/High-Fidelity-Prototype?page-id=10%3A1263&node-id=10-1399&scaling=min-zoom&starting-point-node-id=10%3A1399" legacyBehavior>
+                                    <a target="_blank" rel="noopener noreferrer" className="text-2xl bold underline py-5">Final Prototype</a>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div >
-            <Footer />
+            <CraigFooter />
         </>
     )
 }
