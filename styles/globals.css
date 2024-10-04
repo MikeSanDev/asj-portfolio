@@ -385,27 +385,13 @@ Blurred background when menu is open */
     object-position: 48% center;
   }
 
-  .ball1 {
-    width: 75px !important;
-    height: 50px !important;
-    top: 55% !important;
-    left: 10% !important;
+  .about-res {
+    margin: 0 auto !important;
   }
 
-  .ball2 {
-    width: 75px !important;
-    height: 50px !important;
-    top: 55% !important;
-    right: 10% !important;
+  .text-res {
+    font-size: 23px;
   }
-
-  .ball3 {
-    width: 75px !important;
-    height: 50px !important;
-    top: 70% !important;
-    left: 43% !important;
-  }
-
 
   .pfp {
     width: 300px;
