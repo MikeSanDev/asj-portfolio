@@ -49,26 +49,36 @@ export default function Home() {
         className="relative w-full  "
       >
         <Navbar />
-        <section id='section1' className="min-h-screen flex items-center bg-white">
+        <section
+          id="section1"
+          className="min-h-screen flex items-center  bg-cover bg-center"
+        >
+          {/* bg-[url('/assets/pkmn-bg.png')] */}
+          {/* add tree to background ^ need to figure out what font for the text */}
           {/* SECTION 1 - INTRO */}
-          <motion.div className="asj-width-margin mx-auto px-4  text-center" initial="hidden"
+          <motion.div
+            className="asj-width-margin mx-auto px-4 text-center"
+            initial="hidden"
             animate="visible"
-            variants={fadeInBackground}>
-            <h1 className="text-3xl italic font-extrabold pb-20">
+            variants={fadeInBackground}
+          >
+            <h1 className="text-3xl sm:text2xl italic font-extrabold pb-20">
               Hello there! I am Aaron San Jose <br />
               A product designer focused on congenial and effective designs
             </h1>
           </motion.div>
         </section>
+
+
         {/* SECTION 2 - POKEBALLS */}
         <section id='section2' style={{ minHeight: '100vh', backgroundColor: '#9647ff', display: 'flex', alignItems: 'center' }}>
-          <div className="asj-width-margin-wide mx-auto flex justify-center flex-col items-center h-full">
-            <h1 className="text-black text-center text-4xl italic font-extrabold pb-10"
+          <div className="asj-width-margin-wide mx-auto flex justify-center flex-col items-center h-full ">
+            <h1 className="text-black text-center text-4xl text-res italic font-extrabold pb-10"
               style={{ textShadow: '2px 2px 0 #ffffff, -2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px -2px 0 #ffffff' }}>
               The most influential decision I experienced growing up was...
             </h1>
 
-            <div className="flex justify-center items-center space-x-20 py-10">
+            <div className="flex justify-center items-center  space-x-20 py-10">
               <div className="flex flex-col items-center">
                 <Link href="/workPage">
                   <motion.img
@@ -89,7 +99,7 @@ export default function Home() {
                 <p className="text-white mt-5 text-2xl">Work</p>
               </div>
 
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col about-res items-center">
                 <Link href="/aboutPage">
                   <motion.img
                     src="/assets/ball2.png"
@@ -109,7 +119,7 @@ export default function Home() {
                 <p className="text-white mt-5 text-2xl">About</p>
               </div>
 
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col about-res items-center">
                 <Link href="/assets/ASJ-resume.pdf" legacyBehavior>
                   <a target="_blank" rel="noopener noreferrer">
                     <motion.img
@@ -132,7 +142,7 @@ export default function Home() {
               </div>
             </div>
 
-            <h1 className="text-black text-center text-4xl italic font-extrabold pt-5"
+            <h1 className="text-black text-center text-4xl italic font-extrabold pt-5 text-res"
               style={{ textShadow: '2px 2px 0 #ffffff, -2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px -2px 0 #ffffff' }}>
               Choose your starter
             </h1>
