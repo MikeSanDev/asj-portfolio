@@ -196,7 +196,7 @@ export default function Home() {
             <div className="asj-width-margin mx-auto">
               <div className="flex flex-row items-center">
                 <Image
-                  className="w-1/2"
+                  className="w-1/2 about-img"
                   src="/assets/about-img.jpg"
                   alt='ASJ'
                   width={200}

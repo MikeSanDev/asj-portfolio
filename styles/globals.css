@@ -259,7 +259,7 @@ Blurred background when menu is open */
 }
 
 .pfp {
-  border-radius: 50%;
+
   object-fit: cover;
   display: block;
   width: 100%;
@@ -286,7 +286,8 @@ Blurred background when menu is open */
 
 .about-text {
 
-  font-size: 17px;
+  font-size: 15px;
+  width: 100%;
 }
 
 
@@ -420,8 +421,8 @@ Blurred background when menu is open */
   }
 
   .about-text {
-    font-size: 15px !important;
-    width: 100% !important;
+    font-size: 10px !important;
+    width: 120% !important;
   }
 
   .about-boxes {
@@ -564,12 +565,6 @@ Blurred background when menu is open */
 
   /* About  */
 
-  .pfp {
-    width: 300px;
-    height: auto;
-    border: 5px solid #000000 !important;
-
-  }
 
   .res-width {
     width: 100% !important;
