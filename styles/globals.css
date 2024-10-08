@@ -380,7 +380,13 @@ Blurred background when menu is open */
 /* Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width: 376px) and (max-width: 767px) {
 
-  /* About  */
+  .phone-padding {
+    padding: 0 20px !important;
+  }
+
+  .questions-res {
+    font-size: 13px !important;
+  }
 
   .pkmn-page img {
     object-position: 48% center;
@@ -389,6 +395,12 @@ Blurred background when menu is open */
   .about-res {
     margin: 0 auto !important;
   }
+
+  .reach-info {
+    font-size: 30px !important;
+  }
+
+
 
   .text-res {
     font-size: 23px;
@@ -523,6 +535,8 @@ Blurred background when menu is open */
   .res-margin-top {
     margin-top: 20px !important;
   }
+
+
 
   .reach-banner {
     max-width: 125%
