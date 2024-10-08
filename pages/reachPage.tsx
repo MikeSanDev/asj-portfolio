@@ -12,7 +12,7 @@ export default function reachPage() {
 
                 {/* Header */}
                 <div className="bg-[#333333]  mx-auto w-full">
-                    <strong className='header-info italic text-white flex justify-center'>REACH Dashboard</strong>
+                    <strong className='reach-info text-4xl italic text-white flex justify-center'>REACH Dashboard</strong>
                     <div className='flex justify-center fig-box'>
                         <Image
                             src="/assets/dashboard.png"
@@ -25,7 +25,7 @@ export default function reachPage() {
 
                 {/* Overview */}
                 <div className="flex-grow  flex justify-center flex-col res-margin-top">
-                    <div className="bg-[#cccccc] mx-auto  w-full  flex justify-center flex-col items-center">
+                    <div className="bg-[#cccccc] mx-auto phone-padding w-full  flex justify-center flex-col items-center">
                         <div className="asj-width-margin-reach flex justify-center flex-col w-full ">
                             <div className="py-5">
                                 <h1 className="sub-header  text-black asj-padding">Overview</h1>
@@ -64,7 +64,7 @@ export default function reachPage() {
 
 
                     {/* Goal/Role */}
-                    <div className="flex justify-center flex-col items-center py-5">
+                    <div className="phone-padding flex justify-center flex-col items-center py-5">
                         <div className="asj-width-margin-reach flex justify-center flex-col items-center py-5">
                             {/* inconsistency - should these be all caps? */}
                             <h1 className="sub-header text-black py-5">THE GOAL</h1>
@@ -86,7 +86,7 @@ export default function reachPage() {
 
 
                     {/* Research */}
-                    <div className="bg-[#cccccc] w-full flex justify-center flex-col items-center">
+                    <div className="bg-[#cccccc] phone-padding w-full flex justify-center flex-col items-center">
                         <div className="asj-width-margin-reach  w-full flex justify-center flex-col  py-5">
                             <h1 className="sub-header text-black asj-padding ">Research</h1>
                             <em className="flex flex-col asj-padding">
@@ -114,7 +114,7 @@ export default function reachPage() {
                         </div>
                         <div className="asj-width-margin-reach flex justify-center flex-col py-5">
                             <strong className="text-2xl py-5 italic text-center">Sample of questions asked</strong>
-                            <div className="flex flex-row">
+                            <div className="flex questions-res flex-row">
                                 <div className="flex w-1/2">
                                     <em >What technologies are being used by staff?</em>
                                 </div>
@@ -145,7 +145,7 @@ export default function reachPage() {
 
 
                     {/* Conceptual Development */}
-                    <div className="flex justify-center flex-col items-center pt-5">
+                    <div className="phone-padding flex justify-center flex-col items-center pt-5">
                         <div className="asj-width-margin-reach py-5">
                             <h1 className="sub-header text-black text-left ">Conceptual Development</h1>
                             <div className="flex justify-center py-10">
@@ -215,7 +215,7 @@ export default function reachPage() {
 
 
                     {/* Final Product & Development */}
-                    <div className="bg-[#cccccc]  w-full flex justify-center flex-col items-center py-5">
+                    <div className="bg-[#cccccc] phone-padding w-full flex justify-center flex-col items-center py-5">
                         <div className="asj-width-margin-reach flex justify-center flex-col py-5">
                             <h1 className="sub-header text-black asj-padding pb-5">Final Product & Development</h1>
                             <em className="mb-5 ">
@@ -249,7 +249,7 @@ export default function reachPage() {
                             I suggested using a Z pattern on ordering the components of the dashboard. Cards being at the very top highlights what our users would see and interact with first. We followed up the cards because of Fiona&rsquo;s desire to create workshops. We decided to add specific data to show records of the users&rsquo; efforts and to keep track of their progress. Finally having visual graphs at the end just in case Fiona needs to look at her students at a broader level.
                         </em>
                         {/* Final Dashboard */}
-                        <div className='asj-width-margin-reach flex justify-center items-center flex-col py-10'>
+                        <div className='asj-width-margin-reach flex justify-center items-center flex-col py-5'>
                             <Image
                                 src="/assets/dashboard.png"
                                 alt='final dash'
@@ -261,7 +261,7 @@ export default function reachPage() {
                             </em>
                         </div>
                         {/* Engagement */}
-                        <div className='asj-width-margin-reach flex justify-center items-center flex-col asj-padding'>
+                        <div className='asj-width-margin-reach flex justify-center items-center flex-col '>
                             <Image
                                 className="asj-padding"
                                 src="/assets/engagement.png"
@@ -288,7 +288,7 @@ export default function reachPage() {
 
 
                     {/* Whats next */}
-                    <div className="flex justify-center flex-col items-center py-5">
+                    <div className="phone-padding flex justify-center flex-col items-center py-5">
                         <div className="asj-width-margin-reach flex justify-center flex-col py-5">
                             <h1 className="sub-header text-left text-black pb-5">What&rsquo;s Next</h1>
                             <em>
