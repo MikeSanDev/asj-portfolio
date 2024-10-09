@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 export default function CraigFooter() {
     return (
-        <footer className="bg-black p-4" >
-            <div className='text-white flex justify-center flex-col footer-width-margin mx-auto px-4 '>
+        <footer className="bg-black py-5" >
+            <div className='text-white flex justify-center flex-col footer-width-margin mx-auto phone-padding '>
                 <div className='py-3 flex flex-col'>
                     <Link href="/" >
                         <p className='italic '>Nothing is next?</p>

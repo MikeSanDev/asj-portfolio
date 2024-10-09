@@ -530,6 +530,9 @@ Blurred background when menu is open */
     height: auto;
   }
 
+  .phone-padding {
+    padding: 0 20px !important;
+  }
 
   /* REACH page */
   .res-margin-top {
