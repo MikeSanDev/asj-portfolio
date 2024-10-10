@@ -120,7 +120,7 @@ export default function CraigsList() {
                     <div className="asj-width-margin-reach phone-padding w-full flex justify-center flex-col  py-10">
                         <h1 className="sub-header text-black asj-padding">Research</h1>
                         <p className="pb-5">Craigslist has fierce competition on what it does well especially from Facebook Marketplace and Trovit. They use a modern design for clearer accessibility and navigation through pages compared to Craigslist. They also have profile customization to support a more comfortable and marketable experience.</p>
-                        <div className="flex flex-row py-5">
+                        <div className="flex flex-row py-10">
                             <div className="flex flex-col w-1/2">
                                 <strong className="pb-5 text-2xl">Interviews (5)</strong>
                                 <ul className="list-disc italic pl-5 font-light">
@@ -136,7 +136,7 @@ export default function CraigsList() {
                                 </ul>
                             </div>
                         </div>
-                        <strong className="text-2xl font-light text-center py-5">Sample of questions asked</strong>
+                        <p className="text-2xl font-semibold text-center pt-5">Sample of questions asked</p>
                         <div className="flex justify-center space-x-3 asj-padding py-5">
                             <div className="flex w-1/3 font-extralight">
                                 <em>What type of design are you looking for?</em>
@@ -148,7 +148,7 @@ export default function CraigsList() {
                                 <em>What color palette are you looking for?</em>
                             </div>
                         </div>
-                        <div className="flex flex-col py-5">
+                        <div className="flex flex-col py-10">
                             <em className=" asj-padding">We established three trends after user interviews were conducted. </em>
                             <strong>1: 100% interviewees see Craigslist as one time usage or by need basis specifically furniture and expensive rare items. </strong>
                             <strong>2: Lack of information in postings caused concern for safety with making transactions.</strong>
