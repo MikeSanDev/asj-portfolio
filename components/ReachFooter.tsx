@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function ReachFooter() {
   return (
     <footer className="bg-black py-5" >
-      <div className='text-white flex justify-center flex-col footer-width-margin phone-padding '>
+      <div className='text-white flex justify-center flex-col footer-width-margin mx-auto phone-padding '>
         <div className='py-3 flex flex-col'>
           <Link href="/craigsList" >
             <p>Next / Coding Dojo</p>

@@ -120,7 +120,7 @@ body::-webkit-scrollbar {
 }
 
 .footer-width-margin {
-  max-width: 650px;
+  max-width: 620px;
 }
 
 /*************************** Nav-Bar ****************************/
@@ -378,7 +378,7 @@ Blurred background when menu is open */
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media only screen and (min-width: 376px) and (max-width: 767px) {
+@media only screen and (min-width: 374px) and (max-width: 767px) {
 
   .phone-padding {
     padding: 0 20px !important;
@@ -467,7 +467,7 @@ Blurred background when menu is open */
 }
 
 /* Extra small devices (phones, less than 576px) */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 374px) {
   /* Navbar */
 
   .navbar-container {
