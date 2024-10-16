@@ -152,15 +152,15 @@ export default function Home() {
         {/* SECTION3 - WORK */}
         <section id='work' style={{ minHeight: '100vh' }}>
           < motion.div
-            className="asj-width-margin mx-auto px-4"
+            className="asj-width-margin mx-auto px-4  py-10"
             initial="hidden"
             animate="visible"
           >
             {/* Case Studies */}
-            <h1 className="sub-header text-black pt-5" > Case Studies</h1 >
+            <h1 className="sub-header text-black pt-5" >Work</h1 >
             <div className="py-5">
               <Link href="/reachPage">
-                <strong className="from-neutral-300">Chicago Scholars</strong>
+                <strong className=" text-2xl  from-neutral-300">Chicago Scholars</strong>
                 <p className="text-2xl italic font-extralight work-text pb-5">Reach Dashboard - A product that manages student support systems for continuing education staff.</p>
                 <Image
                   className="img-border"
@@ -172,7 +172,7 @@ export default function Home() {
             </div>
             <div className="py-5">
               <Link href="/craigsList">
-                <strong className="from-neutral-300">Coding Dojo</strong>
+                <strong className="text-2xl  from-neutral-300">Coding Dojo</strong>
                 <p className="text-2xl italic font-extralight work-text pb-5">Craigslist Moodboard - A redesign of Craigslist encouraging user engagement.</p>
                 <Image
                   className="mb-10"
