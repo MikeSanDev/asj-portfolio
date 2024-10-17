@@ -14,20 +14,12 @@ export default function Home() {
     visible: {
       opacity: 1,
       transition: {
-        duration: 2, // 1-second duration for the background image
+        duration: 3, // 1-second duration for the background image
       },
     },
   };
 
-  const fadeInBalls = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        duration: 4, // 3-second duration for the balls
-      },
-    },
-  };
+
   // Pokeball Message
   const [message, setMessage] = useState("");
 
@@ -89,7 +81,6 @@ export default function Home() {
                     className="cursor-pointer"
                     initial="hidden"
                     animate="visible"
-                    variants={fadeInBalls}
                     whileHover={{ scale: 1.2 }} // Expands on hover
                     onClick={() => handleBallClick('/workPage')}
                     onMouseEnter={() => handleMouseEnter('Work Experience')}
@@ -109,7 +100,6 @@ export default function Home() {
                     className="cursor-pointer"
                     initial="hidden"
                     animate="visible"
-                    variants={fadeInBalls}
                     whileHover={{ scale: 1.2 }} // Expands on hover
                     onClick={() => handleBallClick('/aboutPage')}
                     onMouseEnter={() => handleMouseEnter('About Me')}
@@ -130,7 +120,7 @@ export default function Home() {
                       className="cursor-pointer"
                       initial="hidden"
                       animate="visible"
-                      variants={fadeInBalls}
+
                       whileHover={{ scale: 1.2 }} // Expands on hover
                       onClick={() => handleBallClick('https://drive.google.com/file/d/1XN3fCDg3PXbmL4PLIJiW_nkYljsL2e9j/view')}
                       onMouseEnter={() => handleMouseEnter('Resume')}

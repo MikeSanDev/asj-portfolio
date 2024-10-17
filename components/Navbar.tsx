@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 interface NavbarProps {
   backgroundColor?: string; // Optional prop with a string type
@@ -31,10 +32,27 @@ export default function Navbar({ backgroundColor = 'bg-white', textColor = 'text
     };
   }, []);
 
+  // Fade-in animation
+  const fadeInNavbar = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 1,
+      },
+    },
+  };
+
+
   return (
     <nav className={`navbar-container mx-auto sticky top-0 z-50 ${backgroundColor}`}>
       <div className="asj-width-margin mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
+        <motion.div
+          className="flex justify-between items-center h-16"
+          initial="hidden"
+          animate="visible"
+          variants={fadeInNavbar}
+        >
           <div className={`flex items-center space-x-4 ${textColor}`}>
             {isSmallScreen && (
               <Image
@@ -48,17 +66,32 @@ export default function Navbar({ backgroundColor = 'bg-white', textColor = 'text
             <Link href="/" className={`font-bold ${textColor}`}>ASJ</Link>
           </div>
           <div className="hidden md:flex items-center space-x-4 nav-item2">
-            <li className={`font-bold hover:underline list-none ${textColor}`}>
+            <motion.li
+              className={`font-bold hover:underline list-none ${textColor}`}
+              initial="hidden"
+              animate="visible"
+              variants={fadeInNavbar}
+            >
               <Link href="/#work">Work</Link>
-            </li>
-            <li className={`font-bold hover:underline list-none ${textColor}`}>
+            </motion.li>
+            <motion.li
+              className={`font-bold hover:underline list-none ${textColor}`}
+              initial="hidden"
+              animate="visible"
+              variants={fadeInNavbar}
+            >
               <Link href="/#about">About</Link>
-            </li>
-            <li className={`font-bold hover:underline list-none ${textColor}`}>
+            </motion.li>
+            <motion.li
+              className={`font-bold hover:underline list-none ${textColor}`}
+              initial="hidden"
+              animate="visible"
+              variants={fadeInNavbar}
+            >
               <Link href="/assets/ASJ-resume.pdf" legacyBehavior>
                 <a target="_blank" rel="noopener noreferrer">Resume</a>
               </Link>
-            </li>
+            </motion.li>
           </div>
           <div className="md:hidden">
             <button onClick={toggleMenu} className={`${textColor} focus:outline-none`}>
@@ -78,17 +111,22 @@ export default function Navbar({ backgroundColor = 'bg-white', textColor = 'text
               </svg>
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
       {isOpen && (
-        <div className="md:hidden px-4 py-4">
+        <motion.div
+          className="md:hidden px-4 py-4"
+          initial="hidden"
+          animate="visible"
+          variants={fadeInNavbar}
+        >
           <li className={`nav-item1 text-2xl italic ${textColor}`}>
             <Link href="/#work">Work</Link>
           </li>
           <li className={`nav-item1 text-2xl italic ${textColor}`}>
             <Link href="/#about">About</Link>
           </li>
-        </div>
+        </motion.div>
       )}
     </nav>
   );
