@@ -14,11 +14,10 @@ export default function Home() {
     visible: {
       opacity: 1,
       transition: {
-        duration: 3, // 1-second duration for the background image
+        duration: 2, // 1-second duration for the background image
       },
     },
   };
-
 
   // Pokeball Message
   const [message, setMessage] = useState("");
@@ -150,7 +149,7 @@ export default function Home() {
             <h1 className="sub-header text-black pt-5" >Work</h1 >
             <div className="py-5">
               <Link href="/reachPage">
-                <strong className=" text-2xl  from-neutral-300">Chicago Scholars</strong>
+                <strong className=" text-2xl mb-5 from-neutral-300">Chicago Scholars</strong>
                 <p className="text-2xl italic font-extralight work-text pb-5">Reach Dashboard - A product that manages student support systems for continuing education staff.</p>
                 <Image
                   className="img-border"
@@ -162,7 +161,7 @@ export default function Home() {
             </div>
             <div className="py-5">
               <Link href="/craigsList">
-                <strong className="text-2xl  from-neutral-300">Coding Dojo</strong>
+                <strong className="text-2xl mb-10 from-neutral-300">Coding Dojo</strong>
                 <p className="text-2xl italic font-extralight work-text pb-5">Craigslist Moodboard - A redesign of Craigslist encouraging user engagement.</p>
                 <Image
                   className="mb-10"

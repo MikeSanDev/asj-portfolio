@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import ReachFooter from "@/components/ReachFooter";
 import Image from "next/image";
-import Link from "next/link";
+import { motion } from 'framer-motion';
 
 
 export default function reachPage() {
