@@ -5,28 +5,61 @@ import { motion } from 'framer-motion';
 
 
 export default function reachPage() {
+
+    // Fade-in animation
+    const fadeIn2 = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                duration: 2,
+            },
+        },
+    };
+    const fadeIn3 = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                duration: 3,
+            },
+        },
+    };
+
     return (
         <>
             <Navbar backgroundColor="bg-[#333333]" textColor="text-white" />
             <div className="flex flex-col min-h-screen">
 
                 {/* Header */}
-                <div className="bg-[#333333]  mx-auto w-full">
-                    <strong className='reach-info text-4xl italic text-white flex justify-center'>REACH Dashboard</strong>
-                    <div className='flex justify-center fig-box'>
+                <div className="bg-[#333333]  mx-auto w-full"
+                >
+                    {/* Cannot put motion here ^ bg color will also fade in */}
+                    <motion.strong className='reach-info text-4xl italic text-white flex justify-center'
+                        initial="hidden"
+                        animate="visible"
+                        variants={fadeIn2}>REACH Dashboard</motion.strong>
+                    <motion.div
+                        className='flex justify-center fig-box'
+                        initial="hidden"
+                        animate="visible"
+                        variants={fadeIn2}>
                         <Image
                             src="/assets/dashboard.png"
                             alt='box'
                             width={620}
                             height={600} />
-                    </div>
+                    </motion.div>
                 </div>
 
 
                 {/* Overview */}
                 <div className="flex-grow  flex justify-center flex-col res-margin-top">
                     <div className="bg-[#cccccc] mx-auto phone-padding w-full  flex justify-center flex-col items-center">
-                        <div className="asj-width-margin-reach flex justify-center flex-col w-full ">
+                        <motion.div className="asj-width-margin-reach flex justify-center flex-col w-full"
+                            initial="hidden"
+                            animate="visible"
+                            variants={fadeIn3}>
                             <div className="py-5">
                                 <h1 className="sub-header  text-black asj-padding">Overview</h1>
                                 <p className="pr-5 reach-cols font-light">
@@ -58,7 +91,7 @@ export default function reachPage() {
                                         height={600} />
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
 
 
