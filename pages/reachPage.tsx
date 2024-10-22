@@ -32,8 +32,7 @@ export default function reachPage() {
             <div className="flex flex-col min-h-screen">
 
                 {/* Header */}
-                <div className="bg-[#333333]  mx-auto w-full"
-                >
+                <div className="bg-[#333333]  mx-auto w-full">
                     {/* Cannot put motion here ^ bg color will also fade in */}
                     <motion.strong className='reach-info text-4xl italic text-white flex justify-center'
                         initial="hidden"
