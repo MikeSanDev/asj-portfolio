@@ -39,6 +39,25 @@ export default function CraigsList() {
         setSelectedIndex2((prevIndex) => (prevIndex === images2.length - 1 ? 0 : prevIndex + 1));
     };
 
+    // Fade-in animation
+    const fadeIn2 = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                duration: 2,
+            },
+        },
+    };
+    const fadeIn3 = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                duration: 3,
+            },
+        },
+    };
     return (
         < >
             <Navbar backgroundColor="bg-[#333333]" textColor="text-white" />
@@ -46,14 +65,21 @@ export default function CraigsList() {
 
                 {/* Header  */}
                 <div className="bg-[#333333] shadow-md mx-auto w-full">
-                    <strong className='reach-info text-4xl italic text-white flex justify-center'>Craigslist Dashboard</strong>
-                    <div className='flex justify-center fig-box'>
+                    {/* Cannot put motion here ^ bg color will also fade in */}
+                    <motion.strong className='reach-info text-4xl italic text-white flex justify-center'
+                        initial="hidden"
+                        animate="visible"
+                        variants={fadeIn2}>Craigslist Dashboard</motion.strong>
+                    <motion.div className='flex justify-center fig-box'
+                        initial="hidden"
+                        animate="visible"
+                        variants={fadeIn2}>
                         <Image
                             src="/assets/craiglist-dash.png"
                             alt='box'
                             width={620}
                             height={500} />
-                    </div>
+                    </motion.div>
                 </div>
 
 
@@ -62,12 +88,15 @@ export default function CraigsList() {
                 <div className="flex-grow  flex justify-center flex-col res-margin-top">
                     <div className="bg-[#cccccc] phone-padding mx-auto  w-full  flex justify-center flex-col items-center">
                         <div className="asj-width-margin-reach flex justify-center flex-col w-full ">
-                            <div className="py-5">
+                            <motion.div className="py-5"
+                                initial="hidden"
+                                animate="visible"
+                                variants={fadeIn3}>
                                 <h1 className="sub-header  text-black asj-padding">Overview</h1>
                                 <p className="pr-5 reach-cols font-light">
                                     Coding dojo bootcamp cohort were assigned to create a redesign of Craigslist in teams of 3. We were tasked to conduct our own interviews, research, and design process for understanding what a UX/UI designer does. We were given one month and half to work as a team and half a month as an individual.
                                 </p>
-                            </div>
+                            </motion.div>
                             <div className="flex justify-center py-5">
                                 <div className="flex flex-col text-center">
                                     <strong className="py-2 underline text-3xl"> What is the problem?</strong>
