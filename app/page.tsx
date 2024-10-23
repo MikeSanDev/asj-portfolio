@@ -66,7 +66,7 @@ export default function Home() {
           <div className="asj-width-margin-wide mx-auto flex justify-center flex-col items-center h-full ">
             <h1 className="text-black text-center text-4xl text-res italic font-extrabold pb-10"
               style={{ textShadow: '2px 2px 0 #ffffff, -2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px -2px 0 #ffffff' }}>
-              The most influential decision I experienced growing up was...
+              The most influential decision <br /> I experienced growing up was...
             </h1>
 
             <div className="flex justify-center items-center  space-x-20 py-10">
