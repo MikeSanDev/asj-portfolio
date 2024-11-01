@@ -6,6 +6,7 @@ import { useState } from 'react';
 import "../styles/globals.css";
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Head from 'next/head';
 
 export default function Home() {
   // Animations
@@ -36,6 +37,9 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Aaron San Jose</title>
+      </Head>
       <div
         className="relative w-full  "
       >
