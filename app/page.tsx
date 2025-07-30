@@ -37,9 +37,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Aaron San Jose</title>
-      </Head>
       <div
         className="relative w-full  "
       >
